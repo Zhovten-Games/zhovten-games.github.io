@@ -1,0 +1,6 @@
+# Publication research build artifacts
+/publications/research/**/*.pdf
+/publications/research/**/*.tex
+/publications/research/**/*.aux
+/publications/research/**/*.log
+/publications/research/**/*.txt

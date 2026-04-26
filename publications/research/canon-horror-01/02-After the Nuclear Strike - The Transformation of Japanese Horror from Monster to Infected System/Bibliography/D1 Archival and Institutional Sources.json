@@ -1,0 +1,28 @@
+[
+  {
+    "id": "criterion-godzilla-a",
+    "citation-key": "criterion-godzilla-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Criterion"
+      }
+    ],
+    "title": "2 or 3 Things I Know About Godzilla",
+    "URL": "https://www.criterion.com/current/posts/5678-2-or-3-things-i-know-about-godzilla",
+    "language": "en"
+  },
+  {
+    "id": "bfi-tetsuo-a",
+    "citation-key": "bfi-tetsuo-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "BFI"
+      }
+    ],
+    "title": "5 Reasons Why Tetsuo: The Iron Man Is a Cult Classic",
+    "URL": "https://www.bfi.org.uk/features/5-reasons-tetsuo-iron-man",
+    "language": "en"
+  }
+]

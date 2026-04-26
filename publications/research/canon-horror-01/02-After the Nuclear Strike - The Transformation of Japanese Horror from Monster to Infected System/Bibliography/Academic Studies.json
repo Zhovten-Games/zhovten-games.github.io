@@ -1,0 +1,73 @@
+[
+  {
+    "id": "dower1995a",
+    "citation-key": "dower1995a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Dower",
+        "given": "John W."
+      }
+    ],
+    "title": "The Bombed: Hiroshimas and Nagasakis in Japanese Memory",
+    "container-title": "Diplomatic History",
+    "volume": "19",
+    "issue": "2",
+    "page": "275-295",
+    "DOI": "10.1111/j.1467-7709.1995.tb00658.x",
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "napier1993a",
+    "citation-key": "napier1993a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Napier",
+        "given": "Susan J."
+      }
+    ],
+    "title": "Panic Sites: The Japanese Imagination of Disaster from Godzilla to Akira",
+    "container-title": "The Journal of Japanese Studies",
+    "volume": "19",
+    "issue": "2",
+    "page": "327-351",
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "oe1965a",
+    "citation-key": "oe1965a",
+    "type": "book",
+    "author": [
+      {
+        "family": "Ōe",
+        "given": "Kenzaburō"
+      }
+    ],
+    "title": "Hiroshima Notes (『ヒロシマ・ノート』)",
+    "publisher": "Iwanami Shoten",
+    "publisher-place": "Tokyo",
+    "issued": {
+      "date-parts": [
+        [
+          1965
+        ]
+      ]
+    },
+    "language": "ja"
+  }
+]

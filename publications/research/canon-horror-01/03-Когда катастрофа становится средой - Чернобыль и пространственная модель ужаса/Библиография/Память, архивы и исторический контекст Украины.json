@@ -1,0 +1,172 @@
+[
+  {
+    "id": "davies2013a",
+    "citation-key": "davies2013a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Davies",
+        "given": "Thom"
+      }
+    ],
+    "title": "A Visual Geography of Chernobyl: Double Exposure",
+    "container-title": "International Labor and Working-Class History",
+    "volume": "84",
+    "page": "65-85",
+    "DOI": "10.1017/S0147547913000379",
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "chornobylmuseum-a",
+    "citation-key": "chornobylmuseum-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "National Museum “Chornobyl” (Kyiv)"
+      }
+    ],
+    "title": "Memory-book and archival public history resources",
+    "URL": "https://chornobylmuseum.kiev.ua/",
+    "language": "en"
+  },
+  {
+    "id": "uinp2019a",
+    "citation-key": "uinp2019a",
+    "type": "document",
+    "author": [
+      {
+        "literal": "Український інститут національної пам’яті"
+      }
+    ],
+    "title": "Чорнобильське досьє КҐБ",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "URL": "https://uinp.gov.ua/elektronni-vydannya/knyga-chornobylske-dosye-kgb1",
+    "language": "uk"
+  },
+  {
+    "id": "wilsoncenter-a",
+    "citation-key": "wilsoncenter-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Wilson Center"
+      }
+    ],
+    "title": "28 Newly Translated Documents on Chernobyl (1973–1991)",
+    "URL": "https://www.wilsoncenter.org/blog-post/28-newly-translated-documents-chernobyl-1973-1991",
+    "language": "en"
+  },
+  {
+    "id": "tumarkin2005a",
+    "citation-key": "tumarkin2005a",
+    "type": "book",
+    "author": [
+      {
+        "family": "Tumarkin",
+        "given": "Maria"
+      }
+    ],
+    "title": "Traumascapes",
+    "publisher": "Melbourne University Press",
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "nixon2011a",
+    "citation-key": "nixon2011a",
+    "type": "book",
+    "author": [
+      {
+        "family": "Nixon",
+        "given": "Rob"
+      }
+    ],
+    "title": "Slow Violence and the Environmentalism of the Poor",
+    "publisher": "Harvard University Press",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "applebaum2017a",
+    "citation-key": "applebaum2017a",
+    "type": "book",
+    "author": [
+      {
+        "family": "Applebaum",
+        "given": "Anne"
+      }
+    ],
+    "title": "Red Famine: Stalin’s War on Ukraine",
+    "publisher": "Allen Lane",
+    "publisher-place": "London",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "uinp-holodomor-a",
+    "citation-key": "uinp-holodomor-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Український інститут національної пам’яті"
+      }
+    ],
+    "title": "Материалы о Голодоморе",
+    "URL": "https://uinp.gov.ua/",
+    "language": "uk"
+  },
+  {
+    "id": "laurila2024a",
+    "citation-key": "laurila2024a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Laurila",
+        "given": "Hayley"
+      }
+    ],
+    "title": "Radioactive Ghosts and Psychic Anomalies: Exploring Pripyat’s Supernatural Topography in the S.T.A.L.K.E.R. Video Game Series",
+    "container-title": "Revenant",
+    "page": "193-211",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "language": "en",
+    "URL": "https://www.revenantjournal.com/wp-content/uploads/2024/09/Laurila_SEPT-2024-1.pdf"
+  }
+]

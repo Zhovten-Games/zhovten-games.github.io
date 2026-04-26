@@ -1,0 +1,233 @@
+[
+  {
+    "id": "leibniz1666a",
+    "citation-key": "leibniz1666a",
+    "author": [
+      {
+        "family": "Leibniz",
+        "given": "Gottfried Wilhelm"
+      }
+    ],
+    "title": "Dissertatio de arte combinatoria",
+    "type": "book",
+    "publisher-place": "Leipzig",
+    "issued": {
+      "date-parts": [
+        [
+          1666
+        ]
+      ]
+    },
+    "language": "la"
+  },
+  {
+    "id": "rossi2000a",
+    "citation-key": "rossi2000a",
+    "author": [
+      {
+        "family": "Rossi",
+        "given": "Paolo"
+      }
+    ],
+    "translator": [
+      {
+        "family": "Clucas",
+        "given": "Stephen"
+      }
+    ],
+    "title": "Logic and the Art of Memory: The Quest for a Universal Language",
+    "type": "book",
+    "publisher": "University of Chicago Press",
+    "publisher-place": "Chicago",
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "kempe2025a",
+    "citation-key": "kempe2025a",
+    "author": [
+      {
+        "family": "Kempe",
+        "given": "Vera"
+      },
+      {
+        "family": "Raviv",
+        "given": "Limor"
+      }
+    ],
+    "title": "No Evidence for Generational Differences in the Conventionalisation of Face Emojis",
+    "type": "article-journal",
+    "container-title": "Computers in Human Behavior Reports",
+    "volume": "19",
+    "page": "article 100750",
+    "DOI": "10.1016/j.chbr.2025.100750",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "mcluhan1964a",
+    "citation-key": "mcluhan1964a",
+    "author": [
+      {
+        "family": "McLuhan",
+        "given": "Marshall"
+      }
+    ],
+    "title": "Understanding Media: The Extensions of Man",
+    "type": "book",
+    "publisher": "McGraw-Hill",
+    "publisher-place": "New York",
+    "issued": {
+      "date-parts": [
+        [
+          1964
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "dawkins1976a",
+    "citation-key": "dawkins1976a",
+    "author": [
+      {
+        "family": "Dawkins",
+        "given": "Richard"
+      }
+    ],
+    "title": "The Selfish Gene",
+    "type": "book",
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "issued": {
+      "date-parts": [
+        [
+          1976
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "sontag1978a",
+    "citation-key": "sontag1978a",
+    "author": [
+      {
+        "family": "Sontag",
+        "given": "Susan"
+      }
+    ],
+    "title": "Illness as Metaphor",
+    "type": "book",
+    "publisher": "Farrar, Straus and Giroux",
+    "publisher-place": "New York",
+    "issued": {
+      "date-parts": [
+        [
+          1978
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "wald2008a",
+    "citation-key": "wald2008a",
+    "author": [
+      {
+        "family": "Wald",
+        "given": "Priscilla"
+      }
+    ],
+    "title": "Contagious: Cultures, Carriers, and the Outbreak Narrative",
+    "type": "book",
+    "publisher": "Duke University Press",
+    "publisher-place": "Durham",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "parikka2007a",
+    "citation-key": "parikka2007a",
+    "author": [
+      {
+        "family": "Parikka",
+        "given": "Jussi"
+      }
+    ],
+    "title": "Digital Contagions: A Media Archaeology of Computer Viruses",
+    "type": "book",
+    "publisher": "Peter Lang",
+    "publisher-place": "New York",
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "sampson2012a",
+    "citation-key": "sampson2012a",
+    "author": [
+      {
+        "family": "Sampson",
+        "given": "Tony D."
+      }
+    ],
+    "title": "Virality: Contagion Theory in the Age of Networks",
+    "type": "book",
+    "publisher": "University of Minnesota Press",
+    "publisher-place": "Minneapolis",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "sperber1996a",
+    "citation-key": "sperber1996a",
+    "author": [
+      {
+        "family": "Sperber",
+        "given": "Dan"
+      }
+    ],
+    "title": "Explaining Culture: A Naturalistic Approach",
+    "type": "book",
+    "publisher": "Blackwell",
+    "publisher-place": "Oxford",
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "language": "en"
+  }
+]

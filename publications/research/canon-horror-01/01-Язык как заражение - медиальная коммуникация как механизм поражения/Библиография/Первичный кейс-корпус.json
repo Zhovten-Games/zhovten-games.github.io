@@ -1,0 +1,312 @@
+[
+  {
+    "id": "konami2015a",
+    "citation-key": "konami2015a",
+    "author": [
+      {
+        "literal": "Konami / Kojima Productions"
+      }
+    ],
+    "title": "Metal Gear Solid V: The Phantom Pain",
+    "type": "motion_picture",
+    "publisher": "Konami",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "burgess1998a",
+    "citation-key": "burgess1998a",
+    "author": [
+      {
+        "family": "Burgess",
+        "given": "Tony"
+      }
+    ],
+    "title": "Pontypool Changes Everything",
+    "type": "book",
+    "publisher": "ECW Press",
+    "publisher-place": "Toronto",
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "mcdonald2008a",
+    "citation-key": "mcdonald2008a",
+    "director": [
+      {
+        "family": "McDonald",
+        "given": "Bruce"
+      }
+    ],
+    "title": "Pontypool",
+    "type": "motion_picture",
+    "publisher": "Maple Pictures",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "kum2016a",
+    "citation-key": "kum2016a",
+    "author": [
+      {
+        "family": "Kum",
+        "given": "Afşin"
+      }
+    ],
+    "title": "Sıcak Kafa (Hot Skull)",
+    "type": "book",
+    "publisher": "Can Yayınları",
+    "publisher-place": "Istanbul",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "language": "tr"
+  },
+  {
+    "id": "hotskull2022a",
+    "citation-key": "hotskull2022a",
+    "title": "Hot Skull",
+    "type": "motion_picture",
+    "publisher": "Netflix",
+    "genre": "adaptation",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "language": "tr"
+  },
+  {
+    "id": "malerman2014a",
+    "citation-key": "malerman2014a",
+    "author": [
+      {
+        "family": "Malerman",
+        "given": "Josh"
+      }
+    ],
+    "title": "Bird Box",
+    "type": "book",
+    "publisher": "Ecco",
+    "publisher-place": "New York",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "bier2018a",
+    "citation-key": "bier2018a",
+    "director": [
+      {
+        "family": "Bier",
+        "given": "Susanne"
+      }
+    ],
+    "title": "Bird Box",
+    "type": "motion_picture",
+    "publisher": "Netflix",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "king2006a",
+    "citation-key": "king2006a",
+    "author": [
+      {
+        "family": "King",
+        "given": "Stephen"
+      }
+    ],
+    "title": "Cell",
+    "type": "book",
+    "publisher": "Scribner",
+    "publisher-place": "New York",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "stephenson1992a",
+    "citation-key": "stephenson1992a",
+    "author": [
+      {
+        "family": "Stephenson",
+        "given": "Neal"
+      }
+    ],
+    "title": "Snow Crash",
+    "type": "book",
+    "publisher": "Bantam Books",
+    "publisher-place": "New York",
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "suzuki1991a",
+    "citation-key": "suzuki1991a",
+    "author": [
+      {
+        "family": "Suzuki",
+        "given": "Koji"
+      }
+    ],
+    "title": "Ring",
+    "type": "book",
+    "publisher": "Kadokawa Shoten",
+    "publisher-place": "Tokyo",
+    "issued": {
+      "date-parts": [
+        [
+          1991
+        ]
+      ]
+    },
+    "language": "ja"
+  },
+  {
+    "id": "nakata1998a",
+    "citation-key": "nakata1998a",
+    "director": [
+      {
+        "family": "Nakata",
+        "given": "Hideo"
+      }
+    ],
+    "title": "Ringu",
+    "type": "motion_picture",
+    "publisher": "Toho",
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "language": "ja"
+  },
+  {
+    "id": "vhs2012a",
+    "citation-key": "vhs2012a",
+    "title": "V/H/S",
+    "type": "motion_picture",
+    "publisher": "Magnolia Pictures",
+    "note": "Directed by Matt Bettinelli-Olpin et al.",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "weekes2020a",
+    "citation-key": "weekes2020a",
+    "director": [
+      {
+        "family": "Bress",
+        "given": "Eric"
+      }
+    ],
+    "title": "Ghosts of War",
+    "type": "motion_picture",
+    "publisher": "Vertical Entertainment",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "carpenter1982a",
+    "citation-key": "carpenter1982a",
+    "director": [
+      {
+        "family": "Carpenter",
+        "given": "John"
+      }
+    ],
+    "title": "The Thing",
+    "type": "motion_picture",
+    "publisher": "Universal Pictures",
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "aster2018a",
+    "citation-key": "aster2018a",
+    "director": [
+      {
+        "family": "Aster",
+        "given": "Ari"
+      }
+    ],
+    "title": "Hereditary",
+    "type": "motion_picture",
+    "publisher": "A24",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "language": "en"
+  }
+]

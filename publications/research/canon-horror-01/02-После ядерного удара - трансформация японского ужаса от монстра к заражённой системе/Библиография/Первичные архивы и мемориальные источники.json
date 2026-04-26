@@ -1,0 +1,54 @@
+[
+  {
+    "id": "hpmm-a",
+    "citation-key": "hpmm-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Hiroshima Peace Memorial Museum"
+      }
+    ],
+    "title": "Survivor Testimonies",
+    "URL": "https://hpmm-db.jp/testify_en/",
+    "language": "en"
+  },
+  {
+    "id": "hiroshima-peace-hall-a",
+    "citation-key": "hiroshima-peace-hall-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims"
+      }
+    ],
+    "title": "Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims",
+    "URL": "https://www.hiro-tsuitokinenkan.go.jp/en/",
+    "language": "en"
+  },
+  {
+    "id": "nagasaki-peace-hall-a",
+    "citation-key": "nagasaki-peace-hall-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Nagasaki National Peace Memorial Hall for the Atomic Bomb Victims"
+      }
+    ],
+    "title": "Nagasaki National Peace Memorial Hall for the Atomic Bomb Victims",
+    "URL": "https://www.peace-nagasaki.go.jp/en/testimonies-memoirs",
+    "language": "en"
+  },
+  {
+    "id": "hidankyo-a",
+    "citation-key": "hidankyo-a",
+    "type": "document",
+    "author": [
+      {
+        "literal": "Nihon Hidankyo"
+      }
+    ],
+    "title": "A Call from Hibakusha of Hiroshima and Nagasaki",
+    "URL": "https://www.ne.jp/asahi/hidankyo/nihon/english/img/a-call-from-hibakusha-of-hiroshima-and-nagasaki-01.pdf",
+    "language": "en"
+  }
+]

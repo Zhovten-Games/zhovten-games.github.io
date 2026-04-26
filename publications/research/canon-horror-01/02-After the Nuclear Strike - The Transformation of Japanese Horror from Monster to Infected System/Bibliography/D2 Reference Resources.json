@@ -1,0 +1,55 @@
+[
+  {
+    "id": "allcinema1988a",
+    "citation-key": "allcinema1988a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "AllCinema"
+      }
+    ],
+    "title": "Guinea Pig: Mermaid in a Manhole (1988)",
+    "URL": "https://www.allcinema.net/cinema/86599",
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    },
+    "language": "ja"
+  },
+  {
+    "id": "jmdb-kairo-a",
+    "citation-key": "jmdb-kairo-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "JMDB"
+      }
+    ],
+    "title": "Kairo (2001)",
+    "URL": "https://www.jmdb.ne.jp/2001/dy000330.htm",
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "language": "ja"
+  },
+  {
+    "id": "japanknowledge-kegare-a",
+    "citation-key": "japanknowledge-kegare-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "JapanKnowledge"
+      }
+    ],
+    "title": "Reference materials on 穢れ (kegare) / 祓い (harae)",
+    "URL": "https://japanknowledge.com/en/contents/",
+    "language": "en"
+  }
+]

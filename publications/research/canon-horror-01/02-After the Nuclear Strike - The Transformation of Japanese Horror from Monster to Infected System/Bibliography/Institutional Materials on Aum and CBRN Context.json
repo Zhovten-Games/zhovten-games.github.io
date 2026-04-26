@@ -1,0 +1,52 @@
+[
+  {
+    "id": "psia-aum-a",
+    "citation-key": "psia-aum-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Public Security Intelligence Agency (Japan)"
+      }
+    ],
+    "title": "Materials on Aum Shinrikyo",
+    "URL": "https://www.moj.go.jp/psia/aumindex.html",
+    "language": "en"
+  },
+  {
+    "id": "olson1999a",
+    "citation-key": "olson1999a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Olson",
+        "given": "Kyle B."
+      }
+    ],
+    "title": "Aum Shinrikyo: Once and Future Threat?",
+    "container-title": "Emerging Infectious Diseases",
+    "volume": "5",
+    "issue": "4",
+    "DOI": "10.3201/eid0504.990409",
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "opcw-aum-a",
+    "citation-key": "opcw-aum-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Organisation for the Prohibition of Chemical Weapons (OPCW)"
+      }
+    ],
+    "title": "Materials on chemical terrorism and Tokyo subway sarin context",
+    "URL": "https://www.opcw.org/",
+    "language": "en"
+  }
+]

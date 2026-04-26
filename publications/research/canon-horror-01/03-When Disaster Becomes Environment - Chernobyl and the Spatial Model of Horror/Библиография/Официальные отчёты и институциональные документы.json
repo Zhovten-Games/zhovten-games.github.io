@@ -1,0 +1,75 @@
+[
+  {
+    "id": "gsc-a",
+    "citation-key": "gsc-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "GSC Game World"
+      }
+    ],
+    "title": "Official resources and company materials",
+    "URL": "https://www.gsc-game.com/",
+    "language": "en"
+  },
+  {
+    "id": "iaea-insag1992a",
+    "citation-key": "iaea-insag1992a",
+    "type": "document",
+    "author": [
+      {
+        "literal": "IAEA / INSAG"
+      }
+    ],
+    "title": "INSAG-7: The Chernobyl Accident: Updating of INSAG-1",
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "URL": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub913e_web.pdf",
+    "language": "en"
+  },
+  {
+    "id": "unscear2000a",
+    "citation-key": "unscear2000a",
+    "type": "document",
+    "author": [
+      {
+        "literal": "UNSCEAR"
+      }
+    ],
+    "title": "2000 Report, Annex J: Exposures and Effects of the Chernobyl Accident",
+    "URL": "https://www.unscear.org/docs/reports/2000/Volume%20II_Effects/AnnexJ_pages%20451-566.pdf",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    }
+  },
+  {
+    "id": "whoun2006a",
+    "citation-key": "whoun2006a",
+    "type": "document",
+    "author": [
+      {
+        "literal": "WHO / UN Chernobyl Forum"
+      }
+    ],
+    "title": "Health Effects and Special Health Care Programmes",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "language": "en",
+    "URL": "https://www.who.int/publications-detail-redirect/9241594179"
+  }
+]

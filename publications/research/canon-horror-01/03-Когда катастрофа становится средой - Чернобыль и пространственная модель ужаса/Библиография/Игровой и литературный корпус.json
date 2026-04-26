@@ -1,0 +1,144 @@
+[
+  {
+    "id": "glukhovsky2005a",
+    "citation-key": "glukhovsky2005a",
+    "type": "book",
+    "author": [
+      {
+        "family": "Глуховский",
+        "given": "Дмитрий"
+      }
+    ],
+    "title": "Метро 2033",
+    "publisher": "АСТ",
+    "publisher-place": "Москва",
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "language": "ru"
+  },
+  {
+    "id": "fouragames-a",
+    "citation-key": "fouragames-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "4A Games"
+      }
+    ],
+    "title": "Official studio profile and Metro series pages",
+    "URL": "https://www.4a-games.com.mt/",
+    "language": "en"
+  },
+  {
+    "id": "steam-valve-a",
+    "citation-key": "steam-valve-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Valve"
+      }
+    ],
+    "title": "Metro 2033 Redux store metadata",
+    "URL": "https://store.steampowered.com/app/286690/Metro_2033_Redux/",
+    "language": "en"
+  },
+  {
+    "id": "krottmaier2023a",
+    "citation-key": "krottmaier2023a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Krottmaier",
+        "given": "Sina"
+      },
+      {
+        "family": "Zuanni",
+        "given": "Chiara"
+      }
+    ],
+    "title": "Paradise Lost and Found Again? Moral Choices in METRO 2033",
+    "container-title": "Journal for Religion, Film and Media",
+    "volume": "9",
+    "issue": "1",
+    "page": "133-148",
+    "DOI": "10.25364/05.9:2023.1.7134",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "kulikov2021a",
+    "citation-key": "kulikov2021a",
+    "type": "motion_picture",
+    "director": [
+      {
+        "family": "Куликов",
+        "given": "Владимир"
+      }
+    ],
+    "title": "Топи (The Swamp)",
+    "publisher": "IMDb",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "language": "ru",
+    "URL": "https://www.imdb.com/title/tt12112118/"
+  },
+  {
+    "id": "shyamalan2004a",
+    "citation-key": "shyamalan2004a",
+    "type": "motion_picture",
+    "director": [
+      {
+        "family": "Shyamalan",
+        "given": "M. Night"
+      }
+    ],
+    "title": "The Village",
+    "publisher": "Touchstone Pictures",
+    "issued": {
+      "date-parts": [
+        [
+          2004
+        ]
+      ]
+    },
+    "language": "en"
+  },
+  {
+    "id": "reynolds2016a",
+    "citation-key": "reynolds2016a",
+    "type": "book",
+    "author": [
+      {
+        "family": "Reynolds",
+        "given": "Alastair"
+      }
+    ],
+    "title": "Beyond the Aquila Rift",
+    "publisher": "Subterranean Press",
+    "publisher-place": "Burton, MI",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "language": "en"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "capcom-re-a",
+    "citation-key": "capcom-re-a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "Capcom"
+      }
+    ],
+    "title": "Resident Evil",
+    "URL": "https://game.capcom.com/residentevil/sp/en/",
+    "language": "en"
+  },
+  {
+    "id": "mobygames1989a",
+    "citation-key": "mobygames1989a",
+    "type": "webpage",
+    "author": [
+      {
+        "literal": "MobyGames"
+      }
+    ],
+    "title": "Sweet Home (1989)",
+    "URL": "https://www.mobygames.com/game/sweet-home/",
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    },
+    "language": "en"
+  }
+]
