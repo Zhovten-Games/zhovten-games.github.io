@@ -1,10 +1,11 @@
 # Canon Horror Series 1 / Канон Хоррор: серия 1
 
-**Zenodo archive:** https://doi.org/10.5281/zenodo.19773964
-
 This directory contains the source materials and publication files for **Canon Horror Series v1.0** — a bilingual archived working-paper package.
 
 Этот каталог содержит исходные материалы и публикационные файлы для **«Канон Хоррор: серия v1.0»** — двуязычного архивного пакета рабочих статей.
+
+**Archive:** https://doi.org/10.5281/zenodo.19773964  
+**Build pipeline:** https://github.com/Zhovten-Games/zg-journal-template
 
 > The materials are published as working papers / preprints and are not peer reviewed.  
 > Материалы опубликованы как working papers / preprints и не проходили рецензирование.
@@ -18,7 +19,11 @@ This directory contains the source materials and publication files for **Canon H
 
 **Canon Horror Series v1.0** is a bilingual working-paper package centered on the idea of language, perception, and media channels as systems of vulnerability in modern horror and science fiction.
 
-The materials are interconnected and refer to one another as parts of a single research corpus. The Zenodo record is the canonical archived release; this repository preserves the working structure, sources, and publication context.
+The materials are interconnected and refer to one another as parts of a single research corpus. This directory preserves the working structure, sources, and publication context of the archived release.
+
+The PDFs were produced through the **ZG Journal Template** pipeline:
+
+https://github.com/Zhovten-Games/zg-journal-template
 
 ## Contents
 
@@ -40,9 +45,7 @@ This companion working paper separates two analytical registers: the biological 
 
 ## Archival note
 
-This repository directory is not the primary citation target. For citation and long-term access, use the Zenodo DOI:
-
-**https://doi.org/10.5281/zenodo.19773964**
+For citation and long-term access, use the archived Zenodo release linked at the top of this README.
 
 </details>
 
@@ -55,7 +58,11 @@ This repository directory is not the primary citation target. For citation and l
 
 **«Канон Хоррор: серия v1.0»** — двуязычный пакет рабочих статей о языке, восприятии и медиальных каналах как системах уязвимости в современном хорроре и научной фантастике.
 
-Материалы взаимосвязаны и ссылаются друг на друга как части единого исследовательского корпуса. Запись Zenodo является основной архивной публикацией; этот каталог репозитория сохраняет рабочую структуру, исходники и публикационный контекст.
+Материалы взаимосвязаны и ссылаются друг на друга как части единого исследовательского корпуса. Этот каталог сохраняет рабочую структуру, исходники и публикационный контекст архивного релиза.
+
+PDF-файлы собраны через пайплайн **ZG Journal Template**:
+
+https://github.com/Zhovten-Games/zg-journal-template
 
 ## Состав
 
@@ -77,9 +84,7 @@ This repository directory is not the primary citation target. For citation and l
 
 ## Архивное примечание
 
-Этот каталог репозитория не является основной целью цитирования. Для цитирования и долгосрочного доступа используйте DOI Zenodo:
-
-**https://doi.org/10.5281/zenodo.19773964**
+Для цитирования и долгосрочного доступа используйте архивный релиз Zenodo, указанный в начале README.
 
 </details>
 
