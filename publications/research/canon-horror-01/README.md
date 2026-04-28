@@ -19,6 +19,8 @@ This directory contains the source materials and publication files for **Canon H
 
 **Canon Horror Series v1.0** is a bilingual working-paper package centered on the idea of language, perception, and media channels as systems of vulnerability in modern horror and science fiction.
 
+This publication emerged from internal development discussions at Zhovten Games. It is a companion research output to the studio’s practical work, focused on questions of language, perception, horror systems, and narrative design.
+
 The materials are interconnected and refer to one another as parts of a single research corpus. This directory preserves the working structure, sources, and publication context of the archived release.
 
 The PDFs were produced through the **ZG Journal Template** pipeline:
@@ -57,6 +59,8 @@ For citation and long-term access, use the archived Zenodo release linked at the
 ## О пакете
 
 **«Канон Хоррор: серия v1.0»** — двуязычный пакет рабочих статей о языке, восприятии и медиальных каналах как системах уязвимости в современном хорроре и научной фантастике.
+
+Данная публикация стала результатом внутренних обсуждений, прошедших в студии Zhovten Games. Это исследовательский материал, дополняющий практическую работу студии и посвящённый вопросам языка, восприятия, механизмов создания атмосферы ужаса и повествовательного дизайна.
 
 Материалы взаимосвязаны и ссылаются друг на друга как части единого исследовательского корпуса. Этот каталог сохраняет рабочую структуру, исходники и публикационный контекст архивного релиза.
 
