@@ -40,6 +40,21 @@ zg_doi: "10.5281/zenodo.19773964"
 >
 > This article offers a theoretical synthesis of that trajectory.
 
+\newpage
+
+## Argument Map
+
+The text moves in four steps:
+
+1. first, it establishes the theoretical framework of media epidemiology;
+2. then, it distinguishes the channels of harm: speech, hearing, vision, and technical signal;
+3. next, it examines cases in which the channel becomes either an agent or an infrastructure of threat;
+4. finally, this logic is connected to the broader arc of the series: from monster to body, from body to environment, and from environment to the channel of perception.
+
+> For the purposes of this article, “media horror” means horror in which fear is organized through media forms and channels of perception: speech, hearing, vision, recording, broadcast, signal, interface, or network. The term does not mean “horror about the media industry”; it refers to horror where mediation itself becomes part of the threat.
+
+\newpage
+
 ## Introduction: Why “Language” Rather Than “Message”
 
 In the first article of the series, I focus not on isolated “scary words” but on a broader structural shift in the genre: in a number of key media cases of recent decades, the channel through which meaning is transmitted itself becomes dangerous [@mcluhan1964a; @wald2008a; @parikka2007a; @sampson2012a]. If the second article of the series described the Japanese material through the model “strike → body → mutation,” and the third through “environment → ruin → adaptation,” then the logic here is different: **“signal → perception → contagion → subjective disintegration”**.[^3] The analysis is limited to the corpus of works in which the channel of perception functions as a mechanism of harm.
@@ -125,41 +140,41 @@ MGSV is therefore not merely a “story about a virus,” but a model of how the
 
 ## 4. Comparative Block: from an infected word to an infected interface
 
-### 4.1. *Pontypool*: semantics as pathology
-
-In *Pontypool*, contagion moves through language and conversation, and the medium of radio turns a local speech failure into a collective epidemic [@burgess1998a; @mcdonald2008a; @kirsch2018a; @ottmann2014a]. The key analytical value of the case: what becomes “ill” is not the body as such, but the relation between word and meaning: aphasia, repetition, and semantic collapse become part of the dramaturgy of infection [@kirsch2018a; @ottmann2014a].
-
-### 4.2. *Hot Skull* (Sıcak Kafa): conversation as pathogenic everyday life
-
-The Turkish case intensifies the everyday dimension of this logic: danger is built into everyday conversation, that is, into the most “normal” social practice [@kum2016a; @hotskull2022a; @keflioglu2025a]. Hence the biopolitical conclusion: control of communication becomes a form of population control, and refusal of communication becomes a practice of survival.
-
-### 4.3. *Bird Box*: visual channel and inversion of the norm
-
-In *Bird Box* vision itself becomes the fatal trigger; survival requires blindfolding, blindness, and trust in alternate navigation modes [@malerman2014a; @bier2018a; @kremmel2018a]. Within the framework of the general typology, this is a demonstration of the “deviation from the norm as protection” mechanism [@malerman2014a; @bier2018a; @kremmel2018a].
-
-### 4.4. *Cell*: the technical network as a pathogen
-
-In *Cell*, the threat is carried not by a word or an image as such, but by the infrastructural signal of the mobile network [@king2006a; @hoeglund2015a]. In this way, horror captures late modern fear: dependence on connectivity makes the subject vulnerable to a mass impulse that cannot be recognized in time.
-
-### 4.5. *Snow Crash*: interface, code, and reprogramming
-
-Finally, *Snow Crash* links the linguistic and computational levels: language functions as code, capable of reprogramming the subject through an interface [@stephenson1992a; @kelly2018a]. This is an important precursor to modern platform virality, where contagion is conceived as a property of the protocol.
-
-### 4.6. *Resident Evil*: laboratory “synthesization” as a contrast to MGSV
-
-Within the Capcom circuit (*Resident Evil*), the threat is built not on linguistic selection, but on the laboratory assembly of viral and parasitic platforms that enter biocatastrophe mode.[^8] This mini-case is needed as a structural contrast: if MGSV shows controlled harm mediated through a linguistic filter, then *Resident Evil* models an industrial-military accident, where the key mechanism is mass biological distribution.[^8]
-
-### 4.7. Case-Type Labels (Article 04)
+### 4.1. Case-Type Labels (Article 04)
 
 To preserve the linear logic of the article (“channel → harm”) and simultaneously take into account the origin of the agent within each case, a working triple is used:
 
-- **Epidemic** - spread without a proven targeted weapons circuit.
+- **Epidemic** — spread without a proven targeted weapons circuit.
 - **Bioweapon** — the presence of intent, a controlled circuit of use, and the logic of selective destruction.
 - **Synthesization** — a hybrid configuration where a laboratory/designed agent operates in mass outbreak mode.
 
 In the current corpus it looks like this: *Pontypool*, *Hot Skull*, *Bird Box* and *Cell* are the epidemic type (biological or non-biological), MGSV is the bioweapon type, and *Snow Crash* and the Capcom circuit (*Resident Evil*) are the “synthesization” type.[^8]
 
 This restores the question of responsibility (“who launched the circuit, and how”), but does not destroy the main conclusion of the article: regardless of the origin of the agent, in the corpus under consideration the mode of operation of the perception channel is decisive. For contrast, it is convenient to compare MGSV (a language-selective parasitic tool) and the Capcom scenario of synthetic viruses (a laboratory biocatastrophe).[^8]
+
+### 4.2. *Pontypool*: semantics as pathology
+
+In *Pontypool*, contagion moves through language and conversation, and the medium of radio turns a local speech failure into a collective epidemic [@burgess1998a; @mcdonald2008a; @kirsch2018a; @ottmann2014a]. The key analytical value of the case: what becomes “ill” is not the body as such, but the relation between word and meaning: aphasia, repetition, and semantic collapse become part of the dramaturgy of infection [@kirsch2018a; @ottmann2014a].
+
+### 4.3. *Hot Skull* (Sıcak Kafa): conversation as pathogenic everyday life
+
+The Turkish case intensifies the everyday dimension of this logic: danger is built into everyday conversation, that is, into the most “normal” social practice [@kum2016a; @hotskull2022a; @keflioglu2025a]. Hence the biopolitical conclusion: control of communication becomes a form of population control, and refusal of communication becomes a practice of survival.
+
+### 4.4. *Bird Box*: visual channel and inversion of the norm
+
+In *Bird Box* vision itself becomes the fatal trigger; survival requires blindfolding, blindness, and trust in alternate navigation modes [@malerman2014a; @bier2018a; @kremmel2018a]. Within the framework of the general typology, this is a demonstration of the “deviation from the norm as protection” mechanism [@malerman2014a; @bier2018a; @kremmel2018a].
+
+### 4.5. *Cell*: the technical network as a pathogen
+
+In *Cell*, the threat is carried not by a word or an image as such, but by the infrastructural signal of the mobile network [@king2006a; @hoeglund2015a]. In this way, horror captures late modern fear: dependence on connectivity makes the subject vulnerable to a mass impulse that cannot be recognized in time.
+
+### 4.6. *Snow Crash*: interface, code, and reprogramming
+
+Finally, *Snow Crash* links the linguistic and computational levels: language functions as code, capable of reprogramming the subject through an interface [@stephenson1992a; @kelly2018a]. This is an important precursor to modern platform virality, where contagion is conceived as a property of the protocol.
+
+### 4.7. *Resident Evil*: laboratory “synthesization” as a contrast to MGSV
+
+Within the Capcom circuit (*Resident Evil*), the threat is built not on linguistic selection, but on the laboratory assembly of viral and parasitic platforms that enter biocatastrophe mode.[^8] This mini-case is needed as a structural contrast: if MGSV shows controlled harm mediated through a linguistic filter, then *Resident Evil* models an industrial-military accident, where the key mechanism is mass biological distribution.[^8]
 
 ## 5. Psychopolitics of “dangerous perception”
 
@@ -185,6 +200,10 @@ If we collect the three articles into a single line, the general evolution of th
 In this sense, “language as infection” is not a particular topic about “word viruses”, but the most abstract level of the series within the selected corpus: a steady tendency to shift horror to the channels of perception is recorded here.
 
 In this model, the subject is vulnerable not because it is weak, but because perception itself makes it vulnerable.
+
+### Condensed Conclusion
+
+Modern horror increasingly relocates the source of fear from an individual monster to the system through which a person perceives, lives, speaks, sees, hears, and interprets. The subject’s vulnerability does not arise from weakness or from “understanding too much,” but from being embedded in a body, a space, and communication channels that can be damaged, infected, or turned into instruments of control.
 
 ---
 

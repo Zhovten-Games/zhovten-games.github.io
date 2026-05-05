@@ -1,8 +1,8 @@
 # Canon Horror Series 1 / Канон Хоррор: серия 1
 
-This directory contains the source materials and publication files for **Canon Horror Series v1.0** — a bilingual archived working-paper package.
+This directory contains the source materials and publication files for **Language as Infection and the Systems of Horror** — a bilingual archived working-paper package.
 
-Этот каталог содержит исходные материалы и публикационные файлы для **«Канон Хоррор: серия v1.0»** — двуязычного архивного пакета рабочих статей.
+Этот каталог содержит исходные материалы и публикационные файлы для **Язык как заражение: медиальная коммуникация как механизм поражения** — двуязычного архивного пакета рабочих статей.
 
 **Archive:** https://doi.org/10.5281/zenodo.19773964  
 **Build pipeline:** https://github.com/Zhovten-Games/zg-journal-template
@@ -17,7 +17,7 @@ This directory contains the source materials and publication files for **Canon H
 
 ## About
 
-**Canon Horror Series v1.0** is a bilingual working-paper package centered on the idea of language, perception, and media channels as systems of vulnerability in modern horror and science fiction.
+**Language as Infection and the Systems of Horror** is a bilingual working-paper package centered on the idea of language, perception, and media channels as systems of vulnerability in modern horror and science fiction.
 
 This publication emerged from internal development discussions at Zhovten Games. It is a companion research output to the studio’s practical work, focused on questions of language, perception, horror systems, and narrative design.
 
@@ -58,7 +58,7 @@ For citation and long-term access, use the archived Zenodo release linked at the
 
 ## О пакете
 
-**«Канон Хоррор: серия v1.0»** — двуязычный пакет рабочих статей о языке, восприятии и медиальных каналах как системах уязвимости в современном хорроре и научной фантастике.
+**Язык как заражение: медиальная коммуникация как механизм поражения** — двуязычный пакет рабочих статей о языке, восприятии и медиальных каналах как системах уязвимости в современном хорроре и научной фантастике.
 
 Данная публикация стала результатом внутренних обсуждений, прошедших в студии Zhovten Games. Это исследовательский материал, дополняющий практическую работу студии и посвящённый вопросам языка, восприятия, механизмов создания атмосферы ужаса и повествовательного дизайна.
 
