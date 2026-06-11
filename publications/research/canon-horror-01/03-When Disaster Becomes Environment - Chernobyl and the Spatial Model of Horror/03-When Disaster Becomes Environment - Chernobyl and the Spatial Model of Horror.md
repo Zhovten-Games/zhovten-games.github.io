@@ -21,7 +21,7 @@ zg_bibliography_sections:
   - title: "C. Game and Literary Corpus"
     bibliography: "Библиография/Игровой и литературный корпус.json"
     level: 3
-zg_doi: "10.5281/zenodo.19773964"
+zg_doi: "10.5281/zenodo.20647570"
 ---
 
 # When Disaster Becomes Environment: Chernobyl and the Spatial Model of Horror
@@ -35,6 +35,8 @@ In this article I use the term **“environment”** rather than neutral formula
 Hence the central thesis of this third paper in the series: unlike the Japanese case, where trauma is localized in bodily mutation, the Ukrainian case shows how trauma **is displaced into space and infrastructure**.[^3] For contrast, see Companion working paper (Canon Horror Series, 02, 2026): *After the Nuclear Strike: The Transformation of Japanese Horror from Monster to Infected System*. In other words, the recurring formula here is: **not an event, but a regime; not a background, but an agent; not a disaster, but a risk infrastructure**.[^4]
 
 To preserve the linear logic of the series, the material is read in three phases: **(1) latent systemic vulnerability before the accident, (2) Chernobyl as systemic rupture, (3) prolonged life inside a contaminated environment**.[^5]
+
+The proposed model does not claim to provide an exhaustive account of Ukrainian culture or Ukraine’s historical experience. The analysis is limited to a selected corpus of works, memory materials, and research sources. Spatial logic is treated here as one persistent mode of representing trauma, rather than as a universal characteristic of Ukrainian culture.
 
 \newpage
 
@@ -115,8 +117,6 @@ As an auxiliary comparison beyond the core corpus, comparable effects of environ
 ## Conclusion
 
 The Chernobyl “environment” shows that cultural memory can produce horror without a central monster: a space that continuously organizes threat, survival rules, and forms of moral testing is enough to generate horror [@tumarkin2005a; @nixon2011a; @davies2013a; @laurila2024a; @krottmaier2023a]. From this perspective, the Ukrainian paper is symmetrical to the Japanese one, but fundamentally different in trauma carrier: not body after strike, but environment after rupture.[^3] At the same time, the proposed spatial model is not presented as universal and is treated as one analytical regime within a broader corpus. The next step in the series is analysis of channel as threat infrastructure (see article 01), where vulnerability is shifted from territory to media regimes of perception.
-
----
 
 [^3]: The comparative axis of the series (“Japan: strike → body → mutation” / “Ukraine: environment → space → survival”) defines the contrast between two models of horror.
 [^4]: The article’s recurring formulas synthesize key propositions of the spatial model: risk as regime rather than episode.

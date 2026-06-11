@@ -25,7 +25,7 @@ zg_bibliography_sections:
   - title: "D. Infection Mechanics and Legal Framework"
     bibliography: "Bibliography/Infection Mechanics and Legal Framework.json"
     level: 3
-zg_doi: "10.5281/zenodo.19773964"
+zg_doi: "10.5281/zenodo.20647570"
 ---
 
 *Preprint / Working paper / Not peer reviewed.*
@@ -204,8 +204,6 @@ In this model, the subject is vulnerable not because it is weak, but because per
 ### Condensed Conclusion
 
 Modern horror increasingly relocates the source of fear from an individual monster to the system through which a person perceives, lives, speaks, sees, hears, and interprets. The subject’s vulnerability does not arise from weakness or from “understanding too much,” but from being embedded in a body, a space, and communication channels that can be damaged, infected, or turned into instruments of control.
-
----
 
 [^1]: By “experimental protocols,” I mean attempts to formalize the transmission of meaning through minimal and partially iconic sign systems (at the limit, the reduction of language to a limited set of visual symbols and rules for their combination). Methodologically, this is based on two lines: (1) early modern projects of a universal language and *ars combinatoria* (primarily Leibniz, *Dissertatio de arte combinatoria*, 1666; see also studies on the history of universal language and the art of memory), (2) modern studies of emoji as a conventionalized sign system with mnemonic and operational functions in digital communication (in particular, Kempe & Raviv, 2025).
 

@@ -5,7 +5,7 @@ shortertitle: "Viruses and Bioweapons"
 abstract: |
   A companion working paper for the Canon Horror series. It separates biological mechanics of infection from media-cultural analogues of contagion and provides a comparative template for analyzing viruses, bioweapons, parasites, signals, and perception channels in horror and science fiction.
 keywords: Canon Horror, horror, bioweapons, viruses, infection, contagion, media horror, biopolitics, perception, signal
-zg_doi: "10.5281/zenodo.19773964"
+zg_doi: "10.5281/zenodo.20647570"
 ---
 
 # Viruses and Bioweapons: Infection Mechanics and Media Analogues
@@ -44,8 +44,6 @@ That is why the same type of agent may be analyzed as:
 - It is not a substitute for a virology textbook.
 - It does not reduce complex cases to one “culprit.”
 
----
-
 ## 2) Minimal Mechanics of Real Viruses
 
 ### 2.1. Basic Cycle
@@ -79,8 +77,6 @@ For the series, it is enough to remember: innate response (including the interfe
 
 This is useful when compared with fictional countermeasures: silence, filtering, isolation, and going offline.
 
----
-
 ## 3) Viral Origins: Why There Is No “Single Story”
 
 The contemporary framework allows multiple scenarios (reduction, “escape” of genetic modules, ancient replicators, hybrid assemblies). For this series, the key takeaway is:
@@ -89,8 +85,6 @@ The contemporary framework allows multiple scenarios (reduction, “escape” of
 - but does not remove the need to analyze **transmission mechanics**.
 
 In other words: the question “who created it?” matters, but without “how does it spread?” analysis collapses.
-
----
 
 ## 4) Virus, Parasite, Toxin, Prion: Brief Differentiation
 
@@ -102,8 +96,6 @@ To avoid internal conflicts between articles:
 - **Prion** — a protein infectious agent of a separate class.
 
 This labeling is especially important for game and film cases where the word “virus” is often used metaphorically.
-
----
 
 ## 5) Viruses and Bioweapons: Functional Framework
 
@@ -118,8 +110,6 @@ Minimal checklist:
 
 If the answers are systematically positive, we are dealing not just with an “epidemic,” but with a weaponized or quasi-weaponized configuration.
 
----
-
 ## 6) “Infection Card” Template for Any Case
 
 Use one common form so materials remain comparable:
@@ -130,8 +120,6 @@ Use one common form so materials remain comparable:
 4. **Transmission channel**: speech / hearing / vision / network / contact / combined.
 5. **Scale and selectivity**: local / regional / mass; selective / non-selective.
 6. **Countermeasure**: medical, infrastructural, behavioral, legal-political.
-
----
 
 ## 7) Cases from the Series Corpus
 
@@ -201,8 +189,6 @@ Why this block matters: it helps explicitly separate two close but non-identical
 
 For the series, the key point here is the bridge: “evil” is transmitted not by mystical teleportation but through material channels. This is the key to the link “religious symbolism ↔ epidemiological mechanics.”
 
----
-
 ## 8) Minimal Bibliography for Article 04
 
 1. Baron, Samuel, ed. *Medical Microbiology*. 4th ed. Galveston: University of Texas Medical Branch, 1996. (chapters on virology basics, structure, and cycle).
@@ -222,5 +208,3 @@ For the series, the key point here is the bridge: “evil” is transmitted not 
 - *Cell* (Stephen King, 2006).
 - *Snow Crash* (Neal Stephenson, 1992).
 - *REC* (dirs. Jaume Balagueró and Paco Plaza, 2007).
-
----

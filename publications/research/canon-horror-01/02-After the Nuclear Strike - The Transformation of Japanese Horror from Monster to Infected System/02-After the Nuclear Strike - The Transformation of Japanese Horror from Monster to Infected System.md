@@ -35,7 +35,7 @@ zg_bibliography_sections:
   - title: "D3. Platform/Official game resources"
     bibliography: "Bibliography/D3 Platform Materials.json"
     level: 4
-zg_doi: "10.5281/zenodo.19773964"
+zg_doi: "10.5281/zenodo.20647570"
 ---
 
 *Preprint / Working paper / Not peer reviewed.*
@@ -47,6 +47,8 @@ In this article I use the term **“after the nuclear strike”** rather than th
 The core thesis unfolds in three sequential layers: **prewar cultural ground → external historical strike of 1945 → internal national nightmare of the 1990s**.[^3] This sequence matters because it reveals not a sudden emergence of horror, but a historical recalibration of an already existing cultural environment. In other words, 1945 did not create Japanese horror culture from scratch; it radically transformed its language, optics, and anthropological focus [@dower1995a; @napier1993a]. For contrast with the spatial logic of the Ukrainian corpus, see Companion working paper (Canon Horror Series, 03, 2026): *When Disaster Becomes Environment: Chernobyl and the Spatial Model of Horror*.
 
 At the same time, it is essential to emphasize that 1945 is not the beginning of history, but a radical rupture within it. Japan enters this moment not only as a victim of the nuclear strike, but also as a participant in imperial war and an ally of the Axis powers, which places the strike inside a broader context of total twentieth-century conflict. This does not negate the specificity of the trauma that followed; rather, it situates the external “strike” within a wider logic of war. Postwar cultural processing of horror is therefore formed within a tension between memory of one’s own destruction and the need to reinterpret prior experience of violence.
+
+This article does not claim to provide an exhaustive account of Japanese culture, Japanese society, or national character. Its analysis is limited to a selected corpus of horror works, materials of cultural memory, and relevant research literature. The trajectory described here should therefore be understood not as a universal property of Japanese culture, but as one persistent analytical model emerging within a specific historical and media context.
 
 ## 1. Prewar Cultural Ground: Modernization and Readiness for the Language of Extremity
 
@@ -151,8 +153,6 @@ The extended analysis confirms the initial thesis: postwar Japanese horror is no
 This is no longer only memory of catastrophe, but a way of understanding how, after historical defeats, the principles of total violence migrate into technocratic, sanitary, and media forms. In this perspective, Japanese biohorror should be understood as a social mode of trauma processing in which carriers of threat change, but the structural core remains: invisible agent, vulnerable body, infected environment, and the political question of who controls life and death. This is why analysis of the “after the nuclear strike” scenario remains productive not only for film history, but also for understanding contemporary regimes of fear [@napier1993a; @dower1995a]. At the same time, these regimes coexist and do not constitute a strictly linear evolution.
 
 However, this analysis primarily describes the architecture of threat and only outlines the next question: how these same forms begin to function not only as objects of fear, but as stable aesthetic and cultural matrices of attraction in a broader transmedia field.[^15]
-
----
 
 [^3]: For the article’s basic construction (1945 as rupture, followed by bodily and social representation of trauma), Dower and Napier serve as the analytical frame, while HPMM and Hidankyo provide empirical testimony sources.
 [^6]: The “three monkeys” motif (see no evil, hear no evil, speak no evil) is widespread in Japanese visual culture (in a generalized Shinto-Buddhist context) and is typically interpreted as an ethical injunction to avoid evil. In analytical reinterpretation, it may be treated as a cultural schema of limiting sensory channels, which makes it especially relevant for analyzing media forms of horror where sight, hearing, and speech become vectors of contagion.

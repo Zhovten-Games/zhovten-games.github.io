@@ -5,7 +5,7 @@ shortertitle: "Canon Horror Contents"
 abstract: |
   A curated index of the Canon Horror series, listing the working papers and companion materials included in the first archived release.
 keywords: Canon Horror, horror, media horror, contagion, language, environment, biopolitics
-zg_doi: "10.5281/zenodo.19773964"
+zg_doi: "10.5281/zenodo.20647570"
 ---
 
 # Series Contents: Canon Horror
