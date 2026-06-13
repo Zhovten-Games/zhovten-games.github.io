@@ -8,8 +8,6 @@ keywords: Canon Horror, horror, bioweapons, viruses, infection, contagion, media
 zg_doi: "10.5281/zenodo.20647570"
 ---
 
-# Viruses and Bioweapons: Infection Mechanics and Media Analogues
-
 *Canon Horror Series, 04, 2026. Companion working paper. Preprint / Not peer reviewed.*
 
 ## 1) Terms and Boundaries

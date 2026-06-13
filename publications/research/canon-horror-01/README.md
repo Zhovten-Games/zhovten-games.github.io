@@ -96,7 +96,7 @@ https://github.com/Zhovten-Games/zg-journal-template
 
 ## Suggested citation / Рекомендуемая ссылка
 
-**Starling, Sam, and Oksana Dubinetska. _Canon Horror Series v1.0: Language as Infection and the Systems of Horror_. Zenodo, 2026. https://doi.org/10.5281/zenodo.20647570**
+**Starling, Sam, and Oksana Dubinetska. _Canon Horror Series: Language as Infection and the Systems of Horror v1.2.0_. Zenodo, 2026. https://doi.org/10.5281/zenodo.20647570**
 
 ## License / Лицензия
 

@@ -24,8 +24,6 @@ zg_bibliography_sections:
 zg_doi: "10.5281/zenodo.20647570"
 ---
 
-# When Disaster Becomes Environment: Chernobyl and the Spatial Model of Horror
-
 *Preprint / Working paper / Not peer reviewed.*
 
 ## Introduction: Why “Environment” Rather than “Disaster”

@@ -188,6 +188,8 @@ Third, there is the fear of normativity. In all key cases, it is not the one who
 
 It is here that the first article of the cycle directly connects with two already prepared ones: the Japanese model showed the transition from an external monster to an infected body, [^20] the Ukrainian model showed the transition to an infected environment, [^21] and the language model carries this logic to the level of the channel of perception itself.
 
+\newpage
+
 ## Conclusion: From the Monster to the System, and Then to the Channel (Within a Limited Corpus)
 
 If we collect the three articles into a single line, the general evolution of threat localization becomes visible:
