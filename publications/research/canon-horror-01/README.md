@@ -4,7 +4,7 @@ This directory contains the source materials and publication files for **Languag
 
 Этот каталог содержит исходные материалы и публикационные файлы для **Язык как заражение: медиальная коммуникация как механизм поражения** — двуязычного архивного пакета рабочих статей.
 
-**Archive:** https://doi.org/10.5281/zenodo.20647570  
+**Archive:** https://doi.org/10.5281/zenodo.19773963  
 **Build pipeline:** https://github.com/Zhovten-Games/zg-journal-template
 
 > The materials are published as working papers / preprints and are not peer reviewed.  
@@ -96,7 +96,7 @@ https://github.com/Zhovten-Games/zg-journal-template
 
 ## Suggested citation / Рекомендуемая ссылка
 
-**Starling, Sam, and Oksana Dubinetska. _Canon Horror Series: Language as Infection and the Systems of Horror v1.2.0_. Zenodo, 2026. https://doi.org/10.5281/zenodo.20647570**
+**Starling, Sam, and Oksana Dubinetska. _Canon Horror Series: Language as Infection and the Systems of Horror v1.2.0_. Zenodo, 2026. https://doi.org/10.5281/zenodo.19773963**
 
 ## License / Лицензия
 
