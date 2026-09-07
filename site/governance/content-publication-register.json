@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registryId": "zg-site-register-publications-001",
+  "revision": "2026-08-20",
+  "canonicalEditorialLocale": "en",
+  "publishedLocales": ["en", "uk", "ru", "ja"],
+  "rules": {
+    "preserveSourceDate": true,
+    "requireLocaleParity": true,
+    "ukrainianIsXDefault": true,
+    "sitemapsAreLocaleScoped": true
+  },
+  "publications": [
+    {
+      "slug": "zhovten-games-interdead-launch",
+      "date": "2025-10-31",
+      "type": "announcement",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "psyframework-screening-prototype",
+      "date": "2025-10-31",
+      "type": "announcement",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "transmedia-in-universe-narrative",
+      "date": "2025-11-07",
+      "type": "note",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "echo-of-an-unfading-memory-announcement",
+      "date": "2025-12-29",
+      "type": "announcement",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "brain-anatomy-information-flow-update",
+      "date": "2026-01-12",
+      "type": "devlog",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "why-canon-contract-interdead",
+      "date": "2026-02-20",
+      "type": "case",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "video-artifact-pipeline-interdead",
+      "date": "2026-02-20",
+      "type": "case",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "niro-communication-architecture",
+      "date": "2026-02-20",
+      "type": "case",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "february-umbrella-update",
+      "date": "2026-02-23",
+      "type": "announcement",
+      "origin": "linkedin-history"
+    },
+    {
+      "slug": "canon-horror-series-language-as-infection",
+      "date": "2026-05-01",
+      "type": "research_note",
+      "origin": "linkedin-history",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.19773963"
+    },
+    {
+      "slug": "interdead-noir-itchio-snapshot",
+      "date": "2026-05-01",
+      "type": "announcement",
+      "origin": "linkedin-history",
+      "sourceUrl": "https://zhovten-games.itch.io/interdead"
+    },
+    {
+      "slug": "canon-horror-series-doi",
+      "date": "2026-05-01",
+      "type": "external_article",
+      "origin": "recovered-adapted-wrapper",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.20037828"
+    },
+    {
+      "slug": "inrium-emotional-investigation-tempo",
+      "date": "2026-05-01",
+      "type": "external_article",
+      "origin": "recovered-adapted-wrapper",
+      "sourceUrl": "https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti"
+    }
+  ],
+  "projectDecisions": {
+    "published": [
+      "interdead",
+      "psyframework",
+      "safe-blind-zones-live-tester",
+      "whispered-secrets-13-tying-the-knot",
+      "mcf-25-the-dalimar-legacy",
+      "mcf-26-a-crime-in-reflection",
+      "mcf-27-the-riddle-of-mrs-bishop",
+      "mcf-28-house-that-love-built",
+      "untitled-science-fiction-comic"
+    ],
+    "excluded": [],
+    "resolved": [
+      {
+        "slug": "unannounced-external-studio-project",
+        "sourceState": "draft-with-todo-attribution-and-no-external-url",
+        "decision": "publish-public-safe-summary",
+        "publishedAs": "untitled-science-fiction-comic",
+        "reason": "The site editor supplied a releasable medium, technology, and role attribution. The public entry omits the project name and link pending owner authorization."
+      }
+    ]
+  },
+  "exclusions": [
+    {
+      "sourceExcerpt": "Due to technical reasons, major January updates are postponed and will ship as February releases.",
+      "origin": "linkedin-history",
+      "decision": "exclude-from-public-archive",
+      "reason": "Ephemeral scheduling notice whose durable information was superseded by the February publications. The source record is preserved in the supplied history."
+    }
+  ]
+}

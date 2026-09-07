@@ -1,0 +1,614 @@
+{
+  "locale": "en",
+  "pages": {
+    "homeTitle": "Zhovten Games",
+    "homeDescription": "Independent game studio creating horror, research, and narrative experiments.",
+    "tagline": "Metal Under Tension",
+    "latest": "Latest logs",
+    "blogTitle": "Studio Log",
+    "blogDescription": "Publications, cases, development notes, tools, and external research.",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Games, tools, and credited portfolio work.",
+    "authorsTitle": "Authors",
+    "aboutTitle": "About",
+    "aboutDescription": "About Zhovten Games",
+    "aboutBody": "Zhovten Games is an independent game studio founded in December 2025 by Oksana Dubinetska and Sam Starling. We work where narrative game design, gameplay systems, web engineering, technical experimentation, and public research meet.\n\n## GitHub\n\n- [Oksana Dubinetska · business and governance](https://github.com/FOP-Oksana-Dubinetska)\n- [Zhovten Games · studio repositories](https://github.com/Zhovten-Games)\n- [IRONCREED · research and publications](https://github.com/IRONCREED)",
+    "contactTitle": "Contact",
+    "contactDescription": "Contact Zhovten Games",
+    "contactBody": "Contact us for collaborations, publishing discussions, and media requests."
+  },
+  "posts": [
+    {
+      "slug": "brain-anatomy-information-flow-update",
+      "title": "Brain Anatomy & Information Flow: Interim Update",
+      "description": "Interim update linked to the Brain Anatomy & Information Flow research publication.",
+      "date": "2026-01-12",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "devlogs"
+      ],
+      "tags": [
+        "interdead",
+        "research",
+        "prototype",
+        "gamedev",
+        "psyframework"
+      ],
+      "type": "devlog",
+      "status": "published",
+      "externalUrl": "https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/fdc344b10bc3367bcb3a4701e6cc08c7e3dea1f2/research/brain_anatomy/Brain%20Anatomy%20%26%20Information%20Flow%20(Practical%20Primer).md",
+      "canonicalUrl": "",
+      "body": "Hello everyone.\n\nThis month’s update is an interim update ahead of a larger release. It is forced on purpose, because it is tied to a special date.\n\nI will wrap it in a short comedic remark in the spirit of “our Dr. Samuel,” who cannot quite communicate with an audience like a normal person, but is trying:\n\n> — Hey, how is the game coming along?  \n> — We are doing stats!  \n> — Sounds like you have come a long way. Anything to show?  \n> — Enjoy.\n\n[Brain Anatomy & Information Flow — Practical Primer](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/fdc344b10bc3367bcb3a4701e6cc08c7e3dea1f2/research/brain_anatomy/Brain%20Anatomy%20%26%20Information%20Flow%20(Practical%20Primer).md)\n\nI started writing this overview in parallel with the early work on the framework that helped us build an inverted fear table. That line later became part of [PsyFramework](/blog/psyframework-screening-prototype/). Initially, the document was meant for internal use, but it turned out interesting enough that we decided to publish it.\n\n“We are doing stats” partially explains why this text exists, but it does not fully explain the logic behind it. We will make the full picture explicit later.\n\nIf you are curious to watch how it all assembles into something coherent, we plan to integrate into the website the first version of the app — the one everything started with — and the one we already discussed in *Echo of an Unfading Memory*:\n\n- [English](https://interdead.phantom-draft.com/about/)\n- [Russian](https://interdead.phantom-draft.com/ru/about/)\n- [Ukrainian](https://interdead.phantom-draft.com/uk/about/)\n- [Japanese](https://interdead.phantom-draft.com/ja/about/)"
+    },
+    {
+      "slug": "canon-horror-series-doi",
+      "title": "Canon Horror Series: Language as Infection and the Systems of Horror v0.2",
+      "description": "External DOI wrapper for the Canon Horror Series research corpus.",
+      "date": "2026-05-01",
+      "authors": [
+        "sam-starling",
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "articles"
+      ],
+      "tags": [
+        "external-article",
+        "research",
+        "horror-theory",
+        "canon",
+        "media-studies"
+      ],
+      "type": "external_article",
+      "status": "published",
+      "externalUrl": "https://doi.org/10.5281/zenodo.20037828",
+      "canonicalUrl": "",
+      "body": "This page is a local wrapper for the external DOI publication:\n\n[Canon Horror Series: Language as Infection and the Systems of Horror v0.2](https://doi.org/10.5281/zenodo.20037828)\n\nThe wrapper exists to keep the publication visible in the Zhovten Games archive while preserving the external DOI as the source link."
+    },
+    {
+      "slug": "canon-horror-series-language-as-infection",
+      "title": "Canon Horror Series: Language as Infection and the Systems of Horror",
+      "description": "Research-track announcement for Canon Horror Series: Language as Infection.",
+      "date": "2026-05-01",
+      "authors": [
+        "sam-starling",
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "notes"
+      ],
+      "tags": [
+        "interdead",
+        "research",
+        "horror-theory",
+        "media-studies",
+        "canon",
+        "ssot"
+      ],
+      "type": "research_note",
+      "status": "published",
+      "externalUrl": "https://doi.org/10.5281/zenodo.19773963",
+      "canonicalUrl": "",
+      "body": "How a game sometimes develops a research side track.\n\nEarlier in *Echo of an Unfading Memory*, we wrote that one of the core lines behind InterDead emerged against the background of war and an attempt to rethink language: is it possible to construct a more universal system of signs, what actually carries meaning, and where formal communication ends and lived experience begins.\n\nLater, we showed how the philosophical “Why” was turned into an operational canon structure through a public wiki and SSOT approach. Within that same public wiki layer, we formalized Emoji Protocol — our “language of the dead,” where communication operates through a constrained set of symbols, response contracts, ACK logic, and the constant risk of misinterpretation.\n\nFrom these internal discussions, a side research track emerged, framed as **Language as Infection — Media Communication as a Mechanism of Harm**.\n\n[Initial public research snapshot](https://doi.org/10.5281/zenodo.19773963)\n\nThe current corpus includes:\n\n- *Language as Infection — Media Communication as a Mechanism of Harm*\n- *After the Nuclear Strike — The Transformation of Japanese Horror from Monster to Infected System*\n- *When Disaster Becomes Environment — Chernobyl and the Spatial Model of Horror*\n- *Viruses and Bioweapons — Infection Mechanics and Media Analogues*\n\nAll materials are published as bilingual working papers / preprints and are not peer reviewed.\n\nWe have also prepared a journal version of the work and plan to release it publicly soon. So if the idea resonates but four papers already feel like excessive cognitive load, a more compressed version is coming.\n\n## Key references\n\nEcho of an Unfading Memory — In Place of an About InterDead:\n\n- [English](https://interdead.phantom-draft.com/about/)\n- [Russian](https://interdead.phantom-draft.com/ru/about/)\n- [Ukrainian](https://interdead.phantom-draft.com/uk/about/)\n- [Japanese](https://interdead.phantom-draft.com/ja/about/)\n\nNo evidence for generational differences in the conventionalisation of face emojis:\n\n[doi.org/10.1016/j.chbr.2025.100750](https://doi.org/10.1016/j.chbr.2025.100750)\n\nLeibniz (1666): a glossary of source terms and a brief explanation:\n\n[Leibniz 1666 conspect](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/0976d1b600fa3b2b0fc3461ff524d38c65c71fc1/research/leibniz_1666_conspect/Leibniz%20(1666)%20-%20a%20glossary%20of%20source%20terms%20and%20a%20brief%20explanation.md)\n\nWe formalized the “Why” and reinforced canon discipline through a public wiki and SSOT:\n\n[How We Turned the Why into a Reproducible Canon Contract for InterDead](/blog/why-canon-contract-interdead/)\n\nEmoji Protocol:\n\n- [English](https://interdead.fandom.com/wiki/Emoji_Protocol)\n- [Russian](https://interdead.fandom.com/ru/wiki/Emoji_Protocol)\n- [Ukrainian](https://interdead.fandom.com/uk/wiki/Emoji_Protocol)\n- [Japanese](https://interdead.fandom.com/ja/wiki/Emoji_Protocol)\n\n**Canon Horror Series v1.0: Language as Infection and the Systems of Horror**"
+    },
+    {
+      "slug": "echo-of-an-unfading-memory-announcement",
+      "title": "Echo of an Unfading Memory: First Chapter Opened",
+      "description": "Announcement of the first public chapter of Echo of an Unfading Memory.",
+      "date": "2025-12-29",
+      "authors": [
+        "sam-starling",
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "announcements"
+      ],
+      "tags": [
+        "interdead",
+        "canon",
+        "research",
+        "narrative-design"
+      ],
+      "type": "announcement",
+      "status": "published",
+      "externalUrl": "https://interdead.phantom-draft.com/about/",
+      "canonicalUrl": "",
+      "body": "**Echo of an Unfading Memory** is not a reference document and not a presentation. It is a working collection that captures the internal logic of InterDead: its principles, structure, and ways of thinking.\n\nThe full version will become available after the game’s release. For now, we deliberately open only the first chapter — in place of the familiar “About us.”\n\nInside:\n\n- the genesis of the project;\n- the logic behind the application-prototype at its core;\n- the approach we use to operationalize fear without turnkey psychometrics;\n- the practical contour of how mini-games form a player profile that can later inform dramaturgy, pacing, and presentation.\n\nOur expectation is simple: to build a psychologically oriented horror game that remains coherent, careful, and measurable, without reducing the player to a label.\n\nRead the first chapter:\n\n- [English](https://interdead.phantom-draft.com/about/)\n- [Russian](https://interdead.phantom-draft.com/ru/about/)\n- [Ukrainian](https://interdead.phantom-draft.com/uk/about/)\n- [Japanese](https://interdead.phantom-draft.com/ja/about/)"
+    },
+    {
+      "slug": "february-umbrella-update",
+      "title": "February Umbrella Update",
+      "description": "Umbrella update covering canon, pipeline, communication architecture, and TTRPG testing.",
+      "date": "2026-02-23",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "announcements"
+      ],
+      "tags": [
+        "interdead",
+        "canon",
+        "pipeline",
+        "communication-architecture",
+        "prototype",
+        "ttrpg"
+      ],
+      "type": "announcement",
+      "status": "published",
+      "externalUrl": "",
+      "canonicalUrl": "",
+      "body": "Hello everyone.\n\nFebruary in InterDead was not about individual publications. It was about a systemic restructuring of the project.\n\nWe finalized three architectural layers.\n\n## 1. Canon as a Contract\n\nWe formalized the “Why” and reinforced canon discipline through a public wiki and SSOT.\n\nRead more:\n\n[How We Turned the Why into a Reproducible Canon Contract for InterDead](/blog/why-canon-contract-interdead/)\n\n## 2. Reproducible Artifact Pipeline\n\nVideo production was moved to a deterministic pipeline: ASR → LLM → FFmpeg. This reduced production time by 65–75%, while strengthening stylistic control.\n\nRead more:\n\n[How We Reduced Video Artifact Production Time for InterDead and Built a Reproducible Pipeline](/blog/video-artifact-pipeline-interdead/)\n\n## 3. Communication Architecture\n\nWe unified the project voice through the system character Niro and built a cross-platform communication model.\n\nRead more:\n\n[How We Structured Audience Communication in InterDead Through a System Character](/blog/niro-communication-architecture/)\n\n## 4. TTRPG Layer — Live World Testing\n\nWe are now integrating tabletop RPG sessions as a live stress-test of the canon and mechanics. This layer allows us to validate causality, tension, and narrative resilience in real time.\n\nNew reports and dedicated cases on this process are coming soon.\n\nNext comes an intermediate update of the prototype — the starting point of the entire system. After that, the focus will shift to the game’s narrative and world development."
+    },
+    {
+      "slug": "inrium-emotional-investigation-tempo",
+      "title": "Problems of Emotional Investigation",
+      "description": "External article wrapper for Oksana Dubinetska’s Inrium publication on emotional pacing in detective one-shots.",
+      "date": "2026-05-01",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "articles"
+      ],
+      "tags": [
+        "narrative-design",
+        "game-design",
+        "writing",
+        "external-article"
+      ],
+      "type": "external_article",
+      "status": "published",
+      "externalUrl": "https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti",
+      "canonicalUrl": "",
+      "body": "This page is a local wrapper for Oksana Dubinetska’s external Inrium article:\n\n[Проблеми емоційного розслідування](https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti)\n\nThe article began as a longer reflection on pacing. Its starting point was a practical production problem: events can sag at the beginning or in the middle of a detective story, and that can make players lose attention. The article works through ways to make an investigation emotionally active rather than structurally flat.\n\nThe wrapper exists to preserve authorship and the external publication link inside the Zhovten Games archive."
+    },
+    {
+      "slug": "interdead-noir-itchio-snapshot",
+      "title": "InterDead / NOIR Public Snapshot on itch.io",
+      "description": "Public snapshot announcement for InterDead / NOIR on itch.io with build context.",
+      "date": "2026-05-01",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "announcements"
+      ],
+      "tags": [
+        "interdead",
+        "prototype",
+        "zhovten-games",
+        "web",
+        "gamedev"
+      ],
+      "type": "announcement",
+      "status": "published",
+      "externalUrl": "https://zhovten-games.itch.io/interdead",
+      "canonicalUrl": "",
+      "body": "We have pinned a public snapshot of **InterDead / NOIR** on itch.io:\n\n[InterDead / NOIR on itch.io](https://zhovten-games.itch.io/interdead)\n\nThis is the prototype the main game is currently built around. It is not a standalone title, but a working artifact of the core idea: structured contact with the dead.\n\nA few clarifications:\n\n- it is an experimental build, not a polished release;\n- known issues remain in the [InterDeadProto issue tracker](https://github.com/Zhovten-Games/InterDeadProto/issues);\n- the stable version is still available at [NOIR](https://noir.phantom-draft.com/).\n\nAt this point, the prototype has done its job: the system exists, and the narrative now grows around it."
+    },
+    {
+      "slug": "niro-communication-architecture",
+      "title": "How We Structured Audience Communication in InterDead Through a System Character",
+      "description": "Case study on cross-platform narrative communication through the constrained system character Niro.",
+      "date": "2026-02-20",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "cases"
+      ],
+      "tags": [
+        "interdead",
+        "case-study",
+        "communication-architecture",
+        "niro",
+        "narrative-design"
+      ],
+      "type": "case",
+      "status": "published",
+      "externalUrl": "",
+      "canonicalUrl": "",
+      "body": "*On choosing voice as an architectural decision.*\n\n## Context\n\nInterDead operates across several environments at once: a blog, Telegram group, Discord forum, YouTube channel, and a prototype with an embedded system assistant.\n\nEach platform has its own constraints and audience behaviors, yet all of them are meant to convey one unified world.\n\nThe core question therefore was not what we publish, but who speaks in every environment.\n\n## Problem\n\nIn narrative-driven projects, a conventional “product voice” tends to break immersion. Corporate tone clashes with atmosphere, direct explanations feel external to the world, and tonal mismatches across platforms create the impression of several different projects instead of one coherent system.\n\nWe needed a unified voice model that would function across all communication layers.\n\n## Hypothesis\n\nOur assumption was simple: if all public-facing communication is routed through a defined in-world system entity, then atmosphere can be preserved across platforms, product updates can be delivered as narrative constructs, and the audience will interact not with a brand but with a diegetic layer of the world.\n\nConsistency, in this case, becomes enforceable rather than incidental.\n\n## Solution\n\nThe entity fulfilling this role became [Niro](https://interdead.fandom.com/wiki/Niro) — a system-level support module instantiated after [Incident NERO-01](https://interdead.fandom.com/wiki/Incident_NERO-01).\n\nNiro operates strictly at the UI layer, is not a chat endpoint, and does not possess any “outside the system” perspective. The prototype already includes Niro, and the final game will retain this integration.\n\n\n\nThis positioning makes Niro neither a mascot nor a marketing persona, but a canon-bound system node that unifies communication through constraint.\n\n## Fragmented Rebranding\n\nTransitioning away from the previous stylistic layer — a heavy, Hodgson/Lovecraft-like prose imitation — triggered broader structural changes. Showcase and SEO sections were separated, categories were standardized, publication types unified, and the content plan was restructured. Contextual subtitles were added to artifacts, and a hybrid Twemoji emoji style was introduced during early iterations.\n\nThe result was a cross-platform alignment of tone and structure.\n\n## General Communication Model\n\nWe established a single structural template for communication: consistent post types, log formats, headers, system markers, and tonal integrity. The exact same communication pattern will be reproduced inside the game, ensuring narrative continuity between the meta-layer and the in-game voice.\n\n## Platforms\n\n### NIRO IN NOIR Website\n\n[InterDead blog](https://interdead.phantom-draft.com/blog/)\n\nAll publications are framed as system logs with protocol-style headers, statuses, and message-type markers. Even analytical materials are presented as structured system records — not commentary from outside the world.\n\n### INTER{🤙🏻💀}DEAD Forum — Discord\n\n[Discord forum](https://discord.gg/vAWYg3jFEp)\n\nA structured, thread-based forum where discussion is encouraged, but the canon tone is preserved and deviations are minimized.\n\n### INTER{🤙🏻💀}DEAD — Telegram\n\n[NIRO IN NOIR discussion group](https://t.me/inter_dead)\n\nMaintained in Ukrainian and delivered in the InterDead voice. The group name mirrors the NIRO IN NOIR structure, reinforcing the dual-layer model: an official project voice within an atmospheric wrapper.\n\n### NIRO IN NOIR — YouTube\n\n[YouTube channel NIRO IN NOIR](https://www.youtube.com/@inter_dead)\n\nOnly artifacts are published: no breakdowns, no out-of-character commentary, and no corporate framing. The channel visually and stylistically extends the NIRO IN NOIR blog.\n\n## Log Standardization\n\nAny message that risks exposing plot details or breaking the narrative frame is also formatted as a log — either system-originated or with an undefined author. This prevents tonal rupture, preserves atmosphere, and allows operational information to be published without stepping outside the diegetic frame.\n\n## Cultural Layer\n\nAudience interaction also operates on a cultural level: terminology, linguistic tone, and regional references. This layer is under active development and will be described in a separate case.\n\n## Result\n\nThis approach allowed us to maintain atmospheric cohesion, unify cross-platform communication, synchronize blog, prototype, and game, and embed product information directly into narrative framing.\n\nNiro is not a chatbot. Niro is not a brand character. Niro is a constrained system voice.\n\nThe constraint is what makes the system stable."
+    },
+    {
+      "slug": "psyframework-screening-prototype",
+      "title": "PsyFramework: Screening Prototype and System Notes",
+      "description": "Announcement of PsyFramework, a browser-based screening prototype for player-facing psyche mechanics.",
+      "date": "2025-10-31",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "announcements"
+      ],
+      "tags": [
+        "psyframework",
+        "prototype",
+        "web",
+        "gamedev",
+        "localization"
+      ],
+      "type": "announcement",
+      "status": "published",
+      "externalUrl": "https://zhovten-games.github.io/PsyFramework/",
+      "canonicalUrl": "",
+      "body": "We are building our horror game’s core, and a side product emerged: **PsyFramework** — a browser-based screening prototype we use to model player-facing psyche mechanics.\n\nHighlights:\n\n- locale-routed methodologies: JA → ICD-10, EN → ICD-11, UK → DSM-5-TR;\n- weighted two-core-minimum scoring;\n- guidance surfacing for triggers, fears, and irritants;\n- hexagonal architecture across core, application, config, i18n, and presentation layers;\n- ES-module runtime;\n- BEM UI;\n- transparent, config-driven logic.\n\nDisclaimer: research and entertainment only — not medical or diagnostic.\n\n[PsyFramework](https://zhovten-games.github.io/PsyFramework/)"
+    },
+    {
+      "slug": "transmedia-in-universe-narrative",
+      "title": "Transmedia In-Universe Narrative: Approach and References",
+      "description": "Notes on InterDead’s transmedia in-universe narrative approach and reference model.",
+      "date": "2025-11-07",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "notes"
+      ],
+      "tags": [
+        "interdead",
+        "narrative-design",
+        "communication-architecture",
+        "research",
+        "worldbuilding"
+      ],
+      "type": "note",
+      "status": "published",
+      "externalUrl": "https://discord.com/invite/vAWYg3jFEp",
+      "canonicalUrl": "",
+      "body": "In the previous publication, we opened the first entry point into our meta-universe — a living landing page that will change together with prototypes and lore. Now, briefly and directly: the approach we chose and the examples we rely on.\n\n**Transmedia in-universe narrative** is when parts of the story live on different media and platforms, and each part adds meaning from inside the world. It does not duplicate the same message; it expands the world. The fiction frame remains transparent and respectful to the audience. This is how our landing page works: it speaks in the voice of the world, while clearly acknowledging that it is a game.\n\n## Examples we grew up on\n\n- **ArkhamCare / Batman: Arkham Asylum** — an example of expanding canon through a diegetic artifact. The site lived as part of the Arkham universe, added institutional tone and archival texture, and served as a bridge between game and web environment. Terminologically: an in-universe site, a world artifact that carries new knowledge about the setting and supports its integrity.\n\n- **13 Ghosts — Illusion-O** — the viewer chooses whether to “see” the ghosts by looking through different filters. Terminologically: audience co-participation, a gentle intensity switch placed in the viewer’s hands.\n\n- **The Rocky Horror Picture Show** — a cult of joint viewing, rituals, props, and callbacks. Terminologically: ritualized participation, the rules of a joint game that strengthen the feeling of community.\n\n- **Insidious: Spectral Sightings** — short web inserts about Elise’s team that expand the lore between the larger stories. Terminologically: webisode-bridges, compact autonomous parts that add texture to the world.\n\n- **The Blair Witch Project** — a historical example of online myth-building in the late 1990s. Pulling this off “in its original form” today is unrealistic because of ethics, platform rules, and media literacy. We take from this case not deception, but the lesson of careful framing and precise world-building.\n\n## Why do we need this?\n\nThe living landing page is our layer of “reality” inside the game. Beyond atmosphere and engagement, the landing page and a series of micro-tests will help form a player profile. Based on it, the core of the game will adapt delivery: pace, triggers, and nuances of interaction.\n\nSimply put: you play us, and we learn how to play to you.\n\nIf this kind of play with reality resonates with you, join the discussion and prepare for the first micro-tests.\n\n[Discord forum](https://discord.com/invite/vAWYg3jFEp)"
+    },
+    {
+      "slug": "video-artifact-pipeline-interdead",
+      "title": "How We Reduced Video Artifact Production Time for InterDead and Built a Reproducible Pipeline",
+      "description": "Case study on reproducible InterDead artifact video production with WhisperX, LLM cues, and FFmpeg.",
+      "date": "2026-02-20",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "cases"
+      ],
+      "tags": [
+        "interdead",
+        "case-study",
+        "pipeline",
+        "automation",
+        "ffmpeg",
+        "whisperx",
+        "llm"
+      ],
+      "type": "case",
+      "status": "published",
+      "externalUrl": "",
+      "canonicalUrl": "",
+      "body": "What began as an attempt to speed up the creation of short in-world videos eventually turned into a controlled, engineering-driven system that defines the visual identity of InterDead.\n\n## Context and Objective\n\nIn InterDead, short videos function as artifacts — diegetic traces that appear both inside the application prototype, InterDeadProto, and on the project website.\n\n\n\nTo support steady content production, we needed a mechanism that would assemble these videos quickly, predictably, and with consistent stylistic rules, without re-editing each iteration by hand.\n\nThe structural formula behind all artifacts became simple:\n\n> audio + background image + emoji overlays aligned to word-level timing\n\n## Why Manual Editing Failed\n\nEarly attempts in Canva and Adobe Premiere Pro showed that manual assembly created a bottleneck. Each new video required full re-synchronization, stylistic consistency shifted from asset to asset, and even small revisions turned into separate micro-projects.\n\nWhen we ran manual and pipeline-based production in parallel, the difference became measurable: manual editing averaged 2.5–3 hours, whereas the pipeline stabilized at 35–50 minutes. In practice, this meant a 65–75% time reduction with significantly higher consistency.\n\n## The Roughness We Chose to Keep\n\nPipeline-generated videos inevitably looked more technical than manually edited ones. Surprisingly, this worked in our favor.\n\nThe artifact aesthetic survives best when it avoids polished, studio-like motion design. Although FFmpeg would allow procedural animations, and sprite-based overlays could add motion, visual restraint better supports the internal logic of InterDead.\n\nThe roughness became a feature, not a flaw.\n\n## Pipeline Architecture\n\nAll development happens inside `InterDeadReferenceLibrary/tools/`, and the pipeline remains strictly linear and deterministic.\n\nThe process starts with [`whisperx_timing_builder`](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/main/tools/python_asr/whisperx_timing_builder/README.md), which takes audio input, runs WhisperX alignment, and produces an `aligned.json` file with precise word timings. Synchronizing by words — rather than lines — ensures objective, measurable cues.\n\nThe next stage is the [LLM prompt step](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/main/prompts/emoji-cue-generation-prompt-twemoji-ffmpeg-overlay-mode.md), which uses `aligned.json`, editorial blocks, templates, and the full transcript to generate a structured `cues[]` array for the overlays. If the ASR misses a fragment, the system marks it explicitly rather than inventing timing.\n\nFull automation could assemble the final configuration automatically, but semantic control is more important than eliminating the last bit of manual oversight.\n\nFinally, [`emoji_overlay_video_builder`](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/main/tools/python_ffmpeg/emoji_overlay_video_builder/README.md) takes the completed configuration and assembles the video through FFmpeg. The tool uses a fixed emoji pack, a defined safe area, stable offsets, and deterministic overlays. No timeline editor is involved — only rule-based composition.\n\n## Supporting Assets\n\nMusic is generated via Suno. Commercial use requires an active subscription. Background images come from GPT-based generation and gradually form a recognizable palette and grain profile. Emoji rendering relies on the 72×72 Twemoji PNG set, which offers deterministic cross-platform consistency.\n\n## Outcome\n\nThe pipeline is not “AI for the sake of AI.” It is a disciplined production method that shortens repetitive work, enforces visual constraints, and keeps full engineering control over generative components.\n\nThe system continues to evolve, but its core principles — repeatability, predictability, and stylistic discipline — remain stable.\n\nThe full technical specification is documented here:\n\n[Reproducible video artifact pipeline](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/main/pipeline/reproducible-video-artifact-pipeline.md)"
+    },
+    {
+      "slug": "why-canon-contract-interdead",
+      "title": "How We Turned the Why into a Reproducible Canon Contract for InterDead",
+      "description": "Case study on turning the canon Why into an operational SSOT contract for InterDead.",
+      "date": "2026-02-20",
+      "authors": [
+        "sam-starling"
+      ],
+      "categories": [
+        "cases"
+      ],
+      "tags": [
+        "interdead",
+        "case-study",
+        "canon",
+        "ssot",
+        "narrative-design"
+      ],
+      "type": "case",
+      "status": "published",
+      "externalUrl": "",
+      "canonicalUrl": "",
+      "body": "*On the great and terrible Why in game design.*\n\n## Context\n\nInterDead operates at the intersection of narrative architecture and mechanical implementation, where the number of entities, protocols, and localizations continually grows. In such an environment, every element interacts with many others, creating a cumulative complexity effect.\n\n## Problem\n\nEarly on, this created typical risks for a complex narrative system. Local decisions emerged without shared causality, meanings were duplicated, terminology was interpreted differently by different contributors, and internal contradictions multiplied as the canon expanded. Multilingual support further complicated consistency. In short, the project was scaling faster than the discipline required to maintain it.\n\n## Hypothesis\n\nWe proposed that if the canon is moved into a public wiki and each entity receives an explicit “Why,” the entire structure becomes more manageable. Canon updates could be introduced in waves, causality would become verifiable, team synchronization would accelerate, and localizations would become derivative rather than autonomous versions.\n\n## Solution\n\nThe goal was to turn the “Why” from a philosophical notion into an operational tool. It became a canon contract.\n\nEvery entity is now required to have:\n\n- a defined purpose;\n- documented causal links;\n- a clear scope of applicability;\n- describable consequences.\n\nThe wiki serves both as a formalization environment and as a system of constraints that enforces discipline.\n\n## Effect Metrics\n\nThis is not a quantitative case; its impact is architectural. The approach brought predictability during scaling, reduced internal contradictions, minimized semantic divergence between localizations, and accelerated decision-making. Most importantly, it provided full control over causality.\n\nAdditional side effects included faster editorial processes and improved audience engagement — the latter addressed separately in the case “How We Offset Development Costs.”\n\n## Limitations\n\nThe approach is not universal. It raises the entry threshold, requires terminological discipline, and slows spontaneous iteration. For projects based on rapid prototyping without a long-term canon, this level of structure may be excessive.\n\n## Self-Discipline as the Core Factor\n\nThe model works only if every decision is required to answer “Why,” the canon is fixed before scaling, and the public nature of the wiki acts as pressure toward formulation precision. Creativity becomes structured rather than constrained.\n\n## Model Architecture\n\n### SSOT: Single Source of Truth\n\nThere is one primary version of the canon — in our case, English. All other localizations are derivative, which eliminates disputes over which version is “correct.”\n\n### Change-list Process\n\nAny change to the canon follows a clear sequence:\n\n1. defining the “Why”;\n2. identifying all affected pages;\n3. updating the core material;\n4. propagating dependent edits in waves;\n5. verifying localizations.\n\nThis prevents chaotic edits.\n\n### Three Publication Modes\n\nWe distinguish between manual publication, semi-automated builds, and full API synchronization via Action API + CI.\n\nManual publication is flexible but error-prone. Semi-automated builds reduce copy-paste. Full API synchronization offers high synchronicity and scalability. API automation includes separation of localizations, a unified format, a CI pipeline, diff logic, and token/rate-limit management. Automation, however, does not eliminate editorial responsibility during semantic changes.\n\n## Next Stage\n\nThe next layer of complexity is cultural canon adaptation — preserving the “Why” while shifting cultural context. This will be covered in a separate case.\n\n## Conclusion\n\nBy making the internal system public during development, we turned the “Why” into a contract, an editorial filter, an architectural stabilizer, and a synchronization mechanism — not an abstraction but an actionable part of production.\n\n## Operational Implementation\n\nThe full operational model is documented here:\n\n[InterDead reproducible canon pipeline](https://github.com/Zhovten-Games/InterDeadReferenceLibrary/blob/main/pipeline/Ireproducible-canon-pipeline.md)"
+    },
+    {
+      "slug": "zhovten-games-interdead-launch",
+      "title": "Zhovten Games and InterDead Launch Announcement",
+      "description": "Studio launch announcement and first public entry point to the InterDead meta-universe.",
+      "date": "2025-10-31",
+      "authors": [
+        "sam-starling",
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "announcements"
+      ],
+      "tags": [
+        "zhovten-games",
+        "interdead",
+        "gamedev",
+        "narrative-design"
+      ],
+      "type": "announcement",
+      "status": "published",
+      "externalUrl": "https://interdead.phantom-draft.com/",
+      "canonicalUrl": "",
+      "body": "Hello everyone.\n\nWe are **Zhovten Games** — a small studio founded in October 2025 by two people.\n\nWe are creating a narrative-driven speculative fiction horror game in a novella-style format, with a set of unusual mechanics we hope will pleasantly surprise you. Our target for the demo release is Halloween 2026. Until then, we will share prototypes, art drops, dev notes, and short teasers.\n\nAt a glance:\n\n- cross-platform;\n- languages: English, Українська, 日本語;\n- influences: Japanese horror — *Kairo / Pulse* and *Silent Hill* — interpreted through a speculative-fiction lens, with an intentionally austere, system-focused tone.\n\nToday we are also launching the first entry point into the game’s meta-universe: a living landing page that will evolve with prototypes, lore breadcrumbs, and small experiments.\n\nExplore it here: [InterDead](https://interdead.phantom-draft.com/)"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "mcf-28-house-that-love-built",
+      "title": "Mystery Case Files 28: House That Love Built",
+      "description": "Casual hidden-object puzzle adventure (HOPA) by GrandMA Studios.",
+      "kind": "external-portfolio",
+      "section": "released",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "GrandMA Studios",
+      "role": "Game Designer / Narrative Game Designer",
+      "ownership": "GrandMA Studios portfolio credit attributed to Oksana Dubinetska.",
+      "externalUrl": "https://www.youtube.com/watch?v=vCQ_1Rlirm8",
+      "period": "December 2024 — June 2025",
+      "skills": [
+        "Game Design",
+        "Narrative"
+      ],
+      "imageUrl": "https://i.ytimg.com/vi/vCQ_1Rlirm8/hqdefault.jpg",
+      "imageAlt": "YouTube walkthrough preview for Mystery Case Files 28: House That Love Built",
+      "body": "Oksana Dubinetska contributed game design and narrative work during the listed production period. The linked walkthrough is presented as a public visual reference for the released game."
+    },
+    {
+      "slug": "mcf-27-the-riddle-of-mrs-bishop",
+      "title": "Mystery Case Files 27: The Riddle of Mrs. Bishop",
+      "description": "Casual hidden-object puzzle adventure (HOPA) by GrandMA Studios.",
+      "kind": "external-portfolio",
+      "section": "released",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "GrandMA Studios",
+      "role": "Game Designer / Narrative Game Designer",
+      "ownership": "GrandMA Studios portfolio credit attributed to Oksana Dubinetska.",
+      "externalUrl": "https://www.youtube.com/watch?v=krGvGm9o7jE",
+      "period": "October 2023 — December 2024",
+      "skills": [
+        "Game Design",
+        "Narrative"
+      ],
+      "imageUrl": "https://i.ytimg.com/vi/krGvGm9o7jE/hqdefault.jpg",
+      "imageAlt": "YouTube walkthrough preview for Mystery Case Files 27: The Riddle of Mrs. Bishop",
+      "body": "Oksana Dubinetska contributed game design and narrative work during the listed production period. The linked walkthrough is presented as a public visual reference for the released game."
+    },
+    {
+      "slug": "mcf-26-a-crime-in-reflection",
+      "title": "Mystery Case Files 26: A Crime in Reflection",
+      "description": "Casual hidden-object puzzle adventure (HOPA) by GrandMA Studios.",
+      "kind": "external-portfolio",
+      "section": "released",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "GrandMA Studios",
+      "role": "Game Designer / Narrative Game Designer",
+      "ownership": "GrandMA Studios portfolio credit attributed to Oksana Dubinetska.",
+      "externalUrl": "https://www.youtube.com/watch?v=8mZmJsagw-0",
+      "period": "December 2022 — October 2023",
+      "skills": [
+        "Game Design",
+        "Narrative"
+      ],
+      "imageUrl": "https://i.ytimg.com/vi/8mZmJsagw-0/hqdefault.jpg",
+      "imageAlt": "YouTube walkthrough preview for Mystery Case Files 26: A Crime in Reflection",
+      "body": "Oksana Dubinetska contributed game design and narrative work during the listed production period. The linked walkthrough is presented as a public visual reference for the released game."
+    },
+    {
+      "slug": "mcf-25-the-dalimar-legacy",
+      "title": "Mystery Case Files 25: The Dalimar Legacy",
+      "description": "Casual hidden-object puzzle adventure (HOPA) by GrandMA Studios.",
+      "kind": "external-portfolio",
+      "section": "released",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "GrandMA Studios",
+      "role": "Game Designer / Narrative Game Designer",
+      "ownership": "GrandMA Studios portfolio credit attributed to Oksana Dubinetska.",
+      "externalUrl": "https://www.youtube.com/watch?v=0PtNx_loBHw",
+      "period": "November 2021 — December 2022",
+      "skills": [
+        "Game Design",
+        "Narrative"
+      ],
+      "imageUrl": "https://i.ytimg.com/vi/0PtNx_loBHw/hqdefault.jpg",
+      "imageAlt": "YouTube walkthrough preview for Mystery Case Files 25: The Dalimar Legacy",
+      "body": "Oksana Dubinetska contributed game design and narrative work during the listed production period. The linked walkthrough is presented as a public visual reference for the released game."
+    },
+    {
+      "slug": "whispered-secrets-13-tying-the-knot",
+      "title": "Whispered Secrets 13: Tying the Knot",
+      "description": "Casual hidden-object puzzle adventure (HOPA) by GrandMA Studios.",
+      "kind": "external-portfolio",
+      "section": "released",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "GrandMA Studios",
+      "role": "Game Designer / Narrative Game Designer",
+      "ownership": "GrandMA Studios portfolio credit attributed to Oksana Dubinetska.",
+      "externalUrl": "https://www.youtube.com/watch?v=1lVupJG68xc",
+      "period": "September 2021 — November 2021",
+      "skills": [
+        "Game Design",
+        "Narrative"
+      ],
+      "imageUrl": "https://i.ytimg.com/vi/1lVupJG68xc/hqdefault.jpg",
+      "imageAlt": "YouTube walkthrough preview for Whispered Secrets 13: Tying the Knot",
+      "body": "Oksana Dubinetska contributed game design and narrative work during the listed production period. The linked walkthrough is presented as a public visual reference for the released game."
+    },
+    {
+      "slug": "interdead",
+      "title": "InterDead",
+      "description": "A narrative horror system connecting a game, web layer, prototypes, and research infrastructure.",
+      "kind": "game",
+      "section": "development",
+      "authors": [
+        "sam-starling",
+        "oksana-dubinetska"
+      ],
+      "studio": "Zhovten Games",
+      "role": "Co-development of game design, narrative, and systems",
+      "ownership": "Zhovten Games studio project; co-authored by Sam Starling and Oksana Dubinetska.",
+      "externalUrl": "https://zhovten-games.itch.io/interdead",
+      "period": "In development",
+      "skills": [
+        "Game Design",
+        "Narrative",
+        "Systems Design"
+      ],
+      "body": "InterDead is a co-authored Zhovten Games project built as a connected game, web, and infrastructure system. This page tracks portfolio metadata and public reference links."
+    },
+    {
+      "slug": "untitled-science-fiction-comic",
+      "title": "Untitled Science-Fiction Comic Project",
+      "description": "An in-development science-fiction comic project built in Unity.",
+      "kind": "game",
+      "section": "development",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "External project (name undisclosed)",
+      "role": "Game Designer",
+      "ownership": "Public-safe role attribution for an external project in development.",
+      "externalUrl": "",
+      "period": "In development",
+      "skills": [
+        "Game Design"
+      ],
+      "technology": "Unity",
+      "body": "This public-safe entry records Oksana Dubinetska’s game-design work on a science-fiction comic project developed in Unity. The project name and public link remain undisclosed until publication is authorized by its owner."
+    },
+    {
+      "slug": "psyframework",
+      "title": "PsyFramework",
+      "description": "A browser framework for prototyping player-facing psyche mechanics and fear matrices.",
+      "kind": "tool",
+      "section": "tool",
+      "authors": [
+        "sam-starling"
+      ],
+      "studio": "Zhovten Games",
+      "role": "",
+      "ownership": "Zhovten Games internal/public tool entry.",
+      "externalUrl": "https://zhovten-games.github.io/PsyFramework/",
+      "skills": [
+        "Systems Design",
+        "Web Engineering"
+      ],
+      "body": "PsyFramework is a browser framework for prototyping player-facing psyche mechanics and fear matrices.\n\nDisclaimer: for research and entertainment only. It is not a medical or diagnostic instrument."
+    },
+    {
+      "slug": "safe-blind-zones-live-tester",
+      "title": "Safe / Blind Zones — Live Tester",
+      "description": "A public-safe interface testing tool connected with an external studio workflow.",
+      "kind": "tool",
+      "section": "tool",
+      "authors": [
+        "sam-starling"
+      ],
+      "studio": "Zhovten Games (support tool); related to Oksana external project",
+      "role": "",
+      "ownership": "Zhovten Games support tool related to Oksana external portfolio work. Public-safe details only.",
+      "externalUrl": "https://zhovten-games.github.io/safe-blind-zones-live-tester/",
+      "skills": [
+        "Interface Testing",
+        "Web Engineering"
+      ],
+      "body": "Public-safe note: this tool supports interface testing processes connected with an external studio project without disclosing the project itself."
+    }
+  ],
+  "authors": [
+    {
+      "slug": "sam-starling",
+      "name": "Sam Starling",
+      "role": "Co-Founder · Full-Stack Web Engineer · Gameplay Systems & Technical Design",
+      "description": "Co-founder of Zhovten Games shaped by production systems, client work, and applied engineering, now focused on web infrastructure, gameplay systems, technical design, and research.",
+      "status": "Active",
+      "skills": [
+        "https://github.com/pan-canon"
+      ],
+      "languages": [
+        "English",
+        "Ukrainian",
+        "Russian"
+      ],
+      "tools": [
+        "JavaScript / TypeScript",
+        "PHP",
+        "C++",
+        "SQL",
+        "WordPress / Laravel"
+      ],
+      "profileLinks": [
+        {
+          "kind": "linkedin",
+          "url": "https://www.linkedin.com/in/pan-canon/"
+        },
+        {
+          "kind": "orcid",
+          "url": "https://orcid.org/0009-0009-2621-6372"
+        },
+        {
+          "kind": "github",
+          "url": "https://github.com/pan-canon"
+        }
+      ],
+      "body": "Business and real applied work forged my engineering practice: support queues, broken systems, production deadlines, client risk, and decisions that had to survive contact with users. I entered IT at 18 in 2011 through technical support at uCoz, turning unclear reports into reproducible cases, diagnostics, and Jira workflows.\n\nFrom there I moved through QA and product quality: functional testing, defect reproduction, system-behavior analysis, and direct work with developers. Later, at Scuba Space, I led a bilingual copywriting team and built its workflow, editorial review, and content-quality control.\n\nSince 2019, my main field has been full-stack web engineering: client and server development, WordPress, Laravel, APIs, webhooks, deployment, architecture, security, and technical consulting. Production taught me a blunt rule: a system is defined by what continues to work after the presentation ends.\n\nAt Zhovten Games, I work on web infrastructure, gameplay systems, technical design, prototypes, narrative/game logic, and the research pipelines behind our projects. My current engineering profile and active work are documented on [GitHub](https://github.com/pan-canon)."
+    },
+    {
+      "slug": "oksana-dubinetska",
+      "name": "Oksana Dubinetska",
+      "role": "Founder · Lead Game Designer · Narrative & Technical Game Design",
+      "description": "Founder of Zhovten Games focused on narrative systems, branching quest logic, emotional pacing, worldbuilding, and the technical side of game production.",
+      "status": "Active",
+      "skills": [
+        "Narrative design",
+        "Game design",
+        "Branching quest design",
+        "Worldbuilding",
+        "Technical game design"
+      ],
+      "languages": [
+        "English",
+        "Ukrainian",
+        "Russian"
+      ],
+      "tools": [
+        "Unity production",
+        "Narrative documentation",
+        "Quest flow design",
+        "Playtesting"
+      ],
+      "profileLinks": [
+        {
+          "kind": "linkedin",
+          "url": "https://www.linkedin.com/in/oksanadubinetska/"
+        },
+        {
+          "kind": "orcid",
+          "url": "https://orcid.org/0009-0003-8777-8412"
+        },
+        {
+          "kind": "github",
+          "url": "https://github.com/FOP-Oksana-Dubinetska"
+        },
+        {
+          "kind": "telegram",
+          "url": "https://t.me/gamedevoksana"
+        }
+      ],
+      "body": "I loved reading from childhood. I moved into senior school ahead of schedule and graduated with honors, then earned a Bachelor’s degree in Translation at Kyiv National Linguistics University (2014–2018) and studied at Kyiv School of Journalism in 2017.\n\nI began working in copywriting while still young. That path led from research and commercial writing to scripts, game mastering, and finally game design—the field where narrative, systems, and production became one discipline. I am now increasingly focused on the technical side of games: quest logic, interactive structure, implementation constraints, and collaboration between narrative, art, and code.\n\n## Experience\n\n### [Zhovten Games](https://www.linkedin.com/company/109201497/) — Lead Game Designer / Founder\n\n**December 2025 — present**\n\nI shape game concepts, narrative systems, quest logic, production documentation, and cross-disciplinary implementation. My current work extends into technical game design and the boundary between design, Unity, and engineering.\n\n### GrandMA Studios — Game Designer\n\n**October 2021 — December 2025 · Kyiv, Ukraine**\n\nLed narrative development for multiple HOPA titles from synopsis to final release. Wrote scripts, quest flows, interactive sequences, object descriptions, and character dialogue. Built branching narrative logic for puzzles, investigations, and quest chains while preserving UX clarity. Collaborated with artists and programmers to align story, mechanics, pacing, and environmental storytelling. Published five games across the Whispered Secrets and Mystery Case Files franchises. *Mystery Case Files: The Dalimar Legacy* reached #2 in the publisher’s all-time PC bestseller list.\n\n### Clockwork Magick — Game Master\n\n**October 2020 — August 2021 · Kyiv, Ukraine**\n\nCreated complete scenarios, distinctive characters, locations, and living non-player characters. Adapted game systems to the needs of each story, playtested original systems, and revised them from observed play.\n\n### Rocketslides — Presentation and Advertising Scriptwriter\n\n**July 2020 — June 2021**\n\nWrote scripts for videos, talks, and presentations in collaboration with a designer, and prepared production briefs for design and layout.\n\n### SM Banking Club — Copywriter\n\n**April 2019 — March 2020**\n\nStudied English-language research on mobile banking and turned it into structured analytical reviews."
+    }
+  ]
+}

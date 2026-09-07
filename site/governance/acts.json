@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registryId": "zg-site-acts-001",
+  "status": "candidate",
+  "constitution": {
+    "path": ".constitution",
+    "commit": "220dc9c286ae06f8b6ed60cdda75112eed0408ed"
+  },
+  "acts": [
+    {
+      "id": "zg-site-profile-001",
+      "name": "Zhovten Games Website Founding Profile",
+      "path": "governance/PROFILE.md",
+      "revision": "0.2.0-candidate",
+      "status": "candidate-pending-human-ratification"
+    },
+    {
+      "id": "zg-site-act-development-001",
+      "name": "Zhovten Games Website Development and Publication Regulation",
+      "path": "governance/legislation/DEVELOPMENT.md",
+      "revision": "0.2.0-candidate",
+      "status": "candidate-pending-human-ratification"
+    }
+  ]
+}
