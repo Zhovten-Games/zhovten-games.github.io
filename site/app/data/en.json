@@ -15,9 +15,35 @@
     "aboutBody": "Zhovten Games is an independent game studio founded in December 2025 by Oksana Dubinetska and Sam Starling. We work where narrative game design, gameplay systems, web engineering, technical experimentation, and public research meet.\n\n## GitHub\n\n- [Oksana Dubinetska · business and governance](https://github.com/FOP-Oksana-Dubinetska)\n- [Zhovten Games · studio repositories](https://github.com/Zhovten-Games)\n- [IRONCREED · research and publications](https://github.com/IRONCREED)",
     "contactTitle": "Contact",
     "contactDescription": "Contact Zhovten Games",
-    "contactBody": "Contact us for collaborations, publishing discussions, and media requests."
+    "contactBody": "Contact us for collaborations, publishing discussions, and media requests.\n\n[Zhovten Games on LinkedIn](https://www.linkedin.com/company/zhovten-games/)"
   },
   "posts": [
+    {
+      "slug": "summer-2026-umbrella-update",
+      "title": "Summer 2026 — Umbrella Update",
+      "description": "Summer update connecting literate programming, InterDead’s independent C++ Game Core, and the formation of IRON CREED.",
+      "date": "2026-09-12",
+      "authors": [
+        "sam-starling",
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "announcements"
+      ],
+      "tags": [
+        "interdead",
+        "literate-programming",
+        "game-core",
+        "engineering",
+        "iron-creed"
+      ],
+      "type": "announcement",
+      "status": "published",
+      "externalUrl": "",
+      "canonicalUrl": "",
+      "body": "This summer at Zhovten Games was mostly about turning several parallel experiments into one development pipeline.\n\nWhat began as a practical problem inside InterDead led to a methodological study, then to a clearer game architecture, and eventually helped formalize a separate engineering practice around the studio.\n\nThese developments turned out to be more closely connected than we expected.\n\n## 1. Literate Programming\n\nWe started with a concrete problem in InterDead.\n\nThe scenario needed to remain an independent linguistic source rather than becoming inseparable from a particular engine.\n\nThat question led us back to Donald Knuth’s concept of Literate Programming and eventually to a broader methodological review of reproducible source generation, executable documents, and LLM-assisted development.\n\nThe research follows WEB and compares several contemporary routes around the same underlying problem: how explanation, source code, execution, and verification can remain connected.\n\nThe companion implementations cover CWEB, noweb-like C++, Org Babel, Quarto, Jupyter, and R Markdown.\n\nWe also examined a newer boundary case: LLM-assisted development.\n\nA prompt alone is not a literate source, but we found that AI-assisted work can preserve the useful properties of literate programming when it follows a stricter chain:\n\nexplanation\n→ specification\n→ code\n→ tests\n→ artifact\n\nThe important part for us was not the historical exercise itself.\n\nThe research returned directly to the game project that had started it.\n\nResearch:\n[Literate Programming: Donald Knuth, WEB, and Contemporary Workflows](https://doi.org/10.5281/zenodo.20608558)\n\nResearch and companion implementations:\n[Zhovten Games / literate-programming](https://github.com/Zhovten-Games/literate-programming)\n\nIRON CREED adaptation:\n[Why Documentation Matters](https://web.zhovten.games/en/programming/why-documentation-matters)\n\n## 2. From the Scenario to the Game Core\n\nThe research helped us formalize a clearer architectural model for InterDead.\n\nThe scenario remains a separate linguistic source.\n\nThe implementation moves into an independent C++ Game Core that contains the underlying game logic without tying it to a specific presentation environment.\n\nThe current structure is:\n\nScenario\n→ C++ Game Core\n→ Unreal projection\n→ Web / WASM projection\n\nThe projections are not intended to maintain separate copies of the game logic, but to provide different interfaces to the same underlying core.\n\nThis is now the stage we are actively building.\n\nThe GDD is close to completion.\n\nThe scenario has been written.\n\nThe next major task is turning that structure into the executable core of the game.\n\n## 3. IRON CREED — Something Else Escaped\n\nWhile we were building pipelines, writing research, fixing infrastructure, documenting methods, and trying to keep all of this under control, something else happened.\n\nOne of our recurring characters escaped.\n\nIRON CREED became the applied IT and engineering practice of Zhovten Games.\n\nWhat had existed partly as a character and partly as an internal way of thinking about engineering gradually became a separate public contour for development, infrastructure, automation, security, technical research, documentation, and verification.\n\nThis gives us a place for engineering work that deserves to exist beyond a single project.\n\nIt also gives us somewhere to put the side research that keeps refusing to remain side research.\n\nIRON CREED does not replace the game studio; instead, its methods, tools, and research return to Zhovten Games and directly influence how we build our projects.\n\nAbout IRON CREED:\n[IRON CREED — Applied IT and Engineering Practice](https://web.zhovten.games/en/pages/about)\n\n## Where This Leaves the Project\n\nThe intermediate result of the summer can be summarized as one connected chain:\n\ngame and narrative design\n→ methodological research\n→ reproducible development pipeline\n→ independent C++ Game Core\n→ multiple projections\n→ engineering methods that return to the studio\n\nFor us, this summer was largely about making sure that when we build the visible game, there is a coherent system underneath it.\n\nThe next stage is implementation.",
+      "modifiedDate": "2026-09-13"
+    },
     {
       "slug": "brain-anatomy-information-flow-update",
       "title": "Brain Anatomy & Information Flow: Interim Update",
@@ -46,7 +72,7 @@
       "slug": "canon-horror-series-doi",
       "title": "Canon Horror Series: Language as Infection and the Systems of Horror v0.2",
       "description": "External DOI wrapper for the Canon Horror Series research corpus.",
-      "date": "2026-05-01",
+      "date": "2026-05-05",
       "authors": [
         "sam-starling",
         "oksana-dubinetska"
@@ -65,7 +91,8 @@
       "status": "published",
       "externalUrl": "https://doi.org/10.5281/zenodo.20037828",
       "canonicalUrl": "",
-      "body": "This page is a local wrapper for the external DOI publication:\n\n[Canon Horror Series: Language as Infection and the Systems of Horror v0.2](https://doi.org/10.5281/zenodo.20037828)\n\nThe wrapper exists to keep the publication visible in the Zhovten Games archive while preserving the external DOI as the source link."
+      "body": "This page is a local wrapper for the external DOI publication:\n\n[Canon Horror Series: Language as Infection and the Systems of Horror v0.2](https://doi.org/10.5281/zenodo.20037828)\n\nThe wrapper exists to keep the publication visible in the Zhovten Games archive while preserving the external DOI as the source link.",
+      "modifiedDate": "2026-09-13"
     },
     {
       "slug": "canon-horror-series-language-as-infection",
@@ -119,7 +146,7 @@
     },
     {
       "slug": "february-umbrella-update",
-      "title": "February Umbrella Update",
+      "title": "February 2026 — Umbrella Update",
       "description": "Umbrella update covering canon, pipeline, communication architecture, and TTRPG testing.",
       "date": "2026-02-23",
       "authors": [
@@ -140,13 +167,14 @@
       "status": "published",
       "externalUrl": "",
       "canonicalUrl": "",
-      "body": "Hello everyone.\n\nFebruary in InterDead was not about individual publications. It was about a systemic restructuring of the project.\n\nWe finalized three architectural layers.\n\n## 1. Canon as a Contract\n\nWe formalized the “Why” and reinforced canon discipline through a public wiki and SSOT.\n\nRead more:\n\n[How We Turned the Why into a Reproducible Canon Contract for InterDead](/blog/why-canon-contract-interdead/)\n\n## 2. Reproducible Artifact Pipeline\n\nVideo production was moved to a deterministic pipeline: ASR → LLM → FFmpeg. This reduced production time by 65–75%, while strengthening stylistic control.\n\nRead more:\n\n[How We Reduced Video Artifact Production Time for InterDead and Built a Reproducible Pipeline](/blog/video-artifact-pipeline-interdead/)\n\n## 3. Communication Architecture\n\nWe unified the project voice through the system character Niro and built a cross-platform communication model.\n\nRead more:\n\n[How We Structured Audience Communication in InterDead Through a System Character](/blog/niro-communication-architecture/)\n\n## 4. TTRPG Layer — Live World Testing\n\nWe are now integrating tabletop RPG sessions as a live stress-test of the canon and mechanics. This layer allows us to validate causality, tension, and narrative resilience in real time.\n\nNew reports and dedicated cases on this process are coming soon.\n\nNext comes an intermediate update of the prototype — the starting point of the entire system. After that, the focus will shift to the game’s narrative and world development."
+      "body": "Hello everyone.\n\nFebruary in InterDead was not about individual publications. It was about a systemic restructuring of the project.\n\nWe finalized three architectural layers.\n\n## 1. Canon as a Contract\n\nWe formalized the “Why” and reinforced canon discipline through a public wiki and SSOT.\n\nRead more:\n\n[How We Turned the Why into a Reproducible Canon Contract for InterDead](/blog/why-canon-contract-interdead/)\n\n## 2. Reproducible Artifact Pipeline\n\nVideo production was moved to a deterministic pipeline: ASR → LLM → FFmpeg. This reduced production time by 65–75%, while strengthening stylistic control.\n\nRead more:\n\n[How We Reduced Video Artifact Production Time for InterDead and Built a Reproducible Pipeline](/blog/video-artifact-pipeline-interdead/)\n\n## 3. Communication Architecture\n\nWe unified the project voice through the system character Niro and built a cross-platform communication model.\n\nRead more:\n\n[How We Structured Audience Communication in InterDead Through a System Character](/blog/niro-communication-architecture/)\n\n## 4. TTRPG Layer — Live World Testing\n\nWe are now integrating tabletop RPG sessions as a live stress-test of the canon and mechanics. This layer allows us to validate causality, tension, and narrative resilience in real time.\n\nNew reports and dedicated cases on this process are coming soon.\n\nNext comes an intermediate update of the prototype — the starting point of the entire system. After that, the focus will shift to the game’s narrative and world development.",
+      "modifiedDate": "2026-09-13"
     },
     {
       "slug": "inrium-emotional-investigation-tempo",
       "title": "Problems of Emotional Investigation",
       "description": "External article wrapper for Oksana Dubinetska’s Inrium publication on emotional pacing in detective one-shots.",
-      "date": "2026-05-01",
+      "date": "2026-02-10",
       "authors": [
         "oksana-dubinetska"
       ],
@@ -163,7 +191,8 @@
       "status": "published",
       "externalUrl": "https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti",
       "canonicalUrl": "",
-      "body": "This page is a local wrapper for Oksana Dubinetska’s external Inrium article:\n\n[Проблеми емоційного розслідування](https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti)\n\nThe article began as a longer reflection on pacing. Its starting point was a practical production problem: events can sag at the beginning or in the middle of a detective story, and that can make players lose attention. The article works through ways to make an investigation emotionally active rather than structurally flat.\n\nThe wrapper exists to preserve authorship and the external publication link inside the Zhovten Games archive."
+      "body": "This page is a local wrapper for Oksana Dubinetska’s external Inrium article:\n\n[Проблеми емоційного розслідування](https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti)\n\nThe article began as a longer reflection on pacing. Its starting point was a practical production problem: events can sag at the beginning or in the middle of a detective story, and that can make players lose attention. The article works through ways to make an investigation emotionally active rather than structurally flat.\n\nThe wrapper exists to preserve authorship and the external publication link inside the Zhovten Games archive.",
+      "modifiedDate": "2026-09-13"
     },
     {
       "slug": "interdead-noir-itchio-snapshot",
@@ -334,6 +363,28 @@
       "externalUrl": "https://interdead.phantom-draft.com/",
       "canonicalUrl": "",
       "body": "Hello everyone.\n\nWe are **Zhovten Games** — a small studio founded in October 2025 by two people.\n\nWe are creating a narrative-driven speculative fiction horror game in a novella-style format, with a set of unusual mechanics we hope will pleasantly surprise you. Our target for the demo release is Halloween 2026. Until then, we will share prototypes, art drops, dev notes, and short teasers.\n\nAt a glance:\n\n- cross-platform;\n- languages: English, Українська, 日本語;\n- influences: Japanese horror — *Kairo / Pulse* and *Silent Hill* — interpreted through a speculative-fiction lens, with an intentionally austere, system-focused tone.\n\nToday we are also launching the first entry point into the game’s meta-universe: a living landing page that will evolve with prototypes, lore breadcrumbs, and small experiments.\n\nExplore it here: [InterDead](https://interdead.phantom-draft.com/)"
+    },
+    {
+      "slug": "oksana-dubinetska-number-of-the-beast-2024",
+      "title": "Oksana Dubinetska — finalist in «Число звіра — 2024»",
+      "description": "Oksana Dubinetska’s first literary contest: «Шелест листя (Горіх)» reached the final and placed 19th.",
+      "body": "Oksana Dubinetska participated in a literary contest for the first time with the short story «Шелест листя (Горіх)». The work reached the final of Babai’s «Число звіра — 2024» contest and placed 19th. The final concluded on 1 June 2024.\n\n[Read «Шелест листя (Горіх)» in Ukrainian](https://babai.co.ua/contests/number_beast-2024/texts/6646622910cae)\n\n[Final results](https://babai.co.ua/contests/number_beast-2024/results?list=120)",
+      "date": "2024-06-01",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "categories": [
+        "notes"
+      ],
+      "tags": [
+        "Literature",
+        "Horror"
+      ],
+      "type": "note",
+      "status": "published",
+      "externalUrl": "https://babai.co.ua/contests/number_beast-2024/texts/6646622910cae",
+      "canonicalUrl": "",
+      "modifiedDate": "2026-09-13"
     }
   ],
   "projects": [
@@ -532,24 +583,12 @@
     {
       "slug": "sam-starling",
       "name": "Sam Starling",
-      "role": "Co-Founder · Full-Stack Web Engineer · Gameplay Systems & Technical Design",
-      "description": "Co-founder of Zhovten Games shaped by production systems, client work, and applied engineering, now focused on web infrastructure, gameplay systems, technical design, and research.",
+      "role": "Senior Full-Stack Web Engineer · Systems Designer",
+      "description": "Senior full-stack web engineer and systems designer working across software architecture, game systems, technical research, and applied engineering.",
       "status": "Active",
-      "skills": [
-        "https://github.com/pan-canon"
-      ],
-      "languages": [
-        "English",
-        "Ukrainian",
-        "Russian"
-      ],
-      "tools": [
-        "JavaScript / TypeScript",
-        "PHP",
-        "C++",
-        "SQL",
-        "WordPress / Laravel"
-      ],
+      "skills": [],
+      "languages": [],
+      "tools": [],
       "profileLinks": [
         {
           "kind": "linkedin",
@@ -561,10 +600,11 @@
         },
         {
           "kind": "github",
-          "url": "https://github.com/pan-canon"
+          "url": "https://github.com/pan-canon",
+          "note": "Detailed documentation about me"
         }
       ],
-      "body": "Business and real applied work forged my engineering practice: support queues, broken systems, production deadlines, client risk, and decisions that had to survive contact with users. I entered IT at 18 in 2011 through technical support at uCoz, turning unclear reports into reproducible cases, diagnostics, and Jira workflows.\n\nFrom there I moved through QA and product quality: functional testing, defect reproduction, system-behavior analysis, and direct work with developers. Later, at Scuba Space, I led a bilingual copywriting team and built its workflow, editorial review, and content-quality control.\n\nSince 2019, my main field has been full-stack web engineering: client and server development, WordPress, Laravel, APIs, webhooks, deployment, architecture, security, and technical consulting. Production taught me a blunt rule: a system is defined by what continues to work after the presentation ends.\n\nAt Zhovten Games, I work on web infrastructure, gameplay systems, technical design, prototypes, narrative/game logic, and the research pipelines behind our projects. My current engineering profile and active work are documented on [GitHub](https://github.com/pan-canon)."
+      "body": "Hello. I’m Sam, a senior full-stack web engineer and systems designer working across software architecture, game systems, technical research, and applied engineering.\n\nAt Zhovten Games, which I co-founded, I work on gameplay and narrative at the systems level: rules, dependencies, progression, project logic, and the structures that connect narrative intent with implementation. My role there is primarily centered on systems design and implementation rather than overall studio direction.\n\nAlongside this, I co-founded IRON CREED, the applied IT and engineering practice of Zhovten Games, and helped originate the concept behind it. For me, it marks a qualitative shift from individual freelance work toward a branded engineering practice: the work remains client- and project-oriented, but now operates under a shared public identity, reusable methods, documented standards, and a clearer engineering position. My role in IRON CREED is broader and more senior in scope than my studio role: I act as an engineering mentor, help shape technical direction and working methods, and support architectural and implementation decisions across the practice.\n\nI prefer work in which architecture, documentation, implementation, and verification remain connected. Three practices currently structure much of my work: Code Constitution for project governance and architectural constraints, a standardized repository-licensing process, and Prompt-Literate Workflow for structured and verifiable LLM-assisted development.\n\nCode Constitution:  \n[https://doi.org/10.5281/zenodo.21894242](https://doi.org/10.5281/zenodo.21894242)\n\nRepository Licensing Policy:  \n[https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy)\n\nPrompt-Literate Workflow:  \n[https://github.com/IRONCREED/prompt-literate-workflow](https://github.com/IRONCREED/prompt-literate-workflow)\n\nI use “Senior” as a description of engineering scope and autonomy rather than encyclopedic tool coverage. It means being able to frame ambiguous problems, identify constraints and risks, make and justify architectural decisions, verify outcomes, and re-check unfamiliar or changed technology when necessary; it does not mean being automatically current on every framework, platform, or tool."
     },
     {
       "slug": "oksana-dubinetska",

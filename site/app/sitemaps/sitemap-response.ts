@@ -23,9 +23,18 @@ export function localeSitemap(locale: Locale) {
     "/contact/",
     "/governance/",
   ];
-  const lastmodByPath = Object.fromEntries(
-    content.posts.map((post) => ["/blog/" + post.slug + "/", post.date]),
-  );
+  const lastmodByPath: Record<string, string> = {
+    ...Object.fromEntries(
+      content.posts.map((post) => ["/blog/" + post.slug + "/", post.modifiedDate ?? post.date]),
+    ),
+    "/": "2026-09-13",
+    "/blog/": "2026-09-13",
+    "/authors/": "2026-09-13",
+    "/authors/sam-starling/": "2026-09-13",
+    "/authors/oksana-dubinetska/": "2026-09-13",
+    "/contact/": "2026-09-13",
+    "/projects/interdead/": "2026-09-13",
+  };
   const rows = paths
     .map((path) => {
       const loc = new URL(localePath(locale, path), SITE_ORIGIN).toString();

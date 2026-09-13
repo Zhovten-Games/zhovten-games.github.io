@@ -25,6 +25,7 @@ export type Post = {
   title: string;
   description: string;
   date: string;
+  modifiedDate?: string;
   authors: string[];
   categories: string[];
   tags: string[];
@@ -70,6 +71,7 @@ export type Author = {
 export type AuthorProfileLink = {
   kind: "linkedin" | "orcid" | "github" | "telegram";
   url: string;
+  note?: string;
 };
 
 export type LocaleContent = {

@@ -4,9 +4,62 @@ import { localizePosts, localizeProjects } from "./localize";
 
 type PostText = Pick<Post, "title" | "description" | "body">;
 type ProjectText = Pick<Project, "title" | "description" | "body" | "studio" | "role" | "ownership" | "period" | "imageAlt" | "skills">;
-type AuthorText = Pick<Author, "role" | "description" | "status" | "skills" | "languages" | "tools" | "body">;
+type AuthorText = Pick<Author, "role" | "description" | "status" | "skills" | "languages" | "tools" | "body"> & Partial<Pick<Author, "profileLinks">>;
 
 const postText: Record<string, PostText> = {
+  "oksana-dubinetska-number-of-the-beast-2024": {
+    "title": "Oksana Dubinetska — 「Число звіра — 2024」最終選考進出",
+    "description": "Oksana Dubinetskaが初めて文学コンテストに参加。「Шелест листя (Горіх)」が最終選考に進み、19位となりました。",
+    "body": "Oksana Dubinetskaは短編小説「Шелест листя (Горіх)」で初めて文学コンテストに参加しました。作品はBabai主催の「Число звіра — 2024」で最終選考に進み、19位となりました。最終選考は2024年6月1日に終了しました。\n\n[「Шелест листя (Горіх)」をウクライナ語で読む](https://babai.co.ua/contests/number_beast-2024/texts/6646622910cae)\n\n[最終選考の結果](https://babai.co.ua/contests/number_beast-2024/results?list=120)"
+},
+  "summer-2026-umbrella-update": {
+    title: "2026年夏 — 総括アップデート",
+    description: "文芸的プログラミング、InterDead の独立した C++ Game Core、IRON CREED の形成を結ぶ夏季アップデート。",
+    body: [
+      "この夏、Zhovten Gamesでは、いくつか並行していた実験を一つの開発パイプラインへまとめることに多くの時間を使いました。",
+      "InterDead内の実務的な問題から始まったものが、方法論的研究につながり、さらに明確なゲームアーキテクチャへ進み、最終的にはスタジオの周囲に独立したエンジニアリング実践を形にする助けにもなりました。",
+      "これらは、私たちが予想していた以上に強く結びついていました。",
+      "## 1. 文芸的プログラミング",
+      "私たちは、InterDeadにある具体的な問題から出発しました。",
+      "シナリオは、特定のエンジンと不可分になるのではなく、独立した言語的ソースとして保たれる必要がありました。",
+      "この問いが、ドナルド・クヌースのLiterate Programmingという考え方へ私たちを連れ戻し、やがて再現可能なソース生成、実行可能ドキュメント、LLM支援開発をめぐる、より広い方法論的レビューへつながりました。",
+      "本研究はWEBを起点に、同じ根本的な問題に対する現代的な複数のアプローチを比較します。つまり、説明、ソースコード、実行、検証をどのように結びつけたままにできるか、という問題です。",
+      "付随実装では、CWEB、noweb-like C++、Org Babel、Quarto、Jupyter、R Markdownを扱っています。",
+      "さらに、新しい境界事例としてLLM支援開発も検討しました。",
+      "プロンプトだけではLiterate Programmingの意味でのソースにはなりませんが、AI支援作業でも、より厳密な連鎖に従うことで文芸的プログラミングの有用な性質を保てることが分かりました。",
+      "説明\n→ 仕様\n→ コード\n→ テスト\n→ 成果物",
+      "私たちにとって重要だったのは、歴史的な検討そのものではありません。",
+      "研究は、その出発点となったゲームプロジェクトへ直接戻ってきました。",
+      "研究:\n[Literate Programming：ドナルド・クヌース、WEB、そして現代のワークフロー](https://doi.org/10.5281/zenodo.20608558)",
+      "研究と付随実装:\n[Zhovten Games / literate-programming](https://github.com/Zhovten-Games/literate-programming)",
+      "IRON CREEDによる適用:\n[ドキュメントが重要な理由](https://web.zhovten.games/en/programming/why-documentation-matters)",
+      "## 2. シナリオからGame Coreへ",
+      "この研究により、InterDeadのアーキテクチャモデルをより明確に定式化できました。",
+      "シナリオは独立した言語的ソースとして保持されます。",
+      "実装は独立したC++ Game Coreに移り、特定の表示環境に縛られることなく、ゲームの基礎ロジックを保持します。",
+      "現在の構造は次のとおりです。",
+      "シナリオ\n→ C++ Game Core\n→ Unrealプロジェクション\n→ Web / WASMプロジェクション",
+      "各プロジェクションはゲームロジックの別々のコピーを維持するためのものではなく、同じ基礎コアへの異なるインターフェースを提供するものです。",
+      "現在、私たちが実際に構築しているのがこの段階です。",
+      "GDDはほぼ完成しています。",
+      "シナリオはすでに書き上がっています。",
+      "次の大きな課題は、その構造を実行可能なゲームコアへ変えることです。",
+      "## 3. IRON CREED — そして、もう一つ逃げ出したもの",
+      "パイプラインを構築し、研究を書き、インフラを直し、方法を文書化し、何とか全体を制御しようとしているあいだに、別のことも起きました。",
+      "繰り返し登場していたキャラクターの一人が逃げ出したのです。",
+      "IRON CREEDは、Zhovten Gamesにおける応用IT・エンジニアリングの実践として形になりました。",
+      "キャラクターでもあり、エンジニアリングを考えるための内部的な思考法でもあったものが、開発、インフラ、自動化、セキュリティ、技術研究、ドキュメンテーション、検証のための独立した公開領域へと徐々に変わっていきました。",
+      "これにより、単一のプロジェクトを超えて残す価値のあるエンジニアリング作業に、置き場所ができました。",
+      "そして、どうしても「脇道の研究」のままでいてくれない脇道の研究にも、置き場所ができました。",
+      "IRON CREEDはゲームスタジオを置き換えるものではなく、その方法、ツール、研究はZhovten Gamesに戻り、私たちのプロジェクトの作り方に直接影響します。",
+      "IRON CREEDについて:\n[IRON CREED — 応用IT・エンジニアリングの実践](https://web.zhovten.games/en/pages/about)",
+      "## 現在地",
+      "この夏の中間成果は、一つの連続した流れとしてまとめられます。",
+      "ゲームデザインとナラティブデザイン\n→ 方法論的研究\n→ 再現可能な開発パイプライン\n→ 独立したC++ Game Core\n→ 複数のプロジェクション\n→ スタジオへ戻っていくエンジニアリング手法",
+      "この夏、私たちが重視したのは、目に見えるゲームを作るとき、その下に一貫したシステムが存在する状態を整えることでした。",
+      "次の段階は実装です。",
+    ].join("\n\n"),
+  },
   "brain-anatomy-information-flow-update": {
     title: "脳の解剖学と情報フロー：中間アップデート",
     description: "研究資料『脳の解剖学と情報フロー』の公開に合わせた中間アップデート。",
@@ -70,7 +123,7 @@ const postText: Record<string, PostText> = {
     ].join("\n\n"),
   },
   "february-umbrella-update": {
-    title: "2月総合アップデート",
+    title: "2026年2月 — 総括アップデート",
     description: "カノン、制作パイプライン、コミュニケーション設計、TTRPG テストをまとめた更新。",
     body: [
       "こんにちは。",
@@ -360,18 +413,14 @@ const projectText: Record<string, ProjectText> = {
 
 const authorText: Record<string, AuthorText> = {
   "sam-starling": {
-    role: "共同設立者 · Full-Stack Web Engineer · Gameplay Systems & Technical Design",
-    description: "実運用システム、顧客案件、応用エンジニアリングを通じて形成され、現在はウェブ基盤、ゲームプレイシステム、技術設計、研究を担当する Zhovten Games 共同設立者。",
+    role: "Senior Full-Stack Web Engineer · Systems Designer",
+    description: "ソフトウェアアーキテクチャ、ゲームシステム、技術研究、応用エンジニアリングに取り組むシニア・フルスタックウェブエンジニア兼システムデザイナー。",
+    skills: [],
+    languages: [],
+    tools: [],
+    profileLinks: [{"kind": "linkedin", "url": "https://www.linkedin.com/in/pan-canon/"}, {"kind": "orcid", "url": "https://orcid.org/0009-0009-2621-6372"}, {"kind": "github", "url": "https://github.com/pan-canon", "note": "私についての詳しいドキュメント"}],
+    body: "こんにちは。Samです。シニア・フルスタックウェブエンジニア兼システムデザイナーとして、ソフトウェアアーキテクチャ、ゲームシステム、技術研究、応用エンジニアリングに取り組んでいます。\n\n共同設立したZhovten Gamesでは、ゲームプレイとナラティブをシステムのレベルで扱っています。対象は、ルール、依存関係、進行、プロジェクトのロジック、そして物語の意図を実装につなぐ構造です。スタジオでの私の役割は、主にシステム設計と実装に集中しています。スタジオ全体の運営方針を統括する役割とは、責任の範囲が異なります。\n\nまた、Zhovten Gamesの実務IT・エンジニアリング事業であるIRON CREEDを共同設立し、その基礎となる構想の立ち上げにも携わりました。私にとって、これは個人のフリーランス業務から、共通のブランドを持つエンジニアリング事業への質的な転換を意味します。業務は引き続き顧客とプロジェクトを中心に据えながら、共通の対外的なアイデンティティ、再利用可能な手法、文書化された基準、そしてより明確なエンジニアリング上の立場のもとで進められています。IRON CREEDでの私の役割は、スタジオでの役割よりも範囲が広く、責任の水準も高いものです。エンジニアリングのメンターとして、技術方針や作業手法の形成に関わり、事業全体のアーキテクチャと実装に関する意思決定を支えています。\n\n私は、アーキテクチャ、文書化、実装、検証がつながった仕事を重視しています。現在の業務の多くは、三つの実践を軸にしています。プロジェクトのガバナンスとアーキテクチャ上の制約を定めるCode Constitution、標準化されたリポジトリのライセンス運用、そしてLLM支援開発を構造化し検証可能にするPrompt-Literate Workflowです。\n\nCode Constitution:  \n[https://doi.org/10.5281/zenodo.21894242](https://doi.org/10.5281/zenodo.21894242)\n\nRepository Licensing Policy:  \n[https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy](https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy)\n\nPrompt-Literate Workflow:  \n[https://github.com/IRONCREED/prompt-literate-workflow](https://github.com/IRONCREED/prompt-literate-workflow)\n\n「Senior」という表現は、エンジニアリングにおける責任範囲と自律性を示すために使っています。曖昧な問題を定義し、制約やリスクを見極め、アーキテクチャ上の判断を行って根拠を説明し、結果を検証し、必要に応じて未知の技術や変化した技術を改めて確認できることを意味します。あらゆるツールを百科事典のように網羅していることや、すべてのフレームワーク、プラットフォーム、ツールの最新状況を常に把握していることは意味しません。",
     status: "活動中",
-    skills: ["https://github.com/pan-canon"],
-    languages: ["English", "Українська", "Русский"],
-    tools: ["JavaScript / TypeScript", "PHP", "C++", "SQL", "WordPress / Laravel"],
-    body: [
-      "私のエンジニアリング実務は、事業と現実の応用課題によって鍛えられました。サポートキュー、壊れたシステム、制作期限、顧客リスク、そして実際のユーザーに耐える必要のある判断です。2011年、18歳で uCoz のテクニカルサポートから IT 分野に入り、曖昧な報告を再現可能な案件、診断、Jira ワークフローへ変換しました。",
-      "その後は QA と製品品質に携わり、機能テスト、不具合再現、システム挙動分析、開発者との直接協働を経験しました。後に Scuba Space で二言語コピーライティングチームを率い、制作フロー、編集レビュー、コンテンツ品質管理を構築しました。",
-      "2019年以降の主軸は full-stack web engineering です。クライアント／サーバー開発、WordPress、Laravel、API、webhook、deployment、アーキテクチャ、セキュリティ、技術コンサルティングを扱います。制作現場から得た単純で厳しい原則があります。システムの価値は、プレゼンテーションが終わった後も動き続けるものによって決まります。",
-      "Zhovten Games では、ウェブ基盤、ゲームプレイシステム、技術設計、プロトタイプ、ナラティブ／ゲームロジック、各プロジェクトを支える研究パイプラインに取り組んでいます。現在の技術プロフィールと進行中の仕事は [GitHub](https://github.com/pan-canon) にまとめています。",
-    ].join("\n\n"),
   },
   "oksana-dubinetska": {
     role: "設立者 · Lead Game Designer · Narrative & Technical Game Design",
@@ -411,7 +460,7 @@ const ja: LocaleContent = {
     aboutBody: "Zhovten Games は、2025年12月に Oksana Dubinetska と Sam Starling が設立した独立系ゲームスタジオです。ナラティブゲームデザイン、ゲームプレイシステム、ウェブエンジニアリング、技術実験、公開研究が交わる領域で活動しています。\n\n## GitHub\n\n- [Oksana Dubinetska · 事業とガバナンス](https://github.com/FOP-Oksana-Dubinetska)\n- [Zhovten Games · スタジオリポジトリ](https://github.com/Zhovten-Games)\n- [IRONCREED · 研究と出版](https://github.com/IRONCREED)",
     contactTitle: "お問い合わせ",
     contactDescription: "Zhovten Games へのお問い合わせ",
-    contactBody: "共同制作、出版、メディアに関するご相談は、以下の連絡先へお寄せください。",
+    contactBody: "共同制作、出版、メディアに関するご相談は、以下の連絡先へお寄せください。\n\n[Zhovten GamesのLinkedIn](https://www.linkedin.com/company/zhovten-games/)",
   },
   posts: localizePosts((en.posts as Post[]).map((post) => ({ ...post, ...postText[post.slug] })), "ja"),
   projects: localizeProjects((en.projects as Project[]).map((project) => ({ ...project, ...projectText[project.slug] })), "ja"),

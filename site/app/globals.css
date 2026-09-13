@@ -700,6 +700,7 @@ main > * + * {
 }
 
 .zg-rich-content {
+  overflow-wrap: anywhere;
   max-width: 76ch;
 }
 

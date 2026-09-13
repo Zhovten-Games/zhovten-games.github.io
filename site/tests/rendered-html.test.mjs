@@ -157,7 +157,12 @@ test("publishes founder histories, organization links, social networks, and the 
     assert.ok(sam.includes("https://github.com/pan-canon"));
     assert.ok(sam.includes("https://www.linkedin.com/in/pan-canon/"));
     assert.ok(sam.includes("https://orcid.org/0009-0009-2621-6372"));
-    assert.ok(sam.includes("Full-Stack Web Engineer"));
+    assert.ok(sam.includes("Senior Full-Stack Web Engineer · Systems Designer"));
+    assert.ok(!sam.includes('class="zg-profile__groups"'));
+    assert.ok(sam.includes("https://doi.org/10.5281/zenodo.21894242"));
+    assert.ok(sam.includes("https://github.com/IRONCREED/prompt-literate-workflow"));
+    const contact = await text(`${edition.prefix}/contact/`);
+    assert.match(contact, /data-rich-content="true"[\s\S]*?href="https:\/\/www\.linkedin\.com\/company\/zhovten-games\/"/);
 
     const oksana = await text(`${edition.prefix}/authors/oksana-dubinetska/`);
     assert.ok(oksana.includes("https://www.linkedin.com/in/oksanadubinetska/"));
@@ -183,7 +188,7 @@ test("publishes all registered items in every locale sitemap", async () => {
   const register = JSON.parse(
     await readFile(new URL("../governance/content-publication-register.json", import.meta.url)),
   );
-  assert.equal(register.publications.length, 13);
+  assert.equal(register.publications.length, 15);
   assert.equal(register.exclusions.length, 1);
   assert.equal(register.projectDecisions.published.length, 9);
   assert.equal(register.projectDecisions.excluded.length, 0);
@@ -194,7 +199,7 @@ test("publishes all registered items in every locale sitemap", async () => {
     assert.ok(index.includes(`https://zhovten.games/sitemaps/${edition.locale}.xml`));
     const sitemap = await text(`/sitemaps/${edition.locale}.xml`, "application/xml");
     const urls = [...sitemap.matchAll(/<url>/g)];
-    assert.equal(urls.length, 31, `${edition.locale} sitemap URL count`);
+    assert.equal(urls.length, 33, `${edition.locale} sitemap URL count`);
 
     for (const publication of register.publications) {
       const prefix = edition.prefix;
@@ -202,7 +207,12 @@ test("publishes all registered items in every locale sitemap", async () => {
         sitemap.includes(`https://zhovten.games${prefix}/blog/${publication.slug}/`),
         `${edition.locale} missing ${publication.slug}`,
       );
-      assert.ok(sitemap.includes(`<lastmod>${publication.date}</lastmod>`));
+      assert.ok(sitemap.includes(
+        `<loc>https://zhovten.games${prefix}/blog/${publication.slug}/</loc><lastmod>${publication.modifiedDate ?? publication.date}</lastmod>`,
+      ));
+      const postHtml = await text(`${prefix}/blog/${publication.slug}/`);
+      assert.match(postHtml.replaceAll("<!-- -->", ""), new RegExp(`<span class="zg-meta-label">[^<]+</span> ${publication.date}</p>`));
+      assert.ok(postHtml.includes(`"datePublished":"${publication.date}"`));
     }
 
     for (const other of editions) {
@@ -213,6 +223,62 @@ test("publishes all registered items in every locale sitemap", async () => {
         );
       }
     }
+  }
+});
+
+test("publishes the Summer 2026 umbrella update in all four source locales", async () => {
+  const localizedEvidence = {
+    en: ["Summer 2026 — Umbrella Update", "From the Scenario to the Game Core", "The next stage is implementation."],
+    uk: ["Літо 2026 — зонтичне оновлення", "Від сценарію до Game Core", "Наступний етап — реалізація."],
+    ru: ["Лето 2026 — зонтичное обновление", "От сценария к Game Core", "Следующий этап — реализация."],
+    ja: ["2026年夏 — 総括アップデート", "シナリオからGame Coreへ", "次の段階は実装です。"],
+  };
+
+  for (const edition of editions) {
+    const html = await text(`${edition.prefix}/blog/summer-2026-umbrella-update/`);
+    for (const fragment of localizedEvidence[edition.locale]) {
+      assert.ok(html.includes(fragment), `${edition.locale} missing ${fragment}`);
+    }
+    assert.ok(html.includes("https://doi.org/10.5281/zenodo.20608558"));
+    assert.ok(html.includes("https://github.com/Zhovten-Games/literate-programming"));
+    assert.ok(html.includes("https://web.zhovten.games/en/pages/about"));
+  }
+});
+
+test("aligns umbrella headings and publishes a professional contest log in every locale", async () => {
+  const headings = {
+    en: "February 2026 — Umbrella Update",
+    uk: "Лютий 2026 — зонтичне оновлення",
+    ru: "Февраль 2026 — зонтичное обновление",
+    ja: "2026年2月 — 総括アップデート",
+  };
+  const profileNotes = {
+    en: "Detailed documentation about me",
+    uk: "Докладна документація про мене",
+    ru: "Подробная документация обо мне",
+    ja: "私についての詳しいドキュメント",
+  };
+  for (const edition of editions) {
+    const february = await text(`${edition.prefix}/blog/february-umbrella-update/`);
+    assert.ok(february.includes(headings[edition.locale]));
+    const map = await text(`${edition.prefix}/projects/interdead/`);
+    assert.ok(map.includes(headings[edition.locale]));
+    const sam = await text(`${edition.prefix}/authors/sam-starling/`);
+    assert.ok(sam.includes(`(${profileNotes[edition.locale]})`));
+    assert.match(sam, /Code Constitution:<br\/?><a href="https:\/\/doi.org\/10.5281\/zenodo.21894242"/);
+
+    const path = `${edition.prefix}/blog/oksana-dubinetska-number-of-the-beast-2024/`;
+    const contest = await text(path);
+    assert.ok(contest.includes('"datePublished":"2024-06-01"'));
+    assert.ok(contest.includes('"dateModified":"2026-09-13"'));
+    assert.ok(contest.includes("Шелест листя (Горіх)"));
+    assert.ok(contest.includes("19"));
+    assert.ok(contest.includes("https://babai.co.ua/contests/number_beast-2024/results?list=120"));
+    assert.doesNotMatch(contest, /Tykhon|A24|My wife|Keep it up/);
+    assert.ok(contest.includes(`rel="canonical" href="https://zhovten.games${path}"`));
+    assertClosedDocument(contest, path);
+    const oksana = await text(`${edition.prefix}/authors/oksana-dubinetska/`);
+    assert.ok(oksana.includes(path));
   }
 });
 
@@ -293,11 +359,11 @@ test("identifies the public source and versioned build", async () => {
     assert.ok(html.includes(
       "https://github.com/Zhovten-Games/zhovten-games.github.io/tree/main/site",
     ));
-    assert.match(html, /v0\.2\.0(?: · [0-9a-f]{8})?/);
+    assert.match(html, /v0\.3\.1(?: · [0-9a-f]{8})?/);
   }
 
   const governance = await text("/governance/");
-  assert.ok(governance.includes("v0.2.0"));
+  assert.ok(governance.includes("v0.3.1"));
 });
 
 test("keeps the original research snapshot distinct from the later DOI wrapper", async () => {

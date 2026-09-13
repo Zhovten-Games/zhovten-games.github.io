@@ -1,9 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "registryId": "zg-site-register-publications-001",
-  "revision": "2026-08-20",
+  "revision": "2026-09-13",
   "canonicalEditorialLocale": "en",
-  "publishedLocales": ["en", "uk", "ru", "ja"],
+  "publishedLocales": [
+    "en",
+    "uk",
+    "ru",
+    "ja"
+  ],
   "rules": {
     "preserveSourceDate": true,
     "requireLocaleParity": true,
@@ -15,83 +20,178 @@
       "slug": "zhovten-games-interdead-launch",
       "date": "2025-10-31",
       "type": "announcement",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 14,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7390135740048908288",
+        "publishingAuthor": "Oksana Dubinetska"
+      }
     },
     {
       "slug": "psyframework-screening-prototype",
       "date": "2025-10-31",
       "type": "announcement",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 15,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7390063601119551489",
+        "publishingAuthor": "Oksana Dubinetska"
+      }
     },
     {
       "slug": "transmedia-in-universe-narrative",
       "date": "2025-11-07",
       "type": "note",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 13,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7392603344701255681",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "echo-of-an-unfading-memory-announcement",
       "date": "2025-12-29",
       "type": "announcement",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 12,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7411358433720934400",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "brain-anatomy-information-flow-update",
       "date": "2026-01-12",
       "type": "devlog",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 11,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7416495898828009473",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "why-canon-contract-interdead",
       "date": "2026-02-20",
       "type": "case",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 9,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7430589952234680320",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "video-artifact-pipeline-interdead",
       "date": "2026-02-20",
       "type": "case",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 8,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7430597493719175169",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "niro-communication-architecture",
       "date": "2026-02-20",
       "type": "case",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 7,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7430694441960546305",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "february-umbrella-update",
       "date": "2026-02-23",
       "type": "announcement",
-      "origin": "linkedin-history"
+      "origin": "linkedin-history",
+      "dateEvidence": {
+        "registryEntry": 6,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7431532189810397184",
+        "publishingAuthor": "Oksana Dubinetska"
+      },
+      "modifiedDate": "2026-09-13"
     },
     {
       "slug": "canon-horror-series-language-as-infection",
       "date": "2026-05-01",
       "type": "research_note",
       "origin": "linkedin-history",
-      "sourceUrl": "https://doi.org/10.5281/zenodo.19773963"
+      "sourceUrl": "https://doi.org/10.5281/zenodo.19773963",
+      "dateEvidence": {
+        "registryEntry": 5,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7456052419244929024",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "interdead-noir-itchio-snapshot",
       "date": "2026-05-01",
       "type": "announcement",
       "origin": "linkedin-history",
-      "sourceUrl": "https://zhovten-games.itch.io/interdead"
+      "sourceUrl": "https://zhovten-games.itch.io/interdead",
+      "dateEvidence": {
+        "registryEntry": 4,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7456075893560606721",
+        "publishingAuthor": "Sam Starling"
+      }
     },
     {
       "slug": "canon-horror-series-doi",
-      "date": "2026-05-01",
+      "date": "2026-05-05",
       "type": "external_article",
       "origin": "recovered-adapted-wrapper",
-      "sourceUrl": "https://doi.org/10.5281/zenodo.20037828"
+      "sourceUrl": "https://doi.org/10.5281/zenodo.20037828",
+      "dateEvidence": {
+        "sourceUrl": "https://zenodo.org/api/records/20037828",
+        "metadata": "metadata.publication_date=2026-05-05"
+      },
+      "modifiedDate": "2026-09-13"
     },
     {
       "slug": "inrium-emotional-investigation-tempo",
-      "date": "2026-05-01",
+      "date": "2026-02-10",
       "type": "external_article",
       "origin": "recovered-adapted-wrapper",
-      "sourceUrl": "https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti"
+      "sourceUrl": "https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti",
+      "dateEvidence": {
+        "sourceUrl": "https://blog.inrium.org.ua/yak-zrobiti-rozsliduvannya-emoczijnim-temp-v-detektivnomu-vanshoti",
+        "metadata": "article:published_time=2026-02-10T10:07:03+00:00"
+      },
+      "modifiedDate": "2026-09-13"
+    },
+    {
+      "slug": "summer-2026-umbrella-update",
+      "date": "2026-09-12",
+      "type": "announcement",
+      "origin": "google-drive-website-registry",
+      "sourceRecord": "Website Registry / ENTRY 001 — SUMMER 2026 — UMBRELLA UPDATE",
+      "sourceUrl": "https://drive.google.com/drive/folders/1UPopZtKMxLb66CgDC6YKdeRH79xBd-Me",
+      "dateEvidence": {
+        "registryEntry": 3,
+        "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7504549611525599232",
+        "publishingAuthor": "Oksana Dubinetska"
+      },
+      "modifiedDate": "2026-09-13"
+    },
+    {
+      "slug": "oksana-dubinetska-number-of-the-beast-2024",
+      "date": "2024-06-01",
+      "modifiedDate": "2026-09-13",
+      "type": "note",
+      "origin": "retrospective-contest-log",
+      "sourceUrl": "https://babai.co.ua/contests/number_beast-2024/texts/6646622910cae",
+      "dateEvidence": {
+        "basis": "Historical event date: final concluded 2024-06-01 at 22:29 according to the organizer. This is not an inferred LinkedIn publication date.",
+        "sourceUrl": "https://babai.co.ua/contests/number_beast-2024",
+        "resultUrl": "https://babai.co.ua/contests/number_beast-2024/results?list=120",
+        "result": "19th place; finalist; 35 points"
+      },
+      "editorialEvidence": "The user confirms this was Oksana Dubinetska’s first literary contest and authorizes a professional log entry with family details and personal congratulations removed."
     }
   ],
   "projectDecisions": {
@@ -124,5 +224,27 @@
       "decision": "exclude-from-public-archive",
       "reason": "Ephemeral scheduling notice whose durable information was superseded by the February publications. The source record is preserved in the supplied history."
     }
-  ]
+  ],
+  "dateReview": {
+    "checkedAt": "2026-09-13",
+    "source": "https://docs.google.com/document/d/161O_eLRDkS1-gFWjxQt4oqc1ONbqfq8Wj1gT_dmvA6Y",
+    "note": "Twelve existing posts matched by identity against the current LinkedIn registry. Two external wrappers verified against their own publication metadata. Publishing-author metadata identifies the LinkedIn sender and does not replace the website editorial author set.",
+    "changes": [
+      {
+        "slug": "summer-2026-umbrella-update",
+        "before": "2026-09-10",
+        "after": "2026-09-12"
+      },
+      {
+        "slug": "inrium-emotional-investigation-tempo",
+        "before": "2026-05-01",
+        "after": "2026-02-10"
+      },
+      {
+        "slug": "canon-horror-series-doi",
+        "before": "2026-05-01",
+        "after": "2026-05-05"
+      }
+    ]
+  }
 }

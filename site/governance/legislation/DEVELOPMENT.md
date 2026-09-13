@@ -4,7 +4,7 @@ Status: candidate derivative act pending human ratification.
 
 Act identifier: `zg-site-act-development-001`.
 
-Revision: `0.2.0-candidate`.
+Revision: `0.3.0-candidate`.
 
 Constitutional basis: the pinned Code Constitution and P04, P06, P07, P12,
 P15, P16, and P17 of `governance/PROFILE.md`.
@@ -137,7 +137,7 @@ Before checkpoint publication, run `npm test`. The checks must establish:
 
 - a successful production build;
 - all four locale routes render;
-- every locale has the same 13 post slugs, 9 project slugs, and 2 author slugs;
+- every locale has the same 14 post slugs, 9 project slugs, and 2 author slugs;
 - source dates and author identifiers are invariant across locales;
 - the research announcement points to DOI `10.5281/zenodo.19773963`, while the
   separate v0.2 wrapper points to `10.5281/zenodo.20037828`;
@@ -147,7 +147,7 @@ Before checkpoint publication, run `npm test`. The checks must establish:
   `</html>` boundary;
 - reciprocal IT-track links, public team profiles, the personal Telegram link,
   and the InterDead resource map resolve to the declared targets;
-- the footer and governance route identify `v0.2.0` and the authorized public
+- the footer and governance route identify `v0.3.0` and the authorized public
   source projection;
 - the Constitution and licensing-policy gitlinks match their recorded SHAs;
 - `LICENSE.md` declares the scoped licensing map.
@@ -208,3 +208,4 @@ founders may adopt, revise, or reject it through the Profile procedure.
 | --- | --- | --- |
 | `0.1.0-candidate` | 2026-08-20 | Initial site-specific source, editorial, localization, SEO, release, and licensing rules |
 | `0.2.0-candidate` | 2026-09-07 | Added scoped source projection, build provenance, InterDead/profile link coverage, and valid HTML document boundaries |
+| `0.3.0-candidate` | 2026-09-10 | Added the four-locale Summer 2026 umbrella publication and expanded sitemap parity checks to 14 posts |

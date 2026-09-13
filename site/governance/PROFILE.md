@@ -229,7 +229,7 @@ locale rules must be written before they are enforced.
 
 | Act ID | Name | Status |
 | --- | --- | --- |
-| `zg-site-act-development-001` | Website development and publication regulation | `0.2.0-candidate` |
+| `zg-site-act-development-001` | Website development and publication regulation | `0.3.0-candidate` |
 | `zg-site-register-publications-001` | Content publication register | Candidate evidence |
 
 ## Project Specification Map

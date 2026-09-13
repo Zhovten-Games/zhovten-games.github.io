@@ -485,6 +485,10 @@ export function buildMetadata(locale: Locale, segments: string[]): Metadata {
     },
     openGraph: {
       type: descriptor.kind === "post" ? "article" : "website",
+      ...(descriptor.post ? {
+        publishedTime: descriptor.post.date,
+        modifiedTime: descriptor.post.modifiedDate ?? descriptor.post.date,
+      } : {}),
       title: descriptor.title,
       description: descriptor.description,
       url: canonical,
@@ -816,6 +820,7 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
               headline: descriptor.post.title,
               description: descriptor.post.description,
               datePublished: descriptor.post.date,
+              dateModified: descriptor.post.modifiedDate ?? descriptor.post.date,
               author: descriptor.post.authors.map((slug) => ({
                 "@type": "Person",
                 name: content.authors.find((author) => author.slug === slug)?.name ?? slug,
@@ -958,17 +963,18 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
                   return (
                     <li key={link.url}>
                       <a href={link.url} rel="noopener noreferrer" target="_blank">{label}</a>
+                      {link.note ? ` (${link.note})` : null}
                     </li>
                   );
                 })}
               </ul>
             </section>
-            <div className="zg-profile__groups">
+            {(descriptor.author.skills.length + descriptor.author.languages.length + descriptor.author.tools.length > 0) && <div className="zg-profile__groups">
               {[
                 ["skills", l.skills],
                 ["languages", l.languages],
                 ["tools", l.tools],
-              ].map(([key, label]) => (
+              ].filter(([key]) => descriptor.author![key as "skills" | "languages" | "tools"].length > 0).map(([key, label]) => (
                 <section className="zg-profile__group" key={key}>
                   <h2>{label}</h2>
                   <ul>
@@ -987,7 +993,7 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
                   </ul>
                 </section>
               ))}
-            </div>
+            </div>}
             <section className="zg-log-section zg-panel--log">
               <h2>{l.studioLog}</h2>
               <LogList

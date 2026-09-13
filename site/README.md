@@ -2,7 +2,7 @@
 
 Public studio site and multilingual publication archive for Zhovten Games.
 
-Current release line: `v0.2.0`.
+Current release line: `v0.3.1`.
 
 Public source projection: [Zhovten-Games/zhovten-games.github.io/site](https://github.com/Zhovten-Games/zhovten-games.github.io/tree/main/site).
 
@@ -27,7 +27,7 @@ authorship, and external-reference identity across all four locales.
 
 ## Content inventory
 
-The archive contains 13 publications, 9 project records, and 2 author records.
+The archive contains 15 publications, 9 project records, and 2 author records.
 The two recovered external wrappers preserve the Canon Horror DOI corpus and
 Oksana Dubinetska's Inrium article. The temporary January postponement notice is
 kept in the source history and deliberately excluded from the public archive.

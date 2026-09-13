@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 import type { Locale } from "./site-types";
 
 function localizedHref(href: string, locale: Locale): string {
@@ -176,7 +176,12 @@ export function Markdown({
       index += 1;
     }
     blocks.push(
-      <p key={"p-" + index}>{inline(paragraph.join(" "), locale)}</p>,
+      <p key={"p-" + index}>{paragraph.join("\n").split(/ {2,}\n/).map((part, partIndex) => (
+        <Fragment key={partIndex}>
+          {partIndex > 0 && <br />}
+          {inline(part.replaceAll("\n", " "), locale)}
+        </Fragment>
+      ))}</p>,
     );
   }
 
