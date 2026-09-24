@@ -423,23 +423,29 @@ const authorText: Record<string, AuthorText> = {
     status: "活動中",
   },
   "oksana-dubinetska": {
-    role: "設立者 · Lead Game Designer · Narrative & Technical Game Design",
-    description: "ナラティブシステム、分岐クエストロジック、感情的テンポ、世界構築、ゲーム制作の技術面を中心に活動する Zhovten Games 設立者。",
+    role: "Founder · Lead Game Designer · Narrative & Technical Game Design",
+    description: "Zhovten Games の設立者兼 Lead Game Designer。ナラティブシステム、クエストロジック、テクニカルゲームデザイン、制作文書、実装に関わる意思決定を扱います。",
     status: "活動中",
     skills: ["ナラティブデザイン", "ゲームデザイン", "分岐クエスト設計", "世界構築", "テクニカルゲームデザイン"],
     languages: ["English", "Українська", "Русский"],
     tools: ["Unity production", "ナラティブ文書", "クエストフロー設計", "プレイテスト"],
     body: [
-      "幼い頃から読書が好きでした。通常より早く上級学年へ進み、優等で卒業しました。その後、Kyiv National Linguistics University で翻訳学の学士号を取得し（2014〜2018年）、2017年には Kyiv School of Journalism でも学びました。",
-      "若い頃からコピーライティングに携わり、調査・商業文書から脚本、Game Master、そして最終的にゲームデザインへ進みました。ゲームデザインは、ナラティブ、システム、制作が一つの専門領域として結びつく場所です。現在は、クエストロジック、インタラクティブ構造、実装制約、ナラティブ・アート・コード間の協働など、ゲームの技術面への関心を深めています。",
+      "Lead Game Designer およびテクニカルサポート担当として、6年以上の総合的な職務経験があり、そのうち4年以上は商用ゲーム制作に携わっています。キャリアは商業ライティングから始まり、脚本、Game Master を経て、プロのゲームデザインとナラティブデザインへ移行しました。現在の商用業務は、production 環境のウェブシステム、トラブルシューティング、ドキュメンテーション、運用サポートが中心です。Zhovten Games では、ナラティブシステム、クエストロジック、制作文書、テクニカルゲームデザイン、実装に関わる判断を含むゲームデザイン業務を主導しています。",
+      "1年以上にわたりウェブ開発とプログラミングを体系的に学び、WordPress、PHP、JavaScript、HTML/CSS、Git、GitHub を実務的に扱っています。Zhovten Games と一部の契約業務でゲーム／ナラティブデザインを継続しながら、Manual QA と隣接する技術領域にも取り組んでいます。",
       "## 経歴",
-      "### [Zhovten Games](https://www.linkedin.com/company/109201497/) — Lead Game Designer / Founder\n\n**2025年12月〜現在**\n\nゲームコンセプト、ナラティブシステム、クエストロジック、制作文書、分野横断型の実装を設計しています。現在の業務はテクニカルゲームデザインと、デザイン・Unity・エンジニアリングの接点まで広がっています。",
-      "### GrandMA Studios — Game Designer\n\n**2021年10月〜2025年12月 · Kyiv, Ukraine**\n\n複数の HOPA タイトルで概要から最終発売までナラティブ開発を主導しました。脚本、クエストフロー、インタラクティブシーケンス、オブジェクト説明、キャラクター会話を執筆し、パズル、調査、クエストチェーンの分岐ナラティブロジックを、明確な UX を保ちながら構築しました。アーティストやプログラマーと協働し、物語、メカニクス、テンポ、環境ナラティブを整合させました。Whispered Secrets と Mystery Case Files の両シリーズで5作品を発売しました。*Mystery Case Files: The Dalimar Legacy* は、パブリッシャーのプラットフォームにおける歴代 PC ベストセラー第2位に達しました。",
-      "### Clockwork Magick — Game Master\n\n**2020年10月〜2021年8月 · Kyiv, Ukraine**\n\n一貫したシナリオ、個性的なキャラクター、ロケーション、生きた NPC を制作しました。物語の要件に合わせてゲームシステムを調整し、独自システムをプレイテストして、実際のプレイ結果から修正しました。",
-      "### Rocketslides — プレゼンテーション／広告案件の脚本家\n\n**2020年7月〜2021年6月**\n\nデザイナーと協働して動画、講演、プレゼンテーションの脚本を執筆し、デザインとレイアウトの制作要件をまとめました。",
-      "### SM Banking Club — Copywriter\n\n**2019年4月〜2020年3月**\n\nモバイルバンキングに関する英語圏の調査を読み込み、構造化された分析レビューとして執筆しました。",
+      "### HOSTiQ — Technical Support Specialist\n\n**2026年〜現在**\n\n- production ウェブシステムとユーザーから報告された技術的問題を扱います。\n- 障害を調査し、問題を再現し、考えられる根本原因を特定し、解決策を文書化して技術的な所見を伝えます。\n- WordPress 管理、サイト設定、ホスティング環境、DNS、cPanel、Git/GitHub のワークフロー、運用ドキュメントを扱います。",
+      "### Zhovten Games — Founder / Lead Game Designer\n\n**2025年10月〜現在**\n\n- ゲームコンセプト、ナラティブ／ゲームプレイシステム、クエストロジック、制作文書、分野横断の実装を設計します。\n- デザイン意図をルール、依存関係、実装上の制約、検証シナリオへ落とし込みます。\n- プロトタイプテスト、フィードバックサイクル、コンテンツ整合性、複数職種をまたぐ制作フローに取り組みます。\n- 現在の業務は、テクニカルゲームデザインと、デザイン・Unity・エンジニアリングの境界まで広がっています。",
+      "### GrandMA Studios — Game Designer / Narrative Game Designer\n\n**2021年10月〜2025年12月**\n\n- 複数の HOPA タイトルで、概要から最終リリースまでナラティブ開発を主導しました。\n- 脚本、クエストフロー、インタラクティブシーケンス、オブジェクト説明、キャラクター会話を執筆しました。\n- パズル、調査、クエストチェーンに対する分岐ナラティブロジックを、明確な UX を保ちながら構築しました。\n- アーティスト、開発者、QA と協働し、物語、メカニクス、テンポ、実装、環境ナラティブを整合させました。\n- Whispered Secrets と Mystery Case Files の両フランチャイズで5作品のリリースに参加しました。*Mystery Case Files: The Dalimar Legacy* は、パブリッシャーのプラットフォームにおける歴代 PC ベストセラー第2位に達しました。",
+      "### Clockwork Magick — Game Master\n\n**2020年10月〜2021年8月**\n\n- 完結したシナリオ、個性的なキャラクター、ロケーション、生きた NPC を制作しました。\n- 物語の要件に合わせてゲームシステムを調整し、独自システムをプレイテストして、実際のプレイ結果から改善しました。",
+      "### Rocketslides — Presentation and Advertising Scriptwriter\n\n**2020年7月〜2021年6月**\n\n- デザイナーと協働し、動画、講演、プレゼンテーションの脚本を執筆しました。\n- デザインとレイアウトの制作要件をまとめました。",
+      "### SM Banking Club — Copywriter\n\n**2019年4月〜2020年3月**\n\n- モバイルバンキングに関する英語圏の資料を調査し、専門読者向けの構造化された分析レビューにまとめました。",
+      "### Commercial Writer — Freelance / additional client work\n\n**2018年〜2020年**\n\n- Web Academy と content.ua を含むデジタル、教育、商業プロジェクト向けにコンテンツを制作し、複雑な情報を異なる読者と形式に合わせて整理しました。",
+      "## プロジェクト経験",
+      "### InterDead — Narrative Horror Game Project\n\n- ナラティブシステム、ゲームプレイ概念、インタラクティブシナリオ、プロジェクトロジックを設計・テストします。\n- ドキュメント、想定挙動、実装の整合性を維持します。\n- デザイン、開発、検証、技術ワークフローを横断して作業します。",
+      "## 学歴\n\n**Kyiv National Linguistics University**  \n翻訳学学士 · 2014–2018\n\n**Kyiv School of Journalism** · 2017",
+      "## Professional development\n\n**Web Development & Programming**  \nWordPress、PHP、JavaScript、HTML/CSS、Git、GitHub と関連するウェブ開発ワークフローについて、1年以上の体系的な学習と実践経験があります。"
     ].join("\n\n"),
-  },
+  }
 };
 
 const ja: LocaleContent = {
@@ -457,7 +463,7 @@ const ja: LocaleContent = {
     authorsTitle: "著者",
     aboutTitle: "スタジオについて",
     aboutDescription: "Zhovten Games について",
-    aboutBody: "Zhovten Games は、2025年12月に Oksana Dubinetska と Sam Starling が設立した独立系ゲームスタジオです。ナラティブゲームデザイン、ゲームプレイシステム、ウェブエンジニアリング、技術実験、公開研究が交わる領域で活動しています。\n\n## GitHub\n\n- [Oksana Dubinetska · 事業とガバナンス](https://github.com/FOP-Oksana-Dubinetska)\n- [Zhovten Games · スタジオリポジトリ](https://github.com/Zhovten-Games)\n- [IRONCREED · 研究と出版](https://github.com/IRONCREED)",
+    aboutBody: "Zhovten Games は、2025年10月に Oksana Dubinetska と Sam Starling が設立した独立系ゲームスタジオです。ナラティブゲームデザイン、ゲームプレイシステム、ウェブエンジニアリング、技術実験、公開研究が交わる領域で活動しています。\n\n## GitHub\n\n- [Oksana Dubinetska · 事業とガバナンス](https://github.com/FOP-Oksana-Dubinetska)\n- [Zhovten Games · スタジオリポジトリ](https://github.com/Zhovten-Games)\n- [IRONCREED · 研究と出版](https://github.com/IRONCREED)",
     contactTitle: "お問い合わせ",
     contactDescription: "Zhovten Games へのお問い合わせ",
     contactBody: "共同制作、出版、メディアに関するご相談は、以下の連絡先へお寄せください。\n\n[Zhovten GamesのLinkedIn](https://www.linkedin.com/company/zhovten-games/)",
