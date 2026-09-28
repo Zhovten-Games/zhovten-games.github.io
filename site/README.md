@@ -2,7 +2,7 @@
 
 Public studio site and multilingual publication archive for Zhovten Games.
 
-Current release line: `v0.4.0`.
+Current release line: `v0.4.1`.
 
 The author directory follows the reviewed Master-CV projections and lists
 Oksana first. Public policies cover AI use, licensing, privacy, and terms in

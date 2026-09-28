@@ -83,8 +83,8 @@ const englishLabels = {
   publicProfiles: "Public team profiles",
   personalTelegram: "Personal Telegram channel",
   itTrackTitle: "IT development is a separate track",
-  itTrackBody: "The studio’s IT development experience is intentionally excluded from this list of game projects. It is presented on the IRON CREED about page.",
-  itTrackLink: "Open IRON CREED",
+  itTrackBody: "The studio’s IT development experience is intentionally excluded from this list of game projects. It is presented on the IRONCREED about page.",
+  itTrackLink: "Open IRONCREED",
   governanceDescription: "Code Constitution, development legislation, and licensing map.",
   governanceIntro: "This site applies the Code Constitution through a project Founding Profile and a site-specific Development Regulation. The Constitution and shared licensing policy are pinned as Git submodules.",
   governanceStatus: "The project-specific acts are publication candidates pending human ratification by the studio founders.",
@@ -151,8 +151,8 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     publicProfiles: "Публічні профілі команди",
     personalTelegram: "Особистий канал у Telegram",
     itTrackTitle: "ІТ-розробка — окремий напрям",
-    itTrackBody: "Досвід студії в ІТ-розробці навмисно не включено до цього переліку ігрових проєктів. Його представлено на сторінці про IRON CREED.",
-    itTrackLink: "Відкрити IRON CREED",
+    itTrackBody: "Досвід студії в ІТ-розробці навмисно не включено до цього переліку ігрових проєктів. Його представлено на сторінці про IRONCREED.",
+    itTrackLink: "Відкрити IRONCREED",
     governanceDescription: "Кодекс Конституції, регламент розробки та карта ліцензування.",
     governanceIntro: "Сайт застосовує Кодекс Конституції через установчий профіль проєкту та спеціальний Регламент розробки. Конституцію і спільну політику ліцензування закріплено як Git-сабмодулі.",
     governanceStatus: "Проєктні акти є кандидатами цієї публікації та очікують на людську ратифікацію засновниками студії.",
@@ -216,8 +216,8 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     publicProfiles: "Публичные профили команды",
     personalTelegram: "Личный канал в Telegram",
     itTrackTitle: "ИТ-разработка — отдельное направление",
-    itTrackBody: "Опыт студии в ИТ-разработке намеренно не включён в этот список игровых проектов. Он представлен на странице об IRON CREED.",
-    itTrackLink: "Открыть IRON CREED",
+    itTrackBody: "Опыт студии в ИТ-разработке намеренно не включён в этот список игровых проектов. Он представлен на странице об IRONCREED.",
+    itTrackLink: "Открыть IRONCREED",
     governanceDescription: "Кодекс Конституции, регламент разработки и карта лицензирования.",
     governanceIntro: "Сайт применяет Кодекс Конституции через учредительный профиль проекта и специальный Регламент разработки. Конституция и общая политика лицензирования закреплены как Git-субмодули.",
     governanceStatus: "Проектные акты являются кандидатами этой публикации и ожидают человеческой ратификации основателями студии.",
@@ -281,8 +281,8 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     publicProfiles: "チームの公開プロフィール",
     personalTelegram: "個人 Telegram チャンネル",
     itTrackTitle: "IT開発は別の領域です",
-    itTrackBody: "スタジオのIT開発経験は、このゲームプロジェクト一覧から意図的に分離しています。詳細はIRON CREEDの紹介ページに掲載しています。",
-    itTrackLink: "IRON CREEDを開く",
+    itTrackBody: "スタジオのIT開発経験は、このゲームプロジェクト一覧から意図的に分離しています。詳細はIRONCREEDの紹介ページに掲載しています。",
+    itTrackLink: "IRONCREEDを開く",
     governanceDescription: "Code Constitution、開発規程、ライセンスマップ。",
     governanceIntro: "このサイトは、プロジェクト設立プロファイルとサイト固有の開発規程を通じて Code Constitution を適用します。Constitution と共通ライセンスポリシーは Git サブモジュールとして固定されています。",
     governanceStatus: "プロジェクト固有の規程は公開候補であり、スタジオ設立者による人間の批准を待っています。",
@@ -577,9 +577,10 @@ function Footer({ locale }: { locale: Locale }) {
     <footer className="site-footer">
       <p>© 2026 Zhovten Games</p>
       <nav className="site-footer__socials" aria-label="Zhovten Games social networks">
+        <a href="https://zhovten-games.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
+        <a href="https://www.facebook.com/ZhovtenGames" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a href="https://www.linkedin.com/company/zhovten-games/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/Zhovten-Games" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://zhovten-games.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
         <a href="https://discord.gg/vAWYg3jFEp" target="_blank" rel="noopener noreferrer">Discord</a>
       </nav>
       <p>
@@ -983,6 +984,12 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
             <p>{descriptor.author.description}</p>
             <p><strong>{l.status}:</strong> {descriptor.author.status}</p>
             <Markdown locale={locale}>{descriptor.author.body}</Markdown>
+            <section className="zg-profile__languages">
+              <h2>{l.languages}</h2>
+              <ul>
+                {descriptor.author.languages.map((language) => <li key={language}>{language}</li>)}
+              </ul>
+            </section>
             <section className="zg-profile__links">
               <h2>{l.publicProfiles}</h2>
               <ul>
@@ -1003,39 +1010,7 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
                 })}
               </ul>
             </section>
-            {(descriptor.author.skills.length + descriptor.author.languages.length + descriptor.author.tools.length > 0) && <div className="zg-profile__groups">
-              {[
-                ["skills", l.skills],
-                ["languages", l.languages],
-                ["tools", l.tools],
-              ].filter(([key]) => descriptor.author![key as "skills" | "languages" | "tools"].length > 0).map(([key, label]) => (
-                <section className="zg-profile__group" key={key}>
-                  <h2>{label}</h2>
-                  <ul>
-                    {descriptor.author?.[key as "skills" | "languages" | "tools"].map((item) => {
-                      const external = /^https?:\/\//.test(item);
-                      return (
-                        <li key={item}>
-                          {external ? (
-                            <a href={item} target="_blank" rel="noopener noreferrer">
-                              {item.replace(/^https?:\/\//, "")}
-                            </a>
-                          ) : item}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </section>
-              ))}
-            </div>}
-            <section className="zg-log-section zg-panel--log">
-              <h2>{l.studioLog}</h2>
-              <LogList
-                posts={content.posts.filter((post) => post.authors.includes(descriptor.author!.slug))}
-                authors={content.authors}
-                locale={locale}
-              />
-            </section>
+
           </article>
         )}
         {descriptor.kind === "about" && (

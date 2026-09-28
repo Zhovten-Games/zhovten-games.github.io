@@ -74,7 +74,7 @@ For CC BY-SA 4.0 material, credit its authors, identify the work, link to the ca
 
 ## 5. Brand and external work
 
-Publication does not authorize use of the Zhovten Games or IRON CREED identity as evidence of endorsement, partnership, or official origin. Characters, fictional worlds, and game assets receive no license merely by appearing on this site. Portfolio records for other studios describe credited contributions; rights remain with the respective holders.
+Publication does not authorize use of the Zhovten Games or IRONCREED identity as evidence of endorsement, partnership, or official origin. Characters, fictional worlds, and game assets receive no license merely by appearing on this site. Portfolio records for other studios describe credited contributions; rights remain with the respective holders.
 
 ## 6. Public source and releases
 
@@ -215,7 +215,7 @@ Zhovten Games відкрито використовує законні обчи�
 
 ## 5. Бренд і зовнішні роботи
 
-Публікація не дозволяє використовувати ідентичність Zhovten Games або IRON CREED як доказ схвалення, партнерства чи офіційного походження. Персонажі, вигадані світи та ігрові активи не отримують ліцензії лише через появу на сайті. Портфоліо інших студій описує внесок авторів; права залишаються у відповідних власників.
+Публікація не дозволяє використовувати ідентичність Zhovten Games або IRONCREED як доказ схвалення, партнерства чи офіційного походження. Персонажі, вигадані світи та ігрові активи не отримують ліцензії лише через появу на сайті. Портфоліо інших студій описує внесок авторів; права залишаються у відповідних власників.
 
 ## 6. Публічний код і випуски
 
@@ -356,7 +356,7 @@ Zhovten Games открыто использует законные вычисл�
 
 ## 5. Бренд и внешние работы
 
-Публикация не разрешает использовать идентичность Zhovten Games или IRON CREED как доказательство одобрения, партнёрства или официального происхождения. Персонажи, вымышленные миры и игровые ресурсы не получают лицензию только вследствие появления на сайте. Портфолио других студий описывает вклад авторов; права остаются у соответствующих владельцев.
+Публикация не разрешает использовать идентичность Zhovten Games или IRONCREED как доказательство одобрения, партнёрства или официального происхождения. Персонажи, вымышленные миры и игровые ресурсы не получают лицензию только вследствие появления на сайте. Портфолио других студий описывает вклад авторов; права остаются у соответствующих владельцев.
 
 ## 6. Публичный код и выпуски
 
@@ -497,7 +497,7 @@ CC BY-SA 4.0 の資料では、著者と作品名、正規ページまたは DOI
 
 ## 5. ブランドと外部作品
 
-公開によって、Zhovten Games や IRON CREED の名称・意匠を、承認、提携、公式な出所の証拠として使用する許可は生じません。キャラクター、架空の世界、ゲーム資産は、サイトに掲載されただけでは利用許諾されません。他スタジオのポートフォリオ記録は著者の貢献を示し、権利は各権利者に帰属します。
+公開によって、Zhovten Games や IRONCREED の名称・意匠を、承認、提携、公式な出所の証拠として使用する許可は生じません。キャラクター、架空の世界、ゲーム資産は、サイトに掲載されただけでは利用許諾されません。他スタジオのポートフォリオ記録は著者の貢献を示し、権利は各権利者に帰属します。
 
 ## 6. 公開ソースとリリース
 

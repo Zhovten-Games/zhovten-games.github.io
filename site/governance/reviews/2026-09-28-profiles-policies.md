@@ -21,14 +21,14 @@ Private source documents remain in Drive. Their maintenance notes, account
 metadata, and private document bodies are not published as release evidence.
 The public Sync Record projection supplies the selected career material.
 The latest user instruction overrides the older Co-Founder-first Sam headline.
-Oksana's formal IRON CREED entry begins August 2026 as explicitly prescribed by
+Oksana's formal IRONCREED entry begins August 2026 as explicitly prescribed by
 her website Sync Record; her Master separately records the earlier freelance
 track from December 2025. Her complete skill groups and language proficiency
 were restored from the Master instead of retaining the older abbreviated lists.
 
 ## Public policies and runtime review
 
-The editorial models are the studio's IRON CREED pages, read on 2026-09-28:
+The editorial models are the studio's IRONCREED pages, read on 2026-09-28:
 
 - <https://web.zhovten.games/uk/pages/ai-policy>
 - <https://web.zhovten.games/uk/pages/licensing>
@@ -46,7 +46,7 @@ contact form, AI input, application cookies, localStorage, or sessionStorage.
 Archive controls use temporary React state and same-origin page requests.
 YouTube image thumbnails do make third-party requests on portfolio pages;
 the privacy policy expressly describes this. Infrastructure logs and provider
-mechanisms are distinguished from the application. IRON CREED's companion,
+mechanisms are distinguished from the application. IRONCREED's companion,
 audio, local-storage preferences, corpus index, VOX publication boundary,
 submodule revisions, and WARDEN are not claimed for this website.
 

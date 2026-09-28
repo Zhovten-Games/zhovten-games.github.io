@@ -80,24 +80,6 @@ const sections: ResourceSection[] = [
   },
   {
     number: "05",
-    title: text("Zhovten Games publications about InterDead", "Публікації Zhovten Games про InterDead", "Публикации Zhovten Games об InterDead", "InterDead に関する Zhovten Games の公開記事"),
-    nodes: [
-      { label: "Studio Journal", path: "/blog/" },
-      { label: "Canon Horror Series", note: text("language as infection and systems of horror", "мова як інфекція та системи горору", "язык как инфекция и системы хоррора", "感染としての言語とホラー・システム"), path: "/blog/canon-horror-series-language-as-infection/" },
-      { label: "Canon as Contract", note: text("from ‘Why’ to a reproducible canon contract", "від «Чому» до відтворюваного контракту канону", "от «Почему» к воспроизводимому контракту канона", "「なぜ」から再現可能なカノン契約へ"), path: "/blog/why-canon-contract-interdead/" },
-      { label: "Communication Architecture / Niro", path: "/blog/niro-communication-architecture/" },
-      { label: "Artifact Pipeline", note: "WhisperX → LLM → FFmpeg", path: "/blog/video-artifact-pipeline-interdead/" },
-      { label: text("February 2026 — Umbrella Update", "Лютий 2026 — зонтичне оновлення", "Февраль 2026 — зонтичное обновление", "2026年2月 — 総括アップデート"), path: "/blog/february-umbrella-update/" },
-      { label: text("Summer 2026 — Umbrella Update", "Літо 2026 — зонтичне оновлення", "Лето 2026 — зонтичное обновление", "2026年夏 — 総括アップデート"), path: "/blog/summer-2026-umbrella-update/" },
-      { label: "Brain Anatomy & Information Flow update", path: "/blog/brain-anatomy-information-flow-update/" },
-      { label: "Echo of an Unfading Memory announcement", path: "/blog/echo-of-an-unfading-memory-announcement/" },
-      { label: "Transmedia In-Universe Narrative", path: "/blog/transmedia-in-universe-narrative/" },
-      { label: "PsyFramework", path: "/blog/psyframework-screening-prototype/" },
-      { label: "Zhovten Games & InterDead announcement", path: "/blog/zhovten-games-interdead-launch/" },
-    ],
-  },
-  {
-    number: "06",
     title: "Community / Media",
     nodes: [
       { label: "Discord", href: "https://discord.gg/vAWYg3jFEp" },
@@ -107,17 +89,18 @@ const sections: ResourceSection[] = [
     ],
   },
   {
-    number: "07",
+    number: "06",
     title: text("Zhovten Games / external platforms", "Zhovten Games / зовнішні платформи", "Zhovten Games / внешние площадки", "Zhovten Games / 外部プラットフォーム"),
     nodes: [
-      { label: "GitHub", href: "https://github.com/Zhovten-Games" },
       { label: "itch.io", href: "https://zhovten-games.itch.io/" },
+      { label: "GitHub", href: "https://github.com/Zhovten-Games" },
+      { label: "Facebook", href: "https://www.facebook.com/interdead" },
       { label: "LinkedIn", href: "https://www.linkedin.com/company/zhovten-games/" },
       { label: "Instagram", href: "https://www.instagram.com/zhovtengames/" },
     ],
   },
   {
-    number: "08",
+    number: "07",
     title: "Legal / Governance",
     nodes: [
       { label: "Terms of Use", href: "https://interdead.phantom-draft.com/pages/terms-of-use/" },

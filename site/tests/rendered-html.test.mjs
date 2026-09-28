@@ -148,6 +148,15 @@ test("publishes founder histories, organization links, social networks, and the 
     assert.ok(rootHtml.includes("https://github.com/Zhovten-Games"));
     assert.ok(rootHtml.includes("https://zhovten-games.itch.io/"));
     assert.ok(rootHtml.includes("https://discord.gg/vAWYg3jFEp"));
+    const socials = rootHtml.split('class="site-footer__socials"')[1].split("</nav>")[0];
+    const socialLinks = [...socials.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
+    assert.deepEqual(socialLinks, [
+      "https://zhovten-games.itch.io/",
+      "https://www.facebook.com/ZhovtenGames",
+      "https://www.linkedin.com/company/zhovten-games/",
+      "https://github.com/Zhovten-Games",
+      "https://discord.gg/vAWYg3jFEp",
+    ]);
     assert.ok(rootHtml.includes("/favicon.png"));
     assert.ok(rootHtml.includes("/favicon.ico"));
 
@@ -162,8 +171,6 @@ test("publishes founder histories, organization links, social networks, and the 
     assert.ok(sam.includes("https://orcid.org/0009-0009-2621-6372"));
     assert.ok(sam.includes("Senior Full-Stack Web Engineer · Systems Designer"));
     assert.ok(!sam.includes('class="zg-profile__groups"'));
-    assert.ok(sam.includes("https://doi.org/10.5281/zenodo.21894242"));
-    assert.ok(sam.includes("https://github.com/IRONCREED/prompt-literate-workflow"));
     const contact = await text(`${edition.prefix}/contact/`);
     assert.match(contact, /data-rich-content="true"[\s\S]*?href="https:\/\/www\.linkedin\.com\/company\/zhovten-games\/"/);
 
@@ -264,11 +271,8 @@ test("aligns umbrella headings and publishes a professional contest log in every
   for (const edition of editions) {
     const february = await text(`${edition.prefix}/blog/february-umbrella-update/`);
     assert.ok(february.includes(headings[edition.locale]));
-    const map = await text(`${edition.prefix}/projects/interdead/`);
-    assert.ok(map.includes(headings[edition.locale]));
     const sam = await text(`${edition.prefix}/authors/sam-starling/`);
     assert.ok(sam.includes(`(${profileNotes[edition.locale]})`));
-    assert.ok(sam.includes('href="https://doi.org/10.5281/zenodo.21894242"'));
 
     const path = `${edition.prefix}/blog/oksana-dubinetska-number-of-the-beast-2024/`;
     const contest = await text(path);
@@ -280,8 +284,8 @@ test("aligns umbrella headings and publishes a professional contest log in every
     assert.doesNotMatch(contest, /Tykhon|A24|My wife|Keep it up/);
     assert.ok(contest.includes(`rel="canonical" href="https://zhovten.games${path}"`));
     assertClosedDocument(contest, path);
-    const oksana = await text(`${edition.prefix}/authors/oksana-dubinetska/`);
-    assert.ok(oksana.includes(path));
+    const journal = await text(`${edition.prefix}/blog/`);
+    assert.ok(journal.includes(path));
   }
 });
 
@@ -323,7 +327,7 @@ test("groups project credits, development work, and tools with localized metadat
   }
 });
 
-test("publishes the complete localized InterDead project map", async () => {
+test("publishes the localized InterDead map with the requested social links", async () => {
   const externalReferences = [
     "https://interdead.phantom-draft.com/",
     "https://interdead.phantom-draft.com/about/",
@@ -337,6 +341,7 @@ test("publishes the complete localized InterDead project map", async () => {
     "https://t.me/inter_dead",
     "https://www.youtube.com/@inter_dead",
     "https://www.instagram.com/zhovtengames/",
+    "https://www.facebook.com/interdead",
     "https://interdead.phantom-draft.com/pages/terms-of-use/",
     "https://interdead.phantom-draft.com/pages/privacy-policy/",
     "https://interdead.phantom-draft.com/pages/ai-policy/",
@@ -344,15 +349,19 @@ test("publishes the complete localized InterDead project map", async () => {
 
   for (const edition of editions) {
     const html = await text(`${edition.prefix}/projects/interdead/`);
-    for (let section = 0; section <= 8; section += 1) {
+    for (let section = 0; section <= 7; section += 1) {
       assert.ok(html.includes(`${String(section).padStart(2, "0")}.`));
     }
     for (const reference of externalReferences) {
       assert.ok(html.includes(reference), `${edition.locale} missing ${reference}`);
     }
-    assert.ok(html.includes(`${edition.prefix}/blog/why-canon-contract-interdead/`));
-    assert.ok(html.includes(`${edition.prefix}/blog/niro-communication-architecture/`));
-    assert.ok(html.includes(`${edition.prefix}/blog/video-artifact-pipeline-interdead/`));
+    const map = html.split('class="zg-resource-map"')[1].split("</article>")[0];
+    assert.ok(!map.includes(`${edition.prefix}/blog/why-canon-contract-interdead/`));
+    assert.ok(!map.includes(`${edition.prefix}/blog/niro-communication-architecture/`));
+    assert.ok(!map.includes(`${edition.prefix}/blog/video-artifact-pipeline-interdead/`));
+    const platforms = map.slice(map.indexOf("06."));
+    assert.ok(platforms.indexOf("https://zhovten-games.itch.io/") < platforms.indexOf("https://github.com/Zhovten-Games"));
+    assert.ok(platforms.indexOf("https://www.facebook.com/interdead") < platforms.indexOf("https://www.linkedin.com/company/zhovten-games/"));
   }
 });
 
@@ -426,10 +435,16 @@ test("pins governance and applies the scoped licensing map", async () => {
   assert.ok(staged.includes("160000 6e4c2627717c079827ed4aa9044a5346b3ea3ddb"));
 });
 
-test("matches the author sync records, places founders last, and lists Oksana first", async () => {
+test("matches the concise author sync records, shared languages, and founder order", async () => {
   const samTitle = "Senior Full-Stack Web Engineer · Systems Designer · Co-Founder";
   const oksanaTitle = "Lead Game Designer · Narrative &amp; Technical Game Design · Founder";
-  for (const { prefix } of editions) {
+  const expectedSections = {
+    en: ["Experience", "Education", "Languages", "Public team profiles"],
+    uk: ["Досвід", "Освіта", "Мови", "Публічні профілі команди"],
+    ru: ["Опыт", "Образование", "Языки", "Публичные профили команды"],
+    ja: ["経歴", "学歴", "言語", "チームの公開プロフィール"],
+  };
+  for (const { locale, prefix } of editions) {
     const authors = (await text(`${prefix}/authors/`)).split("<main")[1].split("</main>")[0];
     assert.ok(authors.indexOf("/authors/oksana-dubinetska/") < authors.indexOf("/authors/sam-starling/"));
     assert.ok(authors.includes(samTitle));
@@ -444,14 +459,23 @@ test("matches the author sync records, places founders last, and lists Oksana fi
         assert.ok(heading.endsWith("Founder"), heading);
       }
     }
-    for (const name of ["ZIPY HOLDINGS LTD.", "Scuba Space", "uCoz / uKit", "Technical Help Desk Specialist", "IRONCREED Request Log", "Engineering Mentor / Co-Founder"]) {
+    for (const name of ["ZIPY HOLDINGS LTD.", "Scuba Space", "uCoz / uKit", "Technical Help Desk Specialist", "Engineering Mentor / Co-Founder"]) {
       assert.ok(sam.includes(name), `${prefix} missing Sam experience ${name}`);
     }
-    for (const name of ["HOSTiQ", "IRONCREED Request Log", "Web Academy", "content.ua", "Kyiv National Linguistics University", "Kyiv School of Journalism", "Unreal Engine", "DNS", "cPanel", "Mercurial", "Regression Testing"]) {
+    for (const name of ["HOSTiQ", "IRONCREED Request Log", "Web Academy", "content.ua", "Kyiv National Linguistics University", "Kyiv School of Journalism", "DNS", "cPanel"]) {
       assert.ok(oksana.includes(name), `${prefix} missing Oksana source fact ${name}`);
     }
     assert.ok(oksana.includes("2014–2018"));
     assert.ok(!sam.includes('class="zg-profile__groups"'));
+    const profile = (html) => html.split("<main")[1].split("</main>")[0];
+    const h2 = (html) => [...profile(html).matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((match) => match[1]);
+    const [experience, education, languages, publicProfiles] = expectedSections[locale];
+    assert.deepEqual(h2(sam), [experience, languages, publicProfiles]);
+    assert.deepEqual(h2(oksana), [experience, education, languages, publicProfiles]);
+    const languageBlock = (html) => html.split('class="zg-profile__languages"')[1].split("</section>")[0];
+    assert.equal(languageBlock(sam), languageBlock(oksana));
+    assert.equal([...languageBlock(sam).matchAll(/<li>/g)].length, 3);
+    assert.doesNotMatch(profile(sam) + profile(oksana), /IRON\s+CREED|zg-log-section/);
     assertClosedDocument(sam, `${prefix}/authors/sam-starling/`);
     assertClosedDocument(oksana, `${prefix}/authors/oksana-dubinetska/`);
   }

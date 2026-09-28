@@ -118,7 +118,7 @@ material dispute is unresolved.
 The project begins as one repository jurisdiction with subordinate domains for
 editorial content, localization, projects and authors, site software, SEO and
 discovery, deployment, governance, licensing, and external portfolio records.
-External products, DOI records, itch.io, LinkedIn, IRON CREED, and InterDead
+External products, DOI records, itch.io, LinkedIn, IRONCREED, and InterDead
 services remain independent jurisdictions connected by links and attribution.
 The public `site/` source projection is a subordinate release surface within the
 independent `Zhovten-Games/zhovten-games.github.io` repository.
