@@ -431,10 +431,10 @@ const authorText: Record<string, AuthorText> = {
     tools: ["Unity production", "ナラティブ文書", "クエストフロー設計", "プレイテスト"],
     body: [
       "Lead Game Designer およびテクニカルサポート担当として、6年以上の総合的な職務経験があり、そのうち4年以上は商用ゲーム制作に携わっています。キャリアは商業ライティングから始まり、脚本、Game Master を経て、プロのゲームデザインとナラティブデザインへ移行しました。現在の商用業務は、production 環境のウェブシステム、トラブルシューティング、ドキュメンテーション、運用サポートが中心です。Zhovten Games では、ナラティブシステム、クエストロジック、制作文書、テクニカルゲームデザイン、実装に関わる判断を含むゲームデザイン業務を主導しています。",
-      "1年以上にわたりウェブ開発とプログラミングを体系的に学び、WordPress、PHP、JavaScript、HTML/CSS、Git、GitHub を実務的に扱っています。Zhovten Games と一部の契約業務でゲーム／ナラティブデザインを継続しながら、Manual QA と隣接する技術領域にも取り組んでいます。",
+      "1年以上にわたり、体系的な学習、lead engineer のメンタリング、実践的なプロジェクト作業を通じてウェブ開発とプログラミングのスキルを伸ばしてきました。WordPress、PHP、JavaScript、HTML/CSS、Git、GitHub を扱い、現在は Zhovten Games の応用IT・エンジニアリング実践である IRON CREED において、WordPress プラグイン開発や関連するウェブ作業にも参加しています。",
       "## 経歴",
       "### HOSTiQ — Technical Support Specialist\n\n**2026年〜現在**\n\n- production ウェブシステムとユーザーから報告された技術的問題を扱います。\n- 障害を調査し、問題を再現し、考えられる根本原因を特定し、解決策を文書化して技術的な所見を伝えます。\n- WordPress 管理、サイト設定、ホスティング環境、DNS、cPanel、Git/GitHub のワークフロー、運用ドキュメントを扱います。",
-      "### Zhovten Games — Lead Game Designer · Narrative & Technical Game Design · Founder\n\n**2025年10月〜現在**\n\n- ゲームコンセプト、ナラティブ／ゲームプレイシステム、クエストロジック、制作文書、分野横断の実装を設計します。\n- デザイン意図をルール、依存関係、実装上の制約、検証シナリオへ落とし込みます。\n- プロトタイプテスト、フィードバックサイクル、コンテンツ整合性、複数職種をまたぐ制作フローに取り組みます。\n- 現在の業務は、テクニカルゲームデザインと、デザイン・Unity・エンジニアリングの境界まで広がっています。",
+      "### IRON CREED — WordPress Development / Applied Engineering\n\n**2026年8月〜現在**\n\n- Zhovten Games の応用IT・エンジニアリング実践の一環として、WordPress プラグイン開発と関連するウェブエンジニアリング作業に参加しています。\n- WordPress、PHP、JavaScript、HTML/CSS、Git/GitHub、デバッグ、テスト、ドキュメンテーション、実装レビューを扱います。\n- lead engineer のメンタリングのもとで体系的な成長を続けており、この技術トラック自体は IRON CREED の正式化より1年以上前から始まっています。\n- WordPress.org で公開された IRONCREED Request Log への貢献を含む、完了・公開済みの実践作業があります。\n\n### Zhovten Games — Lead Game Designer · Narrative & Technical Game Design · Founder\n\n**2025年10月〜現在**\n\n- ゲームコンセプト、ナラティブ／ゲームプレイシステム、クエストロジック、制作文書、分野横断の実装を設計します。\n- デザイン意図をルール、依存関係、実装上の制約、検証シナリオへ落とし込みます。\n- プロトタイプテスト、フィードバックサイクル、コンテンツ整合性、複数職種をまたぐ制作フローに取り組みます。\n- 現在の業務は、テクニカルゲームデザインと、デザイン・Unity・エンジニアリングの境界まで広がっています。",
       "### GrandMA Studios — Game Designer / Narrative Game Designer\n\n**2021年10月〜2025年12月**\n\n- 複数の HOPA タイトルで、概要から最終リリースまでナラティブ開発を主導しました。\n- 脚本、クエストフロー、インタラクティブシーケンス、オブジェクト説明、キャラクター会話を執筆しました。\n- パズル、調査、クエストチェーンに対する分岐ナラティブロジックを、明確な UX を保ちながら構築しました。\n- アーティスト、開発者、QA と協働し、物語、メカニクス、テンポ、実装、環境ナラティブを整合させました。\n- Whispered Secrets と Mystery Case Files の両フランチャイズで5作品のリリースに参加しました。*Mystery Case Files: The Dalimar Legacy* は、パブリッシャーのプラットフォームにおける歴代 PC ベストセラー第2位に達しました。",
       "### Clockwork Magick — Game Master\n\n**2020年10月〜2021年8月**\n\n- 完結したシナリオ、個性的なキャラクター、ロケーション、生きた NPC を制作しました。\n- 物語の要件に合わせてゲームシステムを調整し、独自システムをプレイテストして、実際のプレイ結果から改善しました。",
       "### Rocketslides — Presentation and Advertising Scriptwriter\n\n**2020年7月〜2021年6月**\n\n- デザイナーと協働し、動画、講演、プレゼンテーションの脚本を執筆しました。\n- デザインとレイアウトの制作要件をまとめました。",
@@ -443,7 +443,7 @@ const authorText: Record<string, AuthorText> = {
       "## プロジェクト経験",
       "### InterDead — Narrative Horror Game Project\n\n- ナラティブシステム、ゲームプレイ概念、インタラクティブシナリオ、プロジェクトロジックを設計・テストします。\n- ドキュメント、想定挙動、実装の整合性を維持します。\n- デザイン、開発、検証、技術ワークフローを横断して作業します。",
       "## 学歴\n\n**Kyiv National Linguistics University**  \n翻訳学学士 · 2014–2018\n\n**Kyiv School of Journalism** · 2017",
-      "## Professional development\n\n**Web Development & Programming**  \nWordPress、PHP、JavaScript、HTML/CSS、Git、GitHub と関連するウェブ開発ワークフローについて、1年以上の体系的な学習と実践経験があります。"
+      "## Professional development\n\n**Web Development & Programming**  \nWordPress、PHP、JavaScript、HTML/CSS、Git、GitHub と関連するウェブ開発ワークフローについて、1年以上の体系的な学習、lead engineer のメンタリング、実践的なプロジェクト経験があり、現在は IRON CREED で継続しています。"
     ].join("\n\n"),
   }
 };
