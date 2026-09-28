@@ -2,7 +2,16 @@
 
 Public studio site and multilingual publication archive for Zhovten Games.
 
-Current release line: `v0.3.1`.
+Current release line: `v0.4.0`.
+
+The author directory follows the reviewed Master-CV projections and lists
+Oksana first. Public policies cover AI use, licensing, privacy, and terms in
+all four locales; the social preview uses the studio logo.
+
+Additional verification commands: `npm run typecheck` (browser and Worker
+targets) and `npm run audit:production`. The full dependency-audit findings and
+governance review are recorded in
+`governance/reviews/2026-09-28-profiles-policies.md`.
 
 Public source projection: [Zhovten-Games/zhovten-games.github.io/site](https://github.com/Zhovten-Games/zhovten-games.github.io/tree/main/site).
 
@@ -19,7 +28,8 @@ complete English, Ukrainian, Russian, and Japanese editions.
 - Japanese: `/ja/`
 - sitemap index: `/sitemap.xml`
 - locale maps: `/sitemaps/{en|uk|ru|ja}.xml`
-- governance summary: `/{locale}/governance/`
+- governance hub: `/{locale}/governance/`
+- public policies: `/{locale}/governance/{ai-policy,licensing,privacy-policy,terms-of-use}/`
 
 English is the canonical editorial source for this revision. Ukrainian is the
 `x-default` public edition. Every published item has the same slug, source date,

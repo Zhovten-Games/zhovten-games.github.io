@@ -3,6 +3,8 @@ import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
+const packageInfo = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
+
 const workerUrl = new URL("../dist/server/index.js", import.meta.url);
 workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
 const { default: worker } = await import(workerUrl.href);
@@ -82,7 +84,8 @@ test("renders four locale roots with correct language and discovery metadata", a
     assert.match(html, /hrefLang="ru"/i);
     assert.match(html, /hrefLang="ja"/i);
     assert.match(html, /hrefLang="x-default" href="https:\/\/zhovten\.games\/uk\/"/i);
-    assert.ok(html.includes('property="og:image" content="https://zhovten.games/og.png"'));
+    assert.ok(html.includes('property="og:image" content="https://zhovten.games/og.png?v=20260928"'));
+    assert.ok(html.includes('name="twitter:image" content="https://zhovten.games/og.png?v=20260928"'));
     assert.ok(html.includes('name="twitter:card" content="summary_large_image"'));
   }
 });
@@ -199,7 +202,7 @@ test("publishes all registered items in every locale sitemap", async () => {
     assert.ok(index.includes(`https://zhovten.games/sitemaps/${edition.locale}.xml`));
     const sitemap = await text(`/sitemaps/${edition.locale}.xml`, "application/xml");
     const urls = [...sitemap.matchAll(/<url>/g)];
-    assert.equal(urls.length, 33, `${edition.locale} sitemap URL count`);
+    assert.equal(urls.length, 37, `${edition.locale} sitemap URL count`);
 
     for (const publication of register.publications) {
       const prefix = edition.prefix;
@@ -265,7 +268,7 @@ test("aligns umbrella headings and publishes a professional contest log in every
     assert.ok(map.includes(headings[edition.locale]));
     const sam = await text(`${edition.prefix}/authors/sam-starling/`);
     assert.ok(sam.includes(`(${profileNotes[edition.locale]})`));
-    assert.match(sam, /Code Constitution:<br\/?><a href="https:\/\/doi.org\/10.5281\/zenodo.21894242"/);
+    assert.ok(sam.includes('href="https://doi.org/10.5281/zenodo.21894242"'));
 
     const path = `${edition.prefix}/blog/oksana-dubinetska-number-of-the-beast-2024/`;
     const contest = await text(path);
@@ -359,11 +362,11 @@ test("identifies the public source and versioned build", async () => {
     assert.ok(html.includes(
       "https://github.com/Zhovten-Games/zhovten-games.github.io/tree/main/site",
     ));
-    assert.match(html, /v0\.3\.1(?: · [0-9a-f]{8})?/);
+    assert.ok(html.includes(`v${packageInfo.version}`));
   }
 
   const governance = await text("/governance/");
-  assert.ok(governance.includes("v0.3.1"));
+  assert.ok(governance.includes(`v${packageInfo.version}`));
 });
 
 test("keeps the original research snapshot distinct from the later DOI wrapper", async () => {
@@ -409,8 +412,8 @@ test("pins governance and applies the scoped licensing map", async () => {
   assert.ok(license.includes("CC-BY-SA-4.0"));
   assert.ok(license.includes("MIT"));
   assert.ok(license.includes("all rights reserved"));
-  assert.equal(socialPreview.readUInt32BE(16), 1200);
-  assert.equal(socialPreview.readUInt32BE(20), 630);
+  assert.equal(socialPreview.readUInt32BE(16), 1733);
+  assert.equal(socialPreview.readUInt32BE(20), 907);
   for (let field = 1; field <= 18; field += 1) {
     assert.ok(profile.includes(`## P${String(field).padStart(2, "0")}.`));
   }
@@ -421,4 +424,73 @@ test("pins governance and applies the scoped licensing map", async () => {
   });
   assert.ok(staged.includes("160000 220dc9c286ae06f8b6ed60cdda75112eed0408ed"));
   assert.ok(staged.includes("160000 6e4c2627717c079827ed4aa9044a5346b3ea3ddb"));
+});
+
+test("matches the author sync records, places founders last, and lists Oksana first", async () => {
+  const samTitle = "Senior Full-Stack Web Engineer · Systems Designer · Co-Founder";
+  const oksanaTitle = "Lead Game Designer · Narrative &amp; Technical Game Design · Founder";
+  for (const { prefix } of editions) {
+    const authors = (await text(`${prefix}/authors/`)).split("<main")[1].split("</main>")[0];
+    assert.ok(authors.indexOf("/authors/oksana-dubinetska/") < authors.indexOf("/authors/sam-starling/"));
+    assert.ok(authors.includes(samTitle));
+    assert.ok(authors.includes(oksanaTitle));
+    const sam = await text(`${prefix}/authors/sam-starling/`);
+    const oksana = await text(`${prefix}/authors/oksana-dubinetska/`);
+    assert.ok(sam.includes(`<p>${samTitle}</p>`));
+    assert.ok(oksana.includes(`<p>${oksanaTitle}</p>`));
+    for (const html of [sam, oksana]) {
+      const headings = [...html.matchAll(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/g)].map((m) => m[1]);
+      for (const heading of headings.filter((s) => s.includes("Founder"))) {
+        assert.ok(heading.endsWith("Founder"), heading);
+      }
+    }
+    for (const name of ["ZIPY HOLDINGS LTD.", "Scuba Space", "uCoz / uKit", "Technical Help Desk Specialist", "IRONCREED Request Log", "Engineering Mentor / Co-Founder"]) {
+      assert.ok(sam.includes(name), `${prefix} missing Sam experience ${name}`);
+    }
+    for (const name of ["HOSTiQ", "IRONCREED Request Log", "Web Academy", "content.ua", "Kyiv National Linguistics University", "Kyiv School of Journalism", "Unreal Engine", "DNS", "cPanel", "Mercurial", "Regression Testing"]) {
+      assert.ok(oksana.includes(name), `${prefix} missing Oksana source fact ${name}`);
+    }
+    assert.ok(oksana.includes("2014–2018"));
+    assert.ok(!sam.includes('class="zg-profile__groups"'));
+    assertClosedDocument(sam, `${prefix}/authors/sam-starling/`);
+    assertClosedDocument(oksana, `${prefix}/authors/oksana-dubinetska/`);
+  }
+});
+
+test("publishes four complete policy editions with discovery, navigation, and licensing parity", async () => {
+  const policySlugs = ["ai-policy", "licensing", "privacy-policy", "terms-of-use"];
+  const sectionCounts = [6, 7, 8, 8];
+  for (const { locale, prefix } of editions) {
+    const hub = await text(`${prefix}/governance/`);
+    const root = await text(`${prefix}/`);
+    const sitemap = await text(`/sitemaps/${locale}.xml`, "application/xml");
+    for (const [index, slug] of policySlugs.entries()) {
+      const path = `${prefix}/governance/${slug}/`;
+      assert.ok(hub.includes(`href="${path}"`));
+      assert.ok(root.split("<footer")[1].includes(`href="${path}"`));
+      const html = await text(path);
+      assert.ok(html.includes(`rel="canonical" href="https://zhovten.games${path}"`));
+      assert.match(html, new RegExp(`<html[^>]+lang="${locale}"`));
+      assert.ok(html.includes(`hrefLang="x-default" href="https://zhovten.games/uk/governance/${slug}/"`));
+      for (const alternate of editions) {
+        assert.ok(html.includes(`hrefLang="${alternate.locale}" href="https://zhovten.games${alternate.prefix}/governance/${slug}/"`));
+      }
+      const body = html.split('data-rich-content="true">')[1].split("</article>")[0];
+      assert.equal([...body.matchAll(/<h2\b/g)].length, sectionCounts[index]);
+      assert.ok(body.includes(`href="${prefix}/contact/"`));
+      assert.ok(sitemap.includes(`<loc>https://zhovten.games${path}</loc><lastmod>2026-09-28</lastmod>`));
+      assert.ok(html.includes('<time dateTime="2026-09-28">2026-09-28</time>'));
+      assertClosedDocument(html, path);
+      if (slug === "licensing") {
+        assert.ok(body.includes("6e4c2627717c079827ed4aa9044a5346b3ea3ddb"));
+        assert.ok(body.includes("https://creativecommons.org/licenses/by-sa/4.0/"));
+        assert.ok(body.includes("https://opensource.org/license/mit"));
+      }
+      if (slug === "privacy-policy") {
+        for (const value of ["YouTube", "localStorage", "sessionStorage", "LinkedIn"]) assert.ok(body.includes(value));
+      }
+    }
+    assert.equal((await request(`${prefix}/governance/nonexistent/`)).status, 404);
+    assert.equal((await request(`${prefix}/governance/licensing/extra/`)).status, 404);
+  }
 });

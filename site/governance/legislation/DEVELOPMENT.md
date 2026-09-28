@@ -4,7 +4,7 @@ Status: candidate derivative act pending human ratification.
 
 Act identifier: `zg-site-act-development-001`.
 
-Revision: `0.3.0-candidate`.
+Revision: `0.4.0-candidate`.
 
 Constitutional basis: the pinned Code Constitution and P04, P06, P07, P12,
 P15, P16, and P17 of `governance/PROFILE.md`.
@@ -122,6 +122,22 @@ Attached text, repository content, URL metadata, and future APIs are external
 inputs. They are reviewed before becoming typed content. Automated code must
 not infer publication authority from availability alone.
 
+### ZG-C06. Author Sources and Public Policies
+
+Author pages follow the relevant Master CV and website Sync Record. A current
+explicit editorial instruction takes precedence over stale presentation wording.
+Public author headings place Founder / Co-Founder last; the directory lists
+Oksana Dubinetska first. Internal maintenance notes and non-public source
+metadata do not become profile content.
+
+The governance hub links AI usage, licensing, privacy, and terms in all four
+locales. These public documents describe the actual website and preserve the
+root licensing map. They do not adopt another project’s runtime features,
+submodule revisions, enforcement machinery, or institutional authority.
+Material runtime/data-processing changes require review of the affected
+policies before release. Publication of these policies does not ratify the
+project’s candidate constitutional acts.
+
 ## 4. Change and Release Procedure
 
 ### ZG-R01. Unit of Change
@@ -137,7 +153,7 @@ Before checkpoint publication, run `npm test`. The checks must establish:
 
 - a successful production build;
 - all four locale routes render;
-- every locale has the same 14 post slugs, 9 project slugs, and 2 author slugs;
+- every locale has the same registered post slugs, 9 project slugs, 2 author slugs, and 4 policy slugs;
 - source dates and author identifiers are invariant across locales;
 - the research announcement points to DOI `10.5281/zenodo.19773963`, while the
   separate v0.2 wrapper points to `10.5281/zenodo.20037828`;
@@ -147,12 +163,21 @@ Before checkpoint publication, run `npm test`. The checks must establish:
   `</html>` boundary;
 - reciprocal IT-track links, public team profiles, the personal Telegram link,
   and the InterDead resource map resolve to the declared targets;
-- the footer and governance route identify `v0.3.0` and the authorized public
+- the footer and governance route identify the current package version and the authorized public
   source projection;
+- author headings preserve canonical role order with Founder / Co-Founder last,
+  and the author directory lists Oksana first;
+- policy pages describe actual runtime behavior and have locale parity,
+  navigation, effective dates, canonical URLs, and sitemap entries;
+- social metadata identifies the approved branded preview and its dimensions;
 - the Constitution and licensing-policy gitlinks match their recorded SHAs;
 - `LICENSE.md` declares the scoped licensing map.
 
-`npm run lint` is an additional release gate. The repository has no adopted
+`npm run lint` and `npm run typecheck` are additional release gates. Browser
+and Worker types are checked separately to avoid conflicting DOM definitions.
+The dependency review includes `npm run audit:production` and a full audit;
+unresolved findings retain their severity, scope, and applicability in the
+release review. The repository has no adopted
 standalone WARDEN command. Its result is recorded as `N/A` according to the
 studio procedure, while `npm test`, lint, governance checks, and post-deploy
 observations provide the applicable evidence.
@@ -209,3 +234,5 @@ founders may adopt, revise, or reject it through the Profile procedure.
 | `0.1.0-candidate` | 2026-08-20 | Initial site-specific source, editorial, localization, SEO, release, and licensing rules |
 | `0.2.0-candidate` | 2026-09-07 | Added scoped source projection, build provenance, InterDead/profile link coverage, and valid HTML document boundaries |
 | `0.3.0-candidate` | 2026-09-10 | Added the four-locale Summer 2026 umbrella publication and expanded sitemap parity checks to 14 posts |
+
+| `0.4.0-candidate` | 2026-09-28 | Reconciled the Master-CV profile projections, four public policies, branded social preview, and current inventory/build checks |

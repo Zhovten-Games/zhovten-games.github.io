@@ -9,6 +9,7 @@ import {
   type NavigationItem,
 } from "./components/SiteInteractions";
 import { Markdown } from "./markdown";
+import { getPolicies, policyLabels, POLICY_DATE, type Policy } from "./data/policies";
 import { getContent, getPublishedLocales } from "./site-content";
 import type { Author, Locale, Post, Project } from "./site-types";
 
@@ -352,11 +353,13 @@ type PageDescriptor = {
   post?: Post;
   project?: Project;
   author?: Author;
+  policy?: Policy;
 };
 
 function pageDescriptor(locale: Locale, segments: string[]): PageDescriptor | null {
   const content = getContent(locale);
   const [section, slug] = segments;
+  if (segments.length > 2) return null;
 
   if (!section) {
     return {
@@ -443,9 +446,20 @@ function pageDescriptor(locale: Locale, segments: string[]): PageDescriptor | nu
     const l = ui(locale);
     return {
       title: l.governance,
-      description: l.governanceDescription,
+      description: policyLabels[locale].intro,
       path: "/governance/",
       kind: "governance",
+    };
+  }
+  if (section === "governance" && slug) {
+    const policy = getPolicies(locale).find((item) => item.slug === slug);
+    if (!policy) return null;
+    return {
+      title: policy.title,
+      description: policy.description,
+      path: "/governance/" + slug + "/",
+      kind: "policy",
+      policy,
     };
   }
   return null;
@@ -467,9 +481,9 @@ export function buildMetadata(locale: Locale, segments: string[]): Metadata {
         }]
       : []
     : [{
-        url: SITE_ORIGIN + "/og.png",
-        width: 1200,
-        height: 630,
+        url: SITE_ORIGIN + "/og.png?v=20260928",
+        width: 1733,
+        height: 907,
         alt: "Zhovten Games — Metal Under Tension",
       }];
   return {
@@ -569,9 +583,10 @@ function Footer({ locale }: { locale: Locale }) {
         <a href="https://discord.gg/vAWYg3jFEp" target="_blank" rel="noopener noreferrer">Discord</a>
       </nav>
       <p>
-        <a href={localePath(locale, "/governance/")}>{l.licensing}</a>
+        <a href={localePath(locale, "/governance/")}>{l.governance}</a>
         {" · "}CC BY-SA 4.0{" · "}MIT{" · "}{l.licenseBrand}
       </p>
+      <PolicyNavigation locale={locale} />
       <p className="site-footer__build">
         {l.build}:{" "}
         <a
@@ -584,6 +599,25 @@ function Footer({ locale }: { locale: Locale }) {
         </a>
       </p>
     </footer>
+  );
+}
+
+function PolicyNavigation({ locale, current }: { locale: Locale; current?: string }) {
+  return (
+    <nav aria-label={policyLabels[locale].title} className="zg-policy-nav">
+      <ul>
+        {getPolicies(locale).map((policy) => (
+          <li key={policy.slug}>
+            <a
+              aria-current={current === policy.slug ? "page" : undefined}
+              href={localePath(locale, "/governance/" + policy.slug + "/")}
+            >
+              {policy.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
 
@@ -1020,8 +1054,18 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
         )}
         {descriptor.kind === "governance" && (
           <article className="zg-panel">
-            <p className="zg-kicker">{l.repositoryOrder}</p>
             <h1>{l.governance}</h1>
+            <p>{policyLabels[locale].intro}</p>
+            <h2>{policyLabels[locale].title}</h2>
+            <ul className="zg-policy-index">
+              {getPolicies(locale).map((policy) => (
+                <li key={policy.slug}>
+                  <h3><a href={localePath(locale, "/governance/" + policy.slug + "/")}>{policy.title}</a></h3>
+                  <p>{policy.description}</p>
+                </li>
+              ))}
+            </ul>
+            <h2>{l.repositoryOrder}</h2>
             <p><strong>{l.governanceStatus}</strong></p>
             <p>{l.governanceIntro}</p>
             <h2>{l.licensingMap}</h2>
@@ -1046,6 +1090,16 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
                 {getBuildIdentity().label}
               </a>
             </p>
+          </article>
+        )}
+        {descriptor.kind === "policy" && descriptor.policy && (
+          <article className="zg-panel zg-policy">
+            <p><a href={localePath(locale, "/governance/")}>{l.governance}</a></p>
+            <h1>{descriptor.policy.title}</h1>
+            <p>{descriptor.policy.description}</p>
+            <PolicyNavigation locale={locale} current={descriptor.policy.slug} />
+            <p className="zg-policy-date">{policyLabels[locale].effective}: <time dateTime={POLICY_DATE}>{POLICY_DATE}</time></p>
+            <Markdown locale={locale}>{descriptor.policy.body}</Markdown>
           </article>
         )}
       </main>

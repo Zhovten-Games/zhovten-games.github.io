@@ -1,6 +1,7 @@
 import { getContent } from "../site-content";
 import { localePath, SITE_ORIGIN } from "../site-page";
 import type { Locale } from "../site-types";
+import { policySlugs, POLICY_DATE } from "../data/policies";
 
 function xml(value: string) {
   return value
@@ -22,6 +23,7 @@ export function localeSitemap(locale: Locale) {
     "/about/",
     "/contact/",
     "/governance/",
+    ...policySlugs.map((slug) => "/governance/" + slug + "/"),
   ];
   const lastmodByPath: Record<string, string> = {
     ...Object.fromEntries(
@@ -29,9 +31,12 @@ export function localeSitemap(locale: Locale) {
     ),
     "/": "2026-09-13",
     "/blog/": "2026-09-13",
-    "/authors/": "2026-09-13",
-    "/authors/sam-starling/": "2026-09-13",
-    "/authors/oksana-dubinetska/": "2026-09-13",
+    "/authors/": "2026-09-28",
+    "/authors/sam-starling/": "2026-09-28",
+    "/authors/oksana-dubinetska/": "2026-09-28",
+    "/about/": "2026-09-28",
+    "/governance/": POLICY_DATE,
+    ...Object.fromEntries(policySlugs.map((slug) => ["/governance/" + slug + "/", POLICY_DATE])),
     "/contact/": "2026-09-13",
     "/projects/interdead/": "2026-09-13",
   };
