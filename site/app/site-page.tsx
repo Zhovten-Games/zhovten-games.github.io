@@ -33,6 +33,7 @@ const englishLabels = {
   home: "Home",
   blog: "Blog",
   projects: "Projects",
+  projectExperience: "Project experience",
   authors: "Authors",
   about: "About",
   contact: "Contact",
@@ -101,6 +102,7 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     home: "Головна",
     blog: "Журнал",
     projects: "Проєкти",
+    projectExperience: "Проєктний досвід",
     authors: "Автори",
     about: "Про студію",
     contact: "Контакти",
@@ -166,6 +168,7 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     home: "Главная",
     blog: "Журнал",
     projects: "Проекты",
+    projectExperience: "Проектный опыт",
     authors: "Авторы",
     about: "О студии",
     contact: "Контакты",
@@ -231,6 +234,7 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     home: "ホーム",
     blog: "ログ",
     projects: "プロジェクト",
+    projectExperience: "プロジェクト経験",
     authors: "著者",
     about: "スタジオ情報",
     contact: "お問い合わせ",
@@ -984,6 +988,19 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
             <p>{descriptor.author.description}</p>
             <p><strong>{l.status}:</strong> {descriptor.author.status}</p>
             <Markdown locale={locale}>{descriptor.author.body}</Markdown>
+            <section className="zg-profile__projects">
+              <h2>{l.projectExperience}</h2>
+              <ul className="zg-project-grid">
+                {content.projects
+                  .filter((project) => descriptor.author!.projectSlugs.includes(project.slug))
+                  .map((project) => (
+                    <ProjectCard key={project.slug} locale={locale} project={project} />
+                  ))}
+              </ul>
+            </section>
+            {descriptor.author.education && (
+              <Markdown locale={locale}>{descriptor.author.education}</Markdown>
+            )}
             <section className="zg-profile__languages">
               <h2>{l.languages}</h2>
               <ul>

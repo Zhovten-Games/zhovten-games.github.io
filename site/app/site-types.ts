@@ -64,6 +64,8 @@ export type Author = {
   skills: string[];
   languages: string[];
   tools: string[];
+  projectSlugs: string[];
+  education?: string;
   profileLinks: AuthorProfileLink[];
   body: string;
 };

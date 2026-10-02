@@ -4,7 +4,7 @@ Status: candidate derivative act pending human ratification.
 
 Act identifier: `zg-site-act-development-001`.
 
-Revision: `0.4.0-candidate`.
+Revision: `0.4.2-candidate`.
 
 Constitutional basis: the pinned Code Constitution and P04, P06, P07, P12,
 P15, P16, and P17 of `governance/PROFILE.md`.
@@ -83,7 +83,7 @@ A semantic content change proceeds in this order:
 2. identify affected fields, links, metadata, and structured data;
 3. update Ukrainian, Russian, and Japanese;
 4. compare slug, date, author, external URL, and section parity;
-5. run the complete verification suite;
+5. run the verification scope required by ZG-R02 and ZG-R02a;
 6. obtain the applicable human editorial review.
 
 Machine assistance may produce a candidate translation. Human ratification is
@@ -149,7 +149,8 @@ candidate when they share the same transition record.
 
 ### ZG-R02. Required Verification
 
-Before checkpoint publication, run `npm test`. The checks must establish:
+For implementation changes, run `npm test` before checkpoint publication.
+Content-only changes may use ZG-R02a. The checks must establish:
 
 - a successful production build;
 - all four locale routes render;
@@ -175,12 +176,38 @@ Before checkpoint publication, run `npm test`. The checks must establish:
 
 `npm run lint` and `npm run typecheck` are additional release gates. Browser
 and Worker types are checked separately to avoid conflicting DOM definitions.
-The dependency review includes `npm run audit:production` and a full audit;
+When dependencies, lockfile resolutions, runtime configuration, or a relevant
+security finding change, the dependency review includes
+`npm run audit:production` and a full audit. Otherwise, an existing applicable
+audit may be cited with its date and unchanged dependency inputs;
 unresolved findings retain their severity, scope, and applicability in the
 release review. The repository has no adopted
 standalone WARDEN command. Its result is recorded as `N/A` according to the
 studio procedure, while `npm test`, lint, governance checks, and post-deploy
 observations provide the applicable evidence.
+
+### ZG-R02a. Small Content and Documentation Changes
+
+A content-only change edits prose, translations, existing links, or selections
+of already supported content blocks. It does not change rendering logic,
+styles, routing, runtime or build configuration, dependencies, executable
+scripts, schemas, or other system files. Release-version metadata alone does
+not make a content change an implementation change.
+
+For this class, record the affected files and locales, inspect the diff and
+source attribution, build the site once when publishing, and run only the
+existing rendered-output checks relevant to the affected pages. Verify locale
+parity, links, and heading order. Do not add a test suite for a simple prose
+correction or repeat successful checks when their inputs have not changed.
+
+Ordinary content and documentation edits do not require a new Constitution or
+Development Regulation review, amendment, or upstream test run. Retain the
+existing evidence and pinned revisions. This shortcut never applies to changes
+to licences, public legal policies, governance rules (including this rule),
+protected provisions, authority, access controls, or submodule pins. Review the
+affected requirements for those changes. If implementation files also change,
+use the implementation gates in ZG-R02. When classification is uncertain, use
+the broader applicable scope.
 
 ### ZG-R03. Publication Evidence
 
@@ -236,3 +263,4 @@ founders may adopt, revise, or reject it through the Profile procedure.
 | `0.3.0-candidate` | 2026-09-10 | Added the four-locale Summer 2026 umbrella publication and expanded sitemap parity checks to 14 posts |
 
 | `0.4.0-candidate` | 2026-09-28 | Reconciled the Master-CV profile projections, four public policies, branded social preview, and current inventory/build checks |
+| `0.4.2-candidate` | 2026-10-02 | Defined proportionate checks for small content/documentation edits and reuse of unchanged dependency evidence; retained full implementation and affected governance/licensing review requirements |

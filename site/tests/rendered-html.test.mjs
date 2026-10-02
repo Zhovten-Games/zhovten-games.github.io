@@ -439,10 +439,10 @@ test("matches the concise author sync records, shared languages, and founder ord
   const samTitle = "Senior Full-Stack Web Engineer · Systems Designer · Co-Founder";
   const oksanaTitle = "Lead Game Designer · Narrative &amp; Technical Game Design · Founder";
   const expectedSections = {
-    en: ["Experience", "Education", "Languages", "Public team profiles"],
-    uk: ["Досвід", "Освіта", "Мови", "Публічні профілі команди"],
-    ru: ["Опыт", "Образование", "Языки", "Публичные профили команды"],
-    ja: ["経歴", "学歴", "言語", "チームの公開プロフィール"],
+    en: ["Experience", "Project experience", "Education", "Languages", "Public team profiles"],
+    uk: ["Досвід", "Проєктний досвід", "Освіта", "Мови", "Публічні профілі команди"],
+    ru: ["Опыт", "Проектный опыт", "Образование", "Языки", "Публичные профили команды"],
+    ja: ["経歴", "プロジェクト経験", "学歴", "言語", "チームの公開プロフィール"],
   };
   for (const { locale, prefix } of editions) {
     const authors = (await text(`${prefix}/authors/`)).split("<main")[1].split("</main>")[0];
@@ -469,9 +469,15 @@ test("matches the concise author sync records, shared languages, and founder ord
     assert.ok(!sam.includes('class="zg-profile__groups"'));
     const profile = (html) => html.split("<main")[1].split("</main>")[0];
     const h2 = (html) => [...profile(html).matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((match) => match[1]);
-    const [experience, education, languages, publicProfiles] = expectedSections[locale];
-    assert.deepEqual(h2(sam), [experience, languages, publicProfiles]);
-    assert.deepEqual(h2(oksana), [experience, education, languages, publicProfiles]);
+    const [experience, projects, education, languages, publicProfiles] = expectedSections[locale];
+    assert.deepEqual(h2(sam), [experience, projects, languages, publicProfiles]);
+    assert.deepEqual(h2(oksana), [experience, projects, education, languages, publicProfiles]);
+    const cards = (html) => [...profile(html).matchAll(/<li class="zg-project-card"[\s\S]*?<\/li>/g)].map((match) => match[0]);
+    const catalog = cards(await text(`${prefix}/projects/`));
+    assert.deepEqual(cards(oksana), catalog.slice(0, 7));
+    assert.deepEqual(cards(sam), catalog.slice(5));
+    const samBody = profile(sam).split('class="zg-profile__links"')[0];
+    assert.ok(!samBody.includes("https://github.com/pan-canon"));
     const languageBlock = (html) => html.split('class="zg-profile__languages"')[1].split("</section>")[0];
     assert.equal(languageBlock(sam), languageBlock(oksana));
     assert.equal([...languageBlock(sam).matchAll(/<li>/g)].length, 3);

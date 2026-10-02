@@ -530,7 +530,9 @@ main > * + * {
   margin-top: 1.8rem;
 }
 
-.zg-project-section > h2 {
+.zg-project-section > h2,
+.zg-profile > .zg-rich-content > h2,
+.zg-profile > section > h2 {
   padding-bottom: 0.55rem;
   border-bottom: 1px dashed var(--paper-border);
   margin-bottom: 0.85rem;

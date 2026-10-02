@@ -2,7 +2,7 @@
 
 Public studio site and multilingual publication archive for Zhovten Games.
 
-Current release line: `v0.4.1`.
+Current release line: `v0.4.2`.
 
 The author directory follows the reviewed Master-CV projections and lists
 Oksana first. Public policies cover AI use, licensing, privacy, and terms in
@@ -80,8 +80,11 @@ npm test
 SEO and sitemap isolation, valid HTML document boundaries, public-source build
 identity, content decisions, licensing, and submodule pins. `npm run lint`
 provides the separate lint gate. The Zhovten Games site has no adopted WARDEN
-command; its procedural status is recorded as `N/A`, and the complete local
-suite is the applicable verification contract.
+command; its procedural status is recorded as `N/A`. Implementation changes
+use the complete local suite. Small content/documentation changes use the
+proportionate checks in Development Regulation ZG-R02a, without reopening
+unchanged Constitution or legislation reviews. Licence, public-policy,
+governance, and system changes are outside that content-only shortcut.
 
 ## Licensing
 
