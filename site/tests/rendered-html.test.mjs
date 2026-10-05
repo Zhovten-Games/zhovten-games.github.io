@@ -159,6 +159,20 @@ test("publishes founder histories, organization links, social networks, and the 
     ]);
     assert.ok(rootHtml.includes("/favicon.png"));
     assert.ok(rootHtml.includes("/favicon.ico"));
+    const credit = rootHtml.split('class="site-footer__credit"')[1].split("</p>")[0];
+    assert.ok(credit.includes('src="/brand/ironcreed-mark.png"'));
+    assert.ok(credit.includes('width="36" height="36" alt=""'));
+    assert.ok(credit.includes('>IRONCREED</a>'));
+    assert.ok(credit.includes(edition.locale === "uk"
+      ? "https://web.zhovten.games/uk/pages/about"
+      : "https://web.zhovten.games/en/pages/about"));
+    const creditLabels = {
+      en: "Website developed by",
+      uk: "Сайт розроблено",
+      ru: "Сайт разработан",
+      ja: "サイト制作：",
+    };
+    assert.ok(credit.includes(creditLabels[edition.locale]));
 
     const about = await text(aboutPath);
     assert.ok(about.includes("https://github.com/FOP-Oksana-Dubinetska"));
@@ -200,16 +214,19 @@ test("publishes all registered items in every locale sitemap", async () => {
   );
   assert.equal(register.publications.length, 15);
   assert.equal(register.exclusions.length, 1);
-  assert.equal(register.projectDecisions.published.length, 9);
+  assert.equal(register.projectDecisions.published.length, 10);
   assert.equal(register.projectDecisions.excluded.length, 0);
-  assert.equal(register.projectDecisions.resolved.length, 1);
+  assert.equal(register.projectDecisions.resolved.length, 2);
 
   const index = await text("/sitemap.xml", "application/xml");
   for (const edition of editions) {
     assert.ok(index.includes(`https://zhovten.games/sitemaps/${edition.locale}.xml`));
     const sitemap = await text(`/sitemaps/${edition.locale}.xml`, "application/xml");
     const urls = [...sitemap.matchAll(/<url>/g)];
-    assert.equal(urls.length, 37, `${edition.locale} sitemap URL count`);
+    assert.equal(urls.length, 38, `${edition.locale} sitemap URL count`);
+    for (const slug of register.projectDecisions.published) {
+      assert.ok(sitemap.includes(`<loc>https://zhovten.games${edition.prefix}/projects/${slug}/</loc>`));
+    }
 
     for (const publication of register.publications) {
       const prefix = edition.prefix;
@@ -289,21 +306,23 @@ test("aligns umbrella headings and publishes a professional contest log in every
   }
 });
 
-test("groups project credits, development work, and tools with localized metadata", async () => {
+test("groups project credits, completed contracts, development work, and tools with localized metadata", async () => {
   const sectionLabels = {
-    en: ["Released games · GrandMA Studios", "Games in development", "Tools"],
-    uk: ["Випущені ігри · GrandMA Studios", "Ігри в розробці", "Інструменти"],
-    ru: ["Выпущенные игры · GrandMA Studios", "Игры в разработке", "Инструменты"],
-    ja: ["リリース済みゲーム · GrandMA Studios", "開発中のゲーム", "ツール"],
+    en: ["Released games · GrandMA Studios", "Completed contracts", "Games in development", "Tools"],
+    uk: ["Випущені ігри · GrandMA Studios", "Завершені контракти", "Ігри в розробці", "Інструменти"],
+    ru: ["Выпущенные игры · GrandMA Studios", "Завершённые контракты", "Игры в разработке", "Инструменты"],
+    ja: ["リリース済みゲーム · GrandMA Studios", "完了した契約業務", "開発中のゲーム", "ツール"],
   };
 
   for (const edition of editions) {
     const html = await text(`${edition.prefix}/projects/`);
-    const [released, development, tools] = sectionLabels[edition.locale];
+    const [released, contracts, development, tools] = sectionLabels[edition.locale];
     assert.ok(html.includes(released));
+    assert.ok(html.includes(contracts));
     assert.ok(html.includes(development));
     assert.ok(html.includes(tools));
-    assert.ok(html.indexOf('id="projects-released"') < html.indexOf('id="projects-development"'));
+    assert.ok(html.indexOf('id="projects-released"') < html.indexOf('id="projects-contract"'));
+    assert.ok(html.indexOf('id="projects-contract"') < html.indexOf('id="projects-development"'));
     assert.ok(html.indexOf('id="projects-development"') < html.indexOf('id="projects-tool"'));
     assert.ok(html.indexOf("Mystery Case Files 28") < html.indexOf("InterDead"));
     assert.ok(html.includes("https://i.ytimg.com/vi/vCQ_1Rlirm8/hqdefault.jpg"));
@@ -324,6 +343,22 @@ test("groups project credits, development work, and tools with localized metadat
     assert.ok(comic.includes("Game Designer"));
     assert.ok(!comic.includes("youtube.com/watch"));
     assert.ok(!comic.includes('property="og:image"'));
+
+    const contractPath = `${edition.prefix}/projects/quokka-consulting/`;
+    const contract = await text(contractPath);
+    const contractBody = contract.split("<main")[1].split("</main>")[0];
+    const periods = { en: "Spring 2026 · Completed", uk: "Весна 2026 · Завершено", ru: "Весна 2026 · Завершено", ja: "2026年春 · 完了" };
+    assert.ok(html.includes(`href="${contractPath}"`));
+    assert.ok(contractBody.includes("QUOKKA / ADDUCATES"));
+    assert.ok(contractBody.includes(periods[edition.locale]));
+    assert.ok(contractBody.includes("NDA"));
+    assert.ok(contractBody.includes("https://quokka.com/"));
+    assert.ok(contractBody.includes("https://adducates.com/about/"));
+    assert.ok(contractBody.includes("Oksana Dubinetska"));
+    assert.ok(!contractBody.includes("Sam Starling"));
+    assert.doesNotMatch(contractBody, /docs\.google\.com|internalNotes|completed-or-ongoing/);
+    assert.ok(contract.includes(`rel="canonical" href="https://zhovten.games${contractPath}"`));
+    assertClosedDocument(contract, contractPath);
   }
 });
 
@@ -413,6 +448,7 @@ test("pins governance and applies the scoped licensing map", async () => {
   const license = await readFile(new URL("LICENSE.md", root), "utf8");
   const profile = await readFile(new URL("governance/PROFILE.md", root), "utf8");
   const socialPreview = await readFile(new URL("public/og.png", root));
+  const engineeringMark = await readFile(new URL("public/brand/ironcreed-mark.png", root));
 
   assert.ok(modules.includes("FOP-Oksana-Dubinetska/code-constitution.git"));
   assert.ok(modules.includes("FOP-Oksana-Dubinetska/repository-licensing-policy.git"));
@@ -423,6 +459,8 @@ test("pins governance and applies the scoped licensing map", async () => {
   assert.ok(license.includes("all rights reserved"));
   assert.equal(socialPreview.readUInt32BE(16), 1733);
   assert.equal(socialPreview.readUInt32BE(20), 907);
+  assert.equal(engineeringMark.readUInt32BE(16), 192);
+  assert.equal(engineeringMark.readUInt32BE(20), 192);
   for (let field = 1; field <= 18; field += 1) {
     assert.ok(profile.includes(`## P${String(field).padStart(2, "0")}.`));
   }
@@ -474,8 +512,10 @@ test("matches the concise author sync records, shared languages, and founder ord
     assert.deepEqual(h2(oksana), [experience, projects, education, languages, publicProfiles]);
     const cards = (html) => [...profile(html).matchAll(/<li class="zg-project-card"[\s\S]*?<\/li>/g)].map((match) => match[0]);
     const catalog = cards(await text(`${prefix}/projects/`));
-    assert.deepEqual(cards(oksana), catalog.slice(0, 7));
-    assert.deepEqual(cards(sam), catalog.slice(5));
+    assert.deepEqual(cards(oksana), catalog.slice(0, 8));
+    assert.deepEqual(cards(sam), catalog.slice(6));
+    assert.ok(profile(oksana).includes("/projects/quokka-consulting/"));
+    assert.ok(!profile(sam).includes("/projects/quokka-consulting/"));
     const samBody = profile(sam).split('class="zg-profile__links"')[0];
     assert.ok(!samBody.includes("https://github.com/pan-canon"));
     const languageBlock = (html) => html.split('class="zg-profile__languages"')[1].split("</section>")[0];

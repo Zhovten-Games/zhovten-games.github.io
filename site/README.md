@@ -37,7 +37,7 @@ authorship, and external-reference identity across all four locales.
 
 ## Content inventory
 
-The archive contains 15 publications, 9 project records, and 2 author records.
+The archive contains 15 publications, 10 project records, and 2 author records.
 The two recovered external wrappers preserve the Canon Horror DOI corpus and
 Oksana Dubinetska's Inrium article. The temporary January postponement notice is
 kept in the source history and deliberately excluded from the public archive.

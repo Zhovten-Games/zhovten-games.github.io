@@ -314,6 +314,15 @@ const postText: Record<string, PostText> = {
 };
 
 const projectText: Record<string, ProjectText> = {
+  "quokka-consulting": {
+    "title": "QUOKKA / ADDUCATES",
+    "description": "Завершена контрактна робота Oksana Dubinetska над іграми та продуктами компанії, що стоїть за брендом освітніх ігор QUOKKA.",
+    "studio": "ADDUCATES / QUOKKA",
+    "role": "Контрактна робота над іграми та продуктами",
+    "ownership": "Зовнішня контрактна робота Oksana Dubinetska. Продукти й бренди QUOKKA та ADDUCATES належать відповідним правовласникам; це не продукт Zhovten Games.",
+    "period": "Весна 2026 · Завершено",
+    "body": "Навесні 2026 року Oksana Dubinetska завершила короткостроковий контракт із ADDUCATES — компанією, що стоїть за брендом освітніх ігор QUOKKA.\n\nРобота охоплювала співпрацю над іграми та продуктами у сфері освітніх ігор. Контракт був під NDA; докладні обов’язки й результати роботи не розголошуються.\n\n[QUOKKA](https://quokka.com/) · [ADDUCATES](https://adducates.com/about/)"
+  },
   "interdead": {
     title: "InterDead",
     description: "Наративна горор-система, що поєднує гру, вебшар, прототипи та дослідницьку інфраструктуру.",

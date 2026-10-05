@@ -33,12 +33,14 @@ export function localeSitemap(locale: Locale) {
     "/blog/": "2026-09-13",
     "/authors/": "2026-09-28",
     "/authors/sam-starling/": "2026-09-28",
-    "/authors/oksana-dubinetska/": "2026-09-28",
+    "/authors/oksana-dubinetska/": "2026-10-05",
     "/about/": "2026-09-28",
     "/governance/": POLICY_DATE,
     ...Object.fromEntries(policySlugs.map((slug) => ["/governance/" + slug + "/", POLICY_DATE])),
     "/contact/": "2026-09-13",
     "/projects/interdead/": "2026-09-13",
+    "/projects/": "2026-10-05",
+    "/projects/quokka-consulting/": "2026-10-05",
   };
   const rows = paths
     .map((path) => {

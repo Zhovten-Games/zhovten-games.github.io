@@ -41,7 +41,7 @@ export type Project = {
   title: string;
   description: string;
   kind: string;
-  section?: "released" | "development" | "tool";
+  section?: "released" | "contract" | "development" | "tool";
   authors: string[];
   studio: string;
   role: string;

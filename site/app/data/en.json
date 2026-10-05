@@ -499,6 +499,22 @@
       "body": "Oksana Dubinetska contributed game design and narrative work during the listed production period. The linked walkthrough is presented as a public visual reference for the released game."
     },
     {
+      "slug": "quokka-consulting",
+      "title": "QUOKKA / ADDUCATES",
+      "description": "Completed contract game and product work by Oksana Dubinetska for the company behind the QUOKKA educational-games brand.",
+      "kind": "external-portfolio",
+      "section": "contract",
+      "authors": [
+        "oksana-dubinetska"
+      ],
+      "studio": "ADDUCATES / QUOKKA",
+      "role": "Contract game and product work",
+      "ownership": "External contract work by Oksana Dubinetska. QUOKKA and ADDUCATES products and brands belong to their respective owners; this is not a Zhovten Games product.",
+      "externalUrl": "https://quokka.com/",
+      "period": "Spring 2026 · Completed",
+      "body": "In spring 2026, Oksana Dubinetska completed a short-term contract engagement with ADDUCATES, the company behind the QUOKKA educational-games brand.\n\nThe work involved game and product collaboration in an educational-games context. The engagement was covered by an NDA; detailed responsibilities and deliverables are not disclosed.\n\n[QUOKKA](https://quokka.com/) · [ADDUCATES](https://adducates.com/about/)"
+    },
+    {
       "slug": "interdead",
       "title": "InterDead",
       "description": "A narrative horror system connecting a game, web layer, prototypes, and research infrastructure.",
@@ -619,6 +635,7 @@
         "mcf-26-a-crime-in-reflection",
         "mcf-25-the-dalimar-legacy",
         "whispered-secrets-13-tying-the-knot",
+        "quokka-consulting",
         "interdead",
         "untitled-science-fiction-comic"
       ]

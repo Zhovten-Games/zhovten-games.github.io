@@ -4,7 +4,7 @@ Status: candidate derivative act pending human ratification.
 
 Act identifier: `zg-site-act-development-001`.
 
-Revision: `0.4.2-candidate`.
+Revision: `0.4.3-candidate`.
 
 Constitutional basis: the pinned Code Constitution and P04, P06, P07, P12,
 P15, P16, and P17 of `governance/PROFILE.md`.
@@ -154,7 +154,7 @@ Content-only changes may use ZG-R02a. The checks must establish:
 
 - a successful production build;
 - all four locale routes render;
-- every locale has the same registered post slugs, 9 project slugs, 2 author slugs, and 4 policy slugs;
+- every locale has the same registered post slugs, 10 project slugs, 2 author slugs, and 4 policy slugs;
 - source dates and author identifiers are invariant across locales;
 - the research announcement points to DOI `10.5281/zenodo.19773963`, while the
   separate v0.2 wrapper points to `10.5281/zenodo.20037828`;
@@ -264,3 +264,4 @@ founders may adopt, revise, or reject it through the Profile procedure.
 
 | `0.4.0-candidate` | 2026-09-28 | Reconciled the Master-CV profile projections, four public policies, branded social preview, and current inventory/build checks |
 | `0.4.2-candidate` | 2026-10-02 | Defined proportionate checks for small content/documentation edits and reuse of unchanged dependency evidence; retained full implementation and affected governance/licensing review requirements |
+| `0.4.3-candidate` | 2026-10-05 | Updated the project inventory to ten for the authorized QUOKKA contract case; verification requirements are unchanged |

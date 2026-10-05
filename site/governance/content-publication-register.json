@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "registryId": "zg-site-register-publications-001",
-  "revision": "2026-09-13",
+  "revision": "2026-10-05",
   "canonicalEditorialLocale": "en",
   "publishedLocales": [
     "en",
@@ -204,7 +204,8 @@
       "mcf-26-a-crime-in-reflection",
       "mcf-27-the-riddle-of-mrs-bishop",
       "mcf-28-house-that-love-built",
-      "untitled-science-fiction-comic"
+      "untitled-science-fiction-comic",
+      "quokka-consulting"
     ],
     "excluded": [],
     "resolved": [
@@ -214,6 +215,11 @@
         "decision": "publish-public-safe-summary",
         "publishedAs": "untitled-science-fiction-comic",
         "reason": "The site editor supplied a releasable medium, technology, and role attribution. The public entry omits the project name and link pending owner authorization."
+      },
+      {
+        "slug": "quokka-consulting",
+        "decision": "publish-completed-contract-case",
+        "reason": "Explicit editor instruction and the approved QUOKKA / ADDUCATES editorial narrative establish a completed short-term contract by Oksana Dubinetska in spring 2026. Publish generalized game/product work under NDA; do not infer a specific role, exact dates, or deliverables."
       }
     ]
   },

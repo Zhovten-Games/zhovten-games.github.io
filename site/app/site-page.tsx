@@ -75,6 +75,9 @@ const englishLabels = {
   primaryNavigation: "Primary navigation",
   repositoryOrder: "Repository order",
   releasedGames: "Released games · GrandMA Studios",
+  completedContracts: "Completed contracts",
+  websiteBy: "Website developed by",
+  engineeringPractice: "the engineering practice of Zhovten Games.",
   developmentGames: "Games in development",
   contributionPeriod: "Contribution period",
   technology: "Technology",
@@ -144,6 +147,9 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     primaryNavigation: "Основна навігація",
     repositoryOrder: "Порядок репозиторію",
     releasedGames: "Випущені ігри · GrandMA Studios",
+    completedContracts: "Завершені контракти",
+    websiteBy: "Сайт розроблено",
+    engineeringPractice: "інженерною практикою Zhovten Games.",
     developmentGames: "Ігри в розробці",
     contributionPeriod: "Період роботи",
     technology: "Технологія",
@@ -210,6 +216,9 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     primaryNavigation: "Основная навигация",
     repositoryOrder: "Порядок репозитория",
     releasedGames: "Выпущенные игры · GrandMA Studios",
+    completedContracts: "Завершённые контракты",
+    websiteBy: "Сайт разработан",
+    engineeringPractice: "инженерной практикой Zhovten Games.",
     developmentGames: "Игры в разработке",
     contributionPeriod: "Период работы",
     technology: "Технология",
@@ -276,6 +285,9 @@ const labelsByLocale: Record<Locale, typeof englishLabels> = {
     primaryNavigation: "メインナビゲーション",
     repositoryOrder: "リポジトリ規範",
     releasedGames: "リリース済みゲーム · GrandMA Studios",
+    completedContracts: "完了した契約業務",
+    websiteBy: "サイト制作：",
+    engineeringPractice: "Zhovten Gamesのエンジニアリング部門。",
     developmentGames: "開発中のゲーム",
     contributionPeriod: "担当期間",
     technology: "技術",
@@ -592,6 +604,22 @@ function Footer({ locale }: { locale: Locale }) {
         {" · "}CC BY-SA 4.0{" · "}MIT{" · "}{l.licenseBrand}
       </p>
       <PolicyNavigation locale={locale} />
+      <p className="site-footer__credit">
+        {/* Reuse the small, fixed-size brand asset without image transformation. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/ironcreed-mark.png" width="36" height="36" alt="" />
+        <span>
+          {l.websiteBy}{" "}
+          <a
+            href={locale === "uk"
+              ? "https://web.zhovten.games/uk/pages/about"
+              : "https://web.zhovten.games/en/pages/about"}
+            rel="noopener noreferrer"
+            target="_blank"
+          >IRONCREED</a>
+          {" — "}{l.engineeringPractice}
+        </span>
+      </p>
       <p className="site-footer__build">
         {l.build}:{" "}
         <a
@@ -885,6 +913,7 @@ export function SitePage({ locale, segments }: { locale: Locale; segments: strin
             <p>{content.pages.projectsDescription}</p>
             {([
               ["released", l.releasedGames],
+              ["contract", l.completedContracts],
               ["development", l.developmentGames],
               ["tool", l.tools],
             ] as const).map(([section, title]) => {
