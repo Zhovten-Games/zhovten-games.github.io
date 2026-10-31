@@ -29,8 +29,8 @@ export function localeSitemap(locale: Locale) {
     ...Object.fromEntries(
       content.posts.map((post) => ["/blog/" + post.slug + "/", post.modifiedDate ?? post.date]),
     ),
-    "/": "2026-09-13",
-    "/blog/": "2026-09-13",
+    "/": "2026-10-31",
+    "/blog/": "2026-10-31",
     "/authors/": "2026-09-28",
     "/authors/sam-starling/": "2026-09-28",
     "/authors/oksana-dubinetska/": "2026-10-05",

@@ -212,7 +212,7 @@ test("publishes all registered items in every locale sitemap", async () => {
   const register = JSON.parse(
     await readFile(new URL("../governance/content-publication-register.json", import.meta.url)),
   );
-  assert.equal(register.publications.length, 15);
+  assert.equal(register.publications.length, 16);
   assert.equal(register.exclusions.length, 1);
   assert.equal(register.projectDecisions.published.length, 10);
   assert.equal(register.projectDecisions.excluded.length, 0);
@@ -223,7 +223,7 @@ test("publishes all registered items in every locale sitemap", async () => {
     assert.ok(index.includes(`https://zhovten.games/sitemaps/${edition.locale}.xml`));
     const sitemap = await text(`/sitemaps/${edition.locale}.xml`, "application/xml");
     const urls = [...sitemap.matchAll(/<url>/g)];
-    assert.equal(urls.length, 38, `${edition.locale} sitemap URL count`);
+    assert.equal(urls.length, 39, `${edition.locale} sitemap URL count`);
     for (const slug of register.projectDecisions.published) {
       assert.ok(sitemap.includes(`<loc>https://zhovten.games${edition.prefix}/projects/${slug}/</loc>`));
     }
@@ -240,6 +240,43 @@ test("publishes all registered items in every locale sitemap", async () => {
       const postHtml = await text(`${prefix}/blog/${publication.slug}/`);
       assert.match(postHtml.replaceAll("<!-- -->", ""), new RegExp(`<span class="zg-meta-label">[^<]+</span> ${publication.date}</p>`));
       assert.ok(postHtml.includes(`"datePublished":"${publication.date}"`));
+      if (publication.slug === "one-year-of-zhovten-games-halloween-2026") {
+        const expected = {
+          en: ["One Year of Zhovten Games — Halloween 2026", "This remains a development target", "Unreal Engine (planned)"],
+          uk: ["Рік Zhovten Games — Гелловін 2026", "Це залишається ціллю розробки", "Unreal Engine (заплановано)"],
+          ru: ["Год Zhovten Games — Хэллоуин 2026", "Это остаётся целью разработки", "Unreal Engine (в планах)"],
+          ja: ["Zhovten Games 1周年 — ハロウィン2026", "これは開発上の目標であり", "Unreal Engine（計画中）"],
+        }[edition.locale];
+        const path = `${prefix}/blog/${publication.slug}/`;
+        for (const fragment of expected) assert.ok(postHtml.includes(fragment), `${edition.locale}: ${fragment}`);
+        assert.ok(postHtml.includes(`<title>${expected[0]} | Zhovten Games</title>`));
+        assert.ok(postHtml.includes(`rel="canonical" href="https://zhovten.games${path}"`));
+        for (const alternate of editions) {
+          assert.ok(postHtml.includes(`hrefLang="${alternate.locale}" href="https://zhovten.games${alternate.prefix}/blog/${publication.slug}/"`));
+        }
+        assert.ok(postHtml.includes(`hrefLang="x-default" href="https://zhovten.games/uk/blog/${publication.slug}/"`));
+        assert.ok(postHtml.includes('property="og:type" content="article"'));
+        assert.ok(postHtml.includes('property="article:published_time" content="2026-10-31"'));
+        assert.ok(postHtml.includes('property="og:image" content="https://zhovten.games/og.png?v=20260928"'));
+        assert.ok(postHtml.includes('name="twitter:card" content="summary_large_image"'));
+        const descriptionStart = {
+          en: "Zhovten Games turns one.",
+          uk: "Zhovten Games виповнився рік:",
+          ru: "Zhovten Games исполнился год:",
+          ja: "Zhovten Games設立1周年。",
+        }[edition.locale];
+        assert.ok(postHtml.includes(`name="description" content="${descriptionStart}`));
+        assert.ok(postHtml.includes(`property="og:description" content="${descriptionStart}`));
+        assert.ok(postHtml.includes(`name="twitter:description" content="${descriptionStart}`));
+        assert.ok(postHtml.includes('"dateModified":"2026-10-31"'));
+        assert.ok(postHtml.includes(`href="${prefix}/projects/interdead/"`));
+        assert.ok(postHtml.includes(`href="${prefix}/blog/summer-2026-umbrella-update/"`));
+        assert.ok(postHtml.includes("C++20"));
+        assert.ok(postHtml.includes("WebAssembly"));
+        const body = postHtml.split('data-post-content="true"')[1].split("</article>")[0];
+        assert.equal([...body.matchAll(/<h2\b/g)].length, 5);
+        assertClosedDocument(postHtml, path);
+      }
     }
 
     for (const other of editions) {

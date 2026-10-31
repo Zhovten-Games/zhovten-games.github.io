@@ -2,7 +2,7 @@ import { SITE_ORIGIN } from "../site-page";
 import { getPublishedLocales } from "../site-content";
 
 export async function GET() {
-  const now = "2026-10-05";
+  const now = "2026-10-31";
   const entries = getPublishedLocales()
     .map(
       (locale) =>
