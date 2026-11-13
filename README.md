@@ -2,7 +2,7 @@
 
 This repository contains public materials and the source projection for [zhovten.games](https://zhovten.games).
 
-- Website source: [`site/`](./site/) — release `v0.2.0`
+- Website source: [`site/`](./site/) — release `v0.4.5`
 - Publications: [`publications/`](./publications/)
 - Release evidence: [`releases/`](./releases/)
 

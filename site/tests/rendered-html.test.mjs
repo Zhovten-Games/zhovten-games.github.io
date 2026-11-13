@@ -401,9 +401,9 @@ test("groups project credits, completed contracts, development work, and tools w
 
 test("publishes the localized InterDead map with the requested social links", async () => {
   const externalReferences = [
-    "https://interdead.phantom-draft.com/",
-    "https://interdead.phantom-draft.com/about/",
-    "https://noir.phantom-draft.com/",
+    "https://interdead.zhovten.games/",
+    "https://interdead.zhovten.games/about/",
+    "https://noir.zhovten.games/",
     "https://interdead.fandom.com/wiki/InterDead_Wiki",
     "https://github.com/Zhovten-Games/InterDeadIT",
     "https://github.com/Zhovten-Games/InterDeadProto",
@@ -414,9 +414,9 @@ test("publishes the localized InterDead map with the requested social links", as
     "https://www.youtube.com/@inter_dead",
     "https://www.instagram.com/zhovtengames/",
     "https://www.facebook.com/interdead",
-    "https://interdead.phantom-draft.com/pages/terms-of-use/",
-    "https://interdead.phantom-draft.com/pages/privacy-policy/",
-    "https://interdead.phantom-draft.com/pages/ai-policy/",
+    "https://interdead.zhovten.games/pages/terms-of-use/",
+    "https://interdead.zhovten.games/pages/privacy-policy/",
+    "https://interdead.zhovten.games/pages/ai-policy/",
   ];
 
   for (const edition of editions) {

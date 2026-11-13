@@ -35,9 +35,9 @@ const sections: ResourceSection[] = [
     number: "01",
     title: text("Public InterDead interface", "Публічний інтерфейс InterDead", "Публичный интерфейс InterDead", "InterDead 公開インターフェース"),
     nodes: [
-      { label: text("Main site / NIRO IN NOIR", "Головний сайт / NIRO IN NOIR", "Главный сайт / NIRO IN NOIR", "メインサイト / NIRO IN NOIR"), href: "https://interdead.phantom-draft.com/" },
-      { label: "About / Echo of an Unfading Memory", href: "https://interdead.phantom-draft.com/about/" },
-      { label: "NOIR", note: text("application artifact / prototype surface", "артефакт застосунку / поверхня прототипу", "артефакт приложения / поверхность прототипа", "アプリケーション成果物 / プロトタイプ画面"), href: "https://noir.phantom-draft.com/" },
+      { label: text("Main site / NIRO IN NOIR", "Головний сайт / NIRO IN NOIR", "Главный сайт / NIRO IN NOIR", "メインサイト / NIRO IN NOIR"), href: "https://interdead.zhovten.games/" },
+      { label: "About / Echo of an Unfading Memory", href: "https://interdead.zhovten.games/about/" },
+      { label: "NOIR", note: text("application artifact / prototype surface", "артефакт застосунку / поверхня прототипу", "артефакт приложения / поверхность прототипа", "アプリケーション成果物 / プロトタイプ画面"), href: "https://noir.zhovten.games/" },
     ],
   },
   {
@@ -103,9 +103,9 @@ const sections: ResourceSection[] = [
     number: "07",
     title: "Legal / Governance",
     nodes: [
-      { label: "Terms of Use", href: "https://interdead.phantom-draft.com/pages/terms-of-use/" },
-      { label: "Privacy Policy", href: "https://interdead.phantom-draft.com/pages/privacy-policy/" },
-      { label: "AI Usage & Generative Technologies Policy", href: "https://interdead.phantom-draft.com/pages/ai-policy/" },
+      { label: "Terms of Use", href: "https://interdead.zhovten.games/pages/terms-of-use/" },
+      { label: "Privacy Policy", href: "https://interdead.zhovten.games/pages/privacy-policy/" },
+      { label: "AI Usage & Generative Technologies Policy", href: "https://interdead.zhovten.games/pages/ai-policy/" },
     ],
   },
 ];
