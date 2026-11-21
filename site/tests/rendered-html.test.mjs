@@ -519,6 +519,12 @@ test("matches the concise author sync records, shared languages, and founder ord
     ru: ["Опыт", "Проектный опыт", "Образование", "Языки", "Публичные профили команды"],
     ja: ["経歴", "プロジェクト経験", "学歴", "言語", "チームの公開プロフィール"],
   };
+  const educationNames = {
+    en: "Kyiv National Linguistic University",
+    uk: "Київський національний лінгвістичний університет",
+    ru: "Киевский национальный лингвистический университет",
+    ja: "キーウ国立言語大学",
+  };
   for (const { locale, prefix } of editions) {
     const authors = (await text(`${prefix}/authors/`)).split("<main")[1].split("</main>")[0];
     assert.ok(authors.indexOf("/authors/oksana-dubinetska/") < authors.indexOf("/authors/sam-starling/"));
@@ -537,7 +543,7 @@ test("matches the concise author sync records, shared languages, and founder ord
     for (const name of ["ZIPY HOLDINGS LTD.", "Scuba Space", "uCoz / uKit", "Technical Help Desk Specialist", "Engineering Mentor / Co-Founder"]) {
       assert.ok(sam.includes(name), `${prefix} missing Sam experience ${name}`);
     }
-    for (const name of ["HOSTiQ", "IRONCREED Request Log", "Web Academy", "content.ua", "Kyiv National Linguistics University", "Kyiv School of Journalism", "DNS", "cPanel"]) {
+    for (const name of ["HOSTiQ", "IRONCREED Request Log", "Web Academy", "content.ua", educationNames[locale], "Kyiv School of Journalism", "DNS", "cPanel"]) {
       assert.ok(oksana.includes(name), `${prefix} missing Oksana source fact ${name}`);
     }
     assert.ok(oksana.includes("2014–2018"));
