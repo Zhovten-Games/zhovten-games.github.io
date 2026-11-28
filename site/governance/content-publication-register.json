@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "registryId": "zg-site-register-publications-001",
-  "revision": "2026-10-31",
+  "revision": "2026-11-28",
   "canonicalEditorialLocale": "en",
   "publishedLocales": [
     "en",
@@ -208,7 +208,8 @@
           "ja"
         ]
       },
-      "publicationAuthority": "Explicit owner instruction to translate into four locales and publish with today’s date. English prose preserved with two internal reference links; translations retain the distinction between closed beta availability and future development targets."
+      "publicationAuthority": "Explicit owner instruction to translate into four locales and publish with today’s date. English prose preserved with two internal reference links; translations retain the distinction between closed beta availability and future development targets.",
+      "modifiedDate": "2026-11-28"
     }
   ],
   "projectDecisions": {

@@ -268,12 +268,15 @@ test("publishes all registered items in every locale sitemap", async () => {
         assert.ok(postHtml.includes(`name="description" content="${descriptionStart}`));
         assert.ok(postHtml.includes(`property="og:description" content="${descriptionStart}`));
         assert.ok(postHtml.includes(`name="twitter:description" content="${descriptionStart}`));
-        assert.ok(postHtml.includes('"dateModified":"2026-10-31"'));
+        assert.ok(postHtml.includes('"dateModified":"2026-11-28"'));
         assert.ok(postHtml.includes(`href="${prefix}/projects/interdead/"`));
         assert.ok(postHtml.includes(`href="${prefix}/blog/summer-2026-umbrella-update/"`));
         assert.ok(postHtml.includes("C++20"));
         assert.ok(postHtml.includes("WebAssembly"));
         const body = postHtml.split('data-post-content="true"')[1].split("</article>")[0];
+        const updateDate = { en: "28 November 2026", uk: "28 листопада 2026", ru: "28 ноября 2026", ja: "2026年11月28日" }[edition.locale];
+        assert.ok(body.includes(`<strong>UPD ${updateDate}</strong>`), `${edition.locale} dated Workshop update`);
+        assert.ok(body.includes('href="https://www.linkedin.com/pulse/custom-operations-workspaces-from-internal-production-client-arpwf/"'));
         assert.equal([...body.matchAll(/<h2\b/g)].length, 5);
         assertClosedDocument(postHtml, path);
       }

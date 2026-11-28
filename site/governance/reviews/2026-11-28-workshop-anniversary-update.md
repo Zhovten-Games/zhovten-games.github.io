@@ -1,0 +1,7 @@
+# Workshop anniversary follow-up — v0.4.7
+
+The owner's instruction adds a dated 2026-11-28 UPD at the end of the Workshop section in the existing Halloween 2026 publication, in English, Ukrainian, Russian and Japanese. The supplied English paragraph and LinkedIn article title/URL are preserved. Translations retain the production workflow, project relationships, playable WebAssembly preview and adaptation to client infrastructure. The original 2026-10-31 publication date and surrounding anniversary text remain intact.
+
+Existing post modification metadata, the publication-register entry and the sitemap index record 2026-11-28; the application release advances from 0.4.6 to 0.4.7. This is a small content change under ZG-R02a. Rendering logic, dependencies, policies and pinned revisions retain their existing evidence; WARDEN is N/A. Verification uses one production build and the relevant existing rendered-output checks for four locales, registered publications and build identity. The existing Halloween assertions also check the localized UPD date and exact outgoing link. No new test suite is introduced.
+
+Canonical source starts at 93e233e72dd706633eda0002f1196fe881031385. The public site/ projection matches that source at opening; its repository also contains newer unrelated publication archives, which remain preserved. The final release journal records the exact canonical/projection commits, saved version and successful deployment. Website registry ENTRY 002 receives only the matching localized update.
